@@ -1,0 +1,2073 @@
+00000000	20:06:14.296	[856] Fileman запуск	
+00000001	20:06:14.312	[856] fillDiskList (1639666, 1006)	
+00000002	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000003	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000004	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000005	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:110 ...)	
+00000006	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:110 ...)	
+00000007	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000008	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000009	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000010	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000011	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000012	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000013	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000014	20:06:14.312	[856] fillDiskList (1639666, 1007)	
+00000015	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000016	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000017	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000018	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:110 ...)	
+00000019	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:110 ...)	
+00000020	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000021	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000022	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000023	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000024	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000025	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:108 ...)	
+00000026	20:06:14.312	[856] loadStringFromResource (hDlg:1639666, strId:107 ...)	
+00000027	20:06:14.328	[856] loadDlgItemProperties (1639666, 103, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000028	20:06:14.328	[856] loadDlgItemProperties (1639666, 1006, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000029	20:06:14.328	[856] loadDlgItemProperties (1639666, 1007, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000030	20:06:14.328	[856] loadDlgItemProperties (1639666, 1009, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000031	20:06:14.328	[856] loadDlgItemProperties (1639666, 1010, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000032	20:06:14.328	[856] FmLocalAlloc (260):177ee0	
+00000033	20:06:14.328	[856] FmLocalAlloc (18):179020	
+00000034	20:06:14.328	[856] FmLocalFree (177ee0)	
+00000035	20:06:14.328	[856] FmLocalAlloc (260):177ee0	
+00000036	20:06:14.328	[856] FmLocalAlloc (22):17b050	
+00000037	20:06:14.328	[856] FmLocalFree (177ee0)	
+00000038	20:06:14.328	[856] listDirectoryToPanelWorker (E:\temp\)	
+00000039	20:06:14.328	[856] addFileToListView (1639666, ., ...)	
+00000040	20:06:14.328	[856] addFileToListView (1639666, .., ...)	
+00000041	20:06:14.328	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000042	20:06:14.328	[856] addFileToListView (1639666, 1, ...)	
+00000043	20:06:14.328	[856] addFileToListView (1639666, ., ...)	
+00000044	20:06:14.328	[856] addFileToListView (1639666, .., ...)	
+00000045	20:06:14.328	[856] addFileToListView (1639666, 1.mp3, ...)	
+00000046	20:06:14.328	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00000047	20:06:14.328	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000048	20:06:14.328	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00000049	20:06:14.328	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00000050	20:06:14.328	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00000051	20:06:14.328	[856] addFileToListView (1639666, 5B-0.6.1-Windows.zip, ...)	
+00000052	20:06:14.328	[856] addFileToListView (1639666, 82660.pdf, ...)	
+00000053	20:06:14.328	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000054	20:06:14.328	[856] addFileToListView (1639666, a460-100d-0.9.7-727-full.zip, ...)	
+00000055	20:06:14.328	[856] addFileToListView (1639666, accelman35.msi, ...)	
+00000056	20:06:14.328	[856] addFileToListView (1639666, AD7170A_GN_105_080415.ZIP, ...)	
+00000057	20:06:14.328	[856] addFileToListView (1639666, APISpy32.zip, ...)	
+00000058	20:06:14.328	[856] addFileToListView (1639666, arch_file_system, ...)	
+00000059	20:06:14.328	[856] addFileToListView (1639666, arrl-comparisons.pdf, ...)	
+00000060	20:06:14.328	[856] addFileToListView (1639666, asfrecorder_v1.1.zip, ...)	
+00000061	20:06:14.328	[856] addFileToListView (1639666, AutoGordianKnot.2.55.Setup.exe, ...)	
+00000062	20:06:14.328	[856] addFileToListView (1639666, avidemux_2.4.3.tar.gz, ...)	
+00000063	20:06:14.328	[856] addFileToListView (1639666, azmid170.exe, ...)	
+00000064	20:06:14.328	[856] addFileToListView (1639666, Bugslayer.zip, ...)	
+00000065	20:06:14.328	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000066	20:06:14.328	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000067	20:06:14.343	[856] addFileToListView (1639666, cdex_170b2_enu.exe, ...)	
+00000068	20:06:14.343	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000069	20:06:14.343	[856] addFileToListView (1639666, cdrkit-1.1.6, ...)	
+00000070	20:06:14.343	[856] addFileToListView (1639666, cdrkit-1.1.6.tar.gz, ...)	
+00000071	20:06:14.343	[856] addFileToListView (1639666, clean1.bat, ...)	
+00000072	20:06:14.343	[856] addFileToListView (1639666, ClientDiag.zip, ...)	
+00000073	20:06:14.343	[856] addFileToListView (1639666, cmd.txt, ...)	
+00000074	20:06:14.343	[856] addFileToListView (1639666, cs16patch_full_v29.exe, ...)	
+00000075	20:06:14.343	[856] addFileToListView (1639666, currenttrack-1.2.exe, ...)	
+00000076	20:06:14.343	[856] addFileToListView (1639666, daemon4303-lite.exe, ...)	
+00000077	20:06:14.343	[856] addFileToListView (1639666, discbone, ...)	
+00000078	20:06:14.343	[856] addFileToListView (1639666, DiscBone-0.1.tar.bz2, ...)	
+00000079	20:06:14.343	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000080	20:06:14.343	[856] addFileToListView (1639666, dllinfo_dll.rar, ...)	
+00000081	20:06:14.343	[856] addFileToListView (1639666, FarManager170.exe, ...)	
+00000082	20:06:14.343	[856] addFileToListView (1639666, fc_setup_.zip, ...)	
+00000083	20:06:14.343	[856] addFileToListView (1639666, Filemon.zip, ...)	
+00000084	20:06:14.343	[856] addFileToListView (1639666, FLAC_encoder.exe, ...)	
+00000085	20:06:14.343	[856] addFileToListView (1639666, FLAC_plugin_with_library_support.exe, ...)	
+00000086	20:06:14.343	[856] addFileToListView (1639666, FLASH891.EXE, ...)	
+00000087	20:06:14.343	[856] addFileToListView (1639666, fltk-1.1.9, ...)	
+00000088	20:06:14.343	[856] addFileToListView (1639666, gdb.zip, ...)	
+00000089	20:06:14.343	[856] addFileToListView (1639666, geany-0.16_nogtk_setup.exe, ...)	
+00000090	20:06:14.343	[856] addFileToListView (1639666, geany-0.16_setup.exe, ...)	
+00000091	20:06:14.343	[856] addFileToListView (1639666, goga nocoda, ...)	
+00000092	20:06:14.343	[856] addFileToListView (1639666, help_diseltv-instr.zip, ...)	
+00000093	20:06:14.343	[856] addFileToListView (1639666, help_diseltv_channels.m3u, ...)	
+00000094	20:06:14.343	[856] addFileToListView (1639666, ipfilter.rar, ...)	
+00000095	20:06:14.343	[856] addFileToListView (1639666, klcodec442f.rar, ...)	
+00000096	20:06:14.343	[856] addFileToListView (1639666, lister32.zip, ...)	
+00000097	20:06:14.343	[856] addFileToListView (1639666, magentsetup.exe, ...)	
+00000098	20:06:14.343	[856] addFileToListView (1639666, ManualRUSDE1103.doc, ...)	
+00000099	20:06:14.343	[856] addFileToListView (1639666, MixerCtl.zip, ...)	
+00000100	20:06:14.343	[856] addFileToListView (1639666, mmc5r04.pdf, ...)	
+00000101	20:06:14.343	[856] addFileToListView (1639666, motherboard_bios_8ipekg_f6.exe, ...)	
+00000102	20:06:14.343	[856] addFileToListView (1639666, MPEG2.zip, ...)	
+00000103	20:06:14.343	[856] addFileToListView (1639666, musictracker-0.4.1-win32.exe, ...)	
+00000104	20:06:14.343	[856] addFileToListView (1639666, myac_client.rar, ...)	
+00000105	20:06:14.343	[856] addFileToListView (1639666, myac_client_1.5.4.rar, ...)	
+00000106	20:06:14.343	[856] addFileToListView (1639666, Nestopia140bin.zip, ...)	
+00000107	20:06:14.343	[856] addFileToListView (1639666, NFO.zip, ...)	
+00000108	20:06:14.343	[856] addFileToListView (1639666, Nix.ZIP, ...)	
+00000109	20:06:14.343	[856] addFileToListView (1639666, OP297.pdf, ...)	
+00000110	20:06:14.343	[856] addFileToListView (1639666, OrbitDownloaderSetup.exe, ...)	
+00000111	20:06:14.343	[856] addFileToListView (1639666, paul_oakenfold_and_dark_-_abc-detective(titels rip).mp3, ...)	
+00000112	20:06:14.343	[856] addFileToListView (1639666, PEiD.v0.95[www.cracklab.ru].zip, ...)	
+00000113	20:06:14.343	[856] addFileToListView (1639666, pidgin-musictracker-0.4.14.exe, ...)	
+00000114	20:06:14.343	[856] addFileToListView (1639666, poweraudio.exe, ...)	
+00000115	20:06:14.343	[856] addFileToListView (1639666, price.zip, ...)	
+00000116	20:06:14.343	[856] addFileToListView (1639666, recpc.zip, ...)	
+00000117	20:06:14.343	[856] addFileToListView (1639666, rostovutk_price-all.zip, ...)	
+00000118	20:06:14.343	[856] addFileToListView (1639666, rpyc, ...)	
+00000119	20:06:14.359	[856] addFileToListView (1639666, setup.exe, ...)	
+00000120	20:06:14.359	[856] addFileToListView (1639666, showTime.bat, ...)	
+00000121	20:06:14.359	[856] addFileToListView (1639666, SkypeSetup.exe, ...)	
+00000122	20:06:14.359	[856] addFileToListView (1639666, smxwin151e.zip, ...)	
+00000123	20:06:14.359	[856] addFileToListView (1639666, sortlistctrltest.zip, ...)	
+00000124	20:06:14.359	[856] addFileToListView (1639666, stalker.rar, ...)	
+00000125	20:06:14.359	[856] addFileToListView (1639666, Trackmania_Sunrise_MI.rar, ...)	
+00000126	20:06:14.359	[856] addFileToListView (1639666, Translit, ...)	
+00000127	20:06:14.359	[856] addFileToListView (1639666, Translit.zip, ...)	
+00000128	20:06:14.359	[856] addFileToListView (1639666, uncomsetup.exe, ...)	
+00000129	20:06:14.359	[856] addFileToListView (1639666, UniversalViewerFreePortable.zip, ...)	
+00000130	20:06:14.359	[856] addFileToListView (1639666, UniversalViewerProPortable.zip, ...)	
+00000131	20:06:14.359	[856] addFileToListView (1639666, unrarsrc-3.8.5.tar.gz, ...)	
+00000132	20:06:14.359	[856] addFileToListView (1639666, usbport.sys, ...)	
+00000133	20:06:14.359	[856] addFileToListView (1639666, Vax_6151SX.pdf, ...)	
+00000134	20:06:14.359	[856] addFileToListView (1639666, VirtualDub-1.8.7-src.7z, ...)	
+00000135	20:06:14.359	[856] addFileToListView (1639666, VirtualDub-1.8.7.zip, ...)	
+00000136	20:06:14.359	[856] addFileToListView (1639666, VirtualDub-1.9.0.zip, ...)	
+00000137	20:06:14.359	[856] addFileToListView (1639666, xcita_v12.zip, ...)	
+00000138	20:06:14.359	[856] addFileToListView (1639666, Радио MEDIAZONA- new (обновлён).PLC, ...)	
+00000139	20:06:14.359	[856] addFileToListView (1639666, Радио медиазона.M3U, ...)	
+00000140	20:06:14.359	[856] addFileToListView (1639666, Радио медиазонаW.M3U, ...)	
+00000141	20:06:14.359	[856] addFileToListView (1639666, Текстовый документ.txt, ...)	
+00000142	20:06:14.359	[856] addFileToListView (1639666, Ура, Эхо Москвы заработало!!!, ...)	
+00000143	20:06:14.359	[856] listDirectoryToPanelWorker (E:\temp\) done	
+00000144	20:06:15.671	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000145	20:06:15.671	[856] FmLocalAlloc (260):1ff5a0	
+00000146	20:06:15.671	[856] FmLocalAlloc (40):151fa0	
+00000147	20:06:15.671	[856] FmLocalAlloc (260):1fe700	
+00000148	20:06:15.671	[856] FmLocalFree (1fe700)	
+00000149	20:06:15.671	[856] FmLocalFree (151fa0)	
+00000150	20:06:15.671	[856] CopyFileData :: addPathSrc (E:\temp\Bugslayer.zip)	
+00000151	20:06:15.671	[856] FmLocalAlloc (44):1e9ee0	
+00000152	20:06:15.671	[856] FmLocalAlloc (40):151fa0	
+00000153	20:06:15.671	[856] FmLocalAlloc (260):1fe700	
+00000154	20:06:15.671	[856] FmLocalFree (1fe700)	
+00000155	20:06:15.671	[856] FmLocalFree (151fa0)	
+00000156	20:06:15.671	[856] Создан диалог 1574260	
+00000157	20:06:15.671	[856] CopyFileData :: setPathDst (E:\temp\1\Bugslayer.zip)	
+00000158	20:06:15.671	[856] FmLocalAlloc (48):17f0b0	
+00000159	20:06:15.671	[856] loadDlgItemProperties (1574260, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000160	20:06:15.671	[856] addCopyDialogThread (1574260, 268, 1)	
+00000161	20:06:15.671	[856] resumeCopyDialogThread (1574260)	
+00000162	20:06:15.671	[856] findCopyDialogNode (1574260)	
+00000163	20:06:15.671	[856] copyFileWorker() 1 файлов в E:\temp\1\Bugslayer.zip 	
+00000164	20:06:15.687	[856] Первый вызов copyProgressRoutine() hCopyDlg:1574260 hParentDlg:1639666	
+00000165	20:06:15.687	[856] FmLocalAlloc (260):1fe700	
+00000166	20:06:15.687	[856] FmLocalAlloc (22):1f2568	
+00000167	20:06:15.687	[856] FmLocalFree (1fe700)	
+00000168	20:06:15.687	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000169	20:06:15.687	[856] addFileToListView (1639666, ., ...)	
+00000170	20:06:15.687	[856] addFileToListView (1639666, .., ...)	
+00000171	20:06:15.687	[856] addFileToListView (1639666, Bugslayer.zip, ...)	
+00000172	20:06:15.687	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000173	20:06:15.687	[856] onCopyDialogFinished (1574260, 0, 3877472)	
+00000174	20:06:15.687	[856] saveDlgItemProperties(1574260, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000175	20:06:15.687	[856] CopyFileData::free()	
+00000176	20:06:15.687	[856] FmLocalFree (1e9ee0)	
+00000177	20:06:15.687	[856] FmLocalFree (17f0b0)	
+00000178	20:06:15.687	[856] FmLocalFree (1ff5a0)	
+00000179	20:06:16.937	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000180	20:06:16.937	[856] FmLocalAlloc (260):1ff5a0	
+00000181	20:06:16.937	[856] FmLocalAlloc (40):151fa0	
+00000182	20:06:16.937	[856] FmLocalAlloc (260):1fe700	
+00000183	20:06:16.937	[856] FmLocalFree (1fe700)	
+00000184	20:06:16.937	[856] FmLocalFree (151fa0)	
+00000185	20:06:16.937	[856] CopyFileData :: addPathSrc (E:\temp\cabpck14.zip)	
+00000186	20:06:16.937	[856] FmLocalAlloc (42):17f0b0	
+00000187	20:06:16.937	[856] FmLocalAlloc (40):151fa0	
+00000188	20:06:16.937	[856] FmLocalAlloc (260):1fe700	
+00000189	20:06:16.937	[856] FmLocalFree (1fe700)	
+00000190	20:06:16.937	[856] FmLocalFree (151fa0)	
+00000191	20:06:16.937	[856] Создан диалог 1639796	
+00000192	20:06:16.937	[856] CopyFileData :: setPathDst (E:\temp\1\cabpck14.zip)	
+00000193	20:06:16.937	[856] FmLocalAlloc (46):1e9ee0	
+00000194	20:06:16.937	[856] loadDlgItemProperties (1639796, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000195	20:06:16.937	[856] addCopyDialogThread (1639796, 236, 1)	
+00000196	20:06:16.937	[856] resumeCopyDialogThread (1639796)	
+00000197	20:06:16.937	[856] findCopyDialogNode (1639796)	
+00000198	20:06:16.937	[856] copyFileWorker() 1 файлов в E:\temp\1\cabpck14.zip 	
+00000199	20:06:16.937	[856] Первый вызов copyProgressRoutine() hCopyDlg:1639796 hParentDlg:1639666	
+00000200	20:06:16.937	[856] FmLocalAlloc (260):1fe700	
+00000201	20:06:16.937	[856] FmLocalAlloc (22):1fe5b8	
+00000202	20:06:16.937	[856] FmLocalFree (1fe700)	
+00000203	20:06:16.937	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000204	20:06:16.937	[856] addFileToListView (1639666, ., ...)	
+00000205	20:06:16.937	[856] addFileToListView (1639666, .., ...)	
+00000206	20:06:16.937	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000207	20:06:16.937	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000208	20:06:16.937	[856] onCopyDialogFinished (1639796, 0, 3877472)	
+00000209	20:06:16.937	[856] saveDlgItemProperties(1639796, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000210	20:06:16.953	[856] CopyFileData::free()	
+00000211	20:06:16.953	[856] FmLocalFree (17f0b0)	
+00000212	20:06:16.953	[856] FmLocalFree (1e9ee0)	
+00000213	20:06:16.953	[856] FmLocalFree (1ff5a0)	
+00000214	20:06:17.609	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000215	20:06:17.609	[856] FmLocalAlloc (260):1ff5a0	
+00000216	20:06:17.609	[856] FmLocalAlloc (40):151fa0	
+00000217	20:06:17.609	[856] FmLocalAlloc (260):1fe700	
+00000218	20:06:17.609	[856] FmLocalFree (1fe700)	
+00000219	20:06:17.609	[856] FmLocalFree (151fa0)	
+00000220	20:06:17.609	[856] CopyFileData :: addPathSrc (E:\temp\cabsdk.exe)	
+00000221	20:06:17.609	[856] FmLocalAlloc (38):151fa0	
+00000222	20:06:17.609	[856] FmLocalAlloc (40):1f2588	
+00000223	20:06:17.609	[856] FmLocalAlloc (260):1fe700	
+00000224	20:06:17.609	[856] FmLocalFree (1fe700)	
+00000225	20:06:17.609	[856] FmLocalFree (1f2588)	
+00000226	20:06:17.609	[856] Создан диалог 1705332	
+00000227	20:06:17.609	[856] CopyFileData :: setPathDst (E:\temp\1\cabsdk.exe)	
+00000228	20:06:17.609	[856] FmLocalAlloc (42):1e9ee0	
+00000229	20:06:17.609	[856] loadDlgItemProperties (1705332, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000230	20:06:17.609	[856] addCopyDialogThread (1705332, 276, 1)	
+00000231	20:06:17.609	[856] resumeCopyDialogThread (1705332)	
+00000232	20:06:17.609	[856] findCopyDialogNode (1705332)	
+00000233	20:06:17.609	[856] copyFileWorker() 1 файлов в E:\temp\1\cabsdk.exe 	
+00000234	20:06:17.625	[856] Первый вызов copyProgressRoutine() hCopyDlg:1705332 hParentDlg:1639666	
+00000235	20:06:17.625	[856] FmLocalAlloc (260):1fe700	
+00000236	20:06:17.625	[856] FmLocalAlloc (22):1fed50	
+00000237	20:06:17.625	[856] FmLocalFree (1fe700)	
+00000238	20:06:17.625	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000239	20:06:17.625	[856] addFileToListView (1639666, ., ...)	
+00000240	20:06:17.625	[856] addFileToListView (1639666, .., ...)	
+00000241	20:06:17.625	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000242	20:06:17.625	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000243	20:06:17.625	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000244	20:06:17.625	[856] onCopyDialogFinished (1705332, 0, 3877472)	
+00000245	20:06:17.625	[856] saveDlgItemProperties(1705332, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000246	20:06:17.625	[856] CopyFileData::free()	
+00000247	20:06:17.625	[856] FmLocalFree (151fa0)	
+00000248	20:06:17.625	[856] FmLocalFree (1e9ee0)	
+00000249	20:06:17.625	[856] FmLocalFree (1ff5a0)	
+00000250	20:06:18.234	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000251	20:06:18.234	[856] FmLocalAlloc (260):1ff5a0	
+00000252	20:06:18.234	[856] FmLocalAlloc (40):151fa0	
+00000253	20:06:18.234	[856] FmLocalAlloc (260):1fc628	
+00000254	20:06:18.234	[856] FmLocalFree (1fc628)	
+00000255	20:06:18.234	[856] FmLocalFree (151fa0)	
+00000256	20:06:18.234	[856] CopyFileData :: addPathSrc (E:\temp\cdex_170b2_src.zip)	
+00000257	20:06:18.234	[856] FmLocalAlloc (54):152028	
+00000258	20:06:18.234	[856] FmLocalAlloc (40):151fa0	
+00000259	20:06:18.234	[856] FmLocalAlloc (260):1fc628	
+00000260	20:06:18.234	[856] FmLocalFree (1fc628)	
+00000261	20:06:18.234	[856] FmLocalFree (151fa0)	
+00000262	20:06:18.234	[856] Создан диалог 1770868	
+00000263	20:06:18.234	[856] CopyFileData :: setPathDst (E:\temp\1\cdex_170b2_src.zip)	
+00000264	20:06:18.234	[856] FmLocalAlloc (58):1f2cf8	
+00000265	20:06:18.234	[856] loadDlgItemProperties (1770868, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000266	20:06:18.234	[856] addCopyDialogThread (1770868, 280, 1)	
+00000267	20:06:18.234	[856] resumeCopyDialogThread (1770868)	
+00000268	20:06:18.234	[856] findCopyDialogNode (1770868)	
+00000269	20:06:18.234	[856] copyFileWorker() 1 файлов в E:\temp\1\cdex_170b2_src.zip 	
+00000270	20:06:18.250	[856] Первый вызов copyProgressRoutine() hCopyDlg:1770868 hParentDlg:1639666	
+00000271	20:06:18.250	[856] FmLocalAlloc (260):1fc628	
+00000272	20:06:18.250	[856] FmLocalAlloc (22):1fed70	
+00000273	20:06:18.250	[856] FmLocalFree (1fc628)	
+00000274	20:06:18.250	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000275	20:06:18.250	[856] addFileToListView (1639666, ., ...)	
+00000276	20:06:18.250	[856] addFileToListView (1639666, .., ...)	
+00000277	20:06:18.250	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000278	20:06:18.250	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000279	20:06:18.250	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000280	20:06:18.312	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000281	20:06:18.312	[856] onCopyDialogFinished (1770868, 0, 3877472)	
+00000282	20:06:18.328	[856] saveDlgItemProperties(1770868, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000283	20:06:18.328	[856] CopyFileData::free()	
+00000284	20:06:18.328	[856] FmLocalFree (152028)	
+00000285	20:06:18.328	[856] FmLocalFree (1f2cf8)	
+00000286	20:06:18.328	[856] FmLocalFree (1ff5a0)	
+00000287	20:06:18.968	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000288	20:06:18.968	[856] FmLocalAlloc (260):1ff5a0	
+00000289	20:06:18.968	[856] FmLocalAlloc (40):151fa0	
+00000290	20:06:18.968	[856] FmLocalAlloc (260):1fc628	
+00000291	20:06:18.968	[856] FmLocalFree (1fc628)	
+00000292	20:06:18.968	[856] FmLocalFree (151fa0)	
+00000293	20:06:18.968	[856] CopyFileData :: addPathSrc (E:\temp\clean1.bat)	
+00000294	20:06:18.968	[856] FmLocalAlloc (38):151fa0	
+00000295	20:06:18.968	[856] FmLocalAlloc (40):24e590	
+00000296	20:06:18.968	[856] FmLocalAlloc (260):1fc628	
+00000297	20:06:18.968	[856] FmLocalFree (1fc628)	
+00000298	20:06:18.968	[856] FmLocalFree (24e590)	
+00000299	20:06:18.968	[856] Создан диалог 1836404	
+00000300	20:06:18.968	[856] CopyFileData :: setPathDst (E:\temp\1\clean1.bat)	
+00000301	20:06:18.968	[856] FmLocalAlloc (42):1e9ee0	
+00000302	20:06:18.984	[856] loadDlgItemProperties (1836404, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000303	20:06:18.984	[856] addCopyDialogThread (1836404, 284, 1)	
+00000304	20:06:18.984	[856] resumeCopyDialogThread (1836404)	
+00000305	20:06:18.984	[856] findCopyDialogNode (1836404)	
+00000306	20:06:18.984	[856] copyFileWorker() 1 файлов в E:\temp\1\clean1.bat 	
+00000307	20:06:18.984	[856] Первый вызов copyProgressRoutine() hCopyDlg:1836404 hParentDlg:1639666	
+00000308	20:06:18.984	[856] FmLocalAlloc (260):1fc628	
+00000309	20:06:18.984	[856] FmLocalAlloc (22):24fea0	
+00000310	20:06:18.984	[856] FmLocalFree (1fc628)	
+00000311	20:06:18.984	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000312	20:06:18.984	[856] addFileToListView (1639666, ., ...)	
+00000313	20:06:18.984	[856] addFileToListView (1639666, .., ...)	
+00000314	20:06:18.984	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000315	20:06:18.984	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000316	20:06:18.984	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000317	20:06:18.984	[856] addFileToListView (1639666, clean1.bat, ...)	
+00000318	20:06:18.984	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000319	20:06:18.984	[856] onCopyDialogFinished (1836404, 0, 3877472)	
+00000320	20:06:18.984	[856] saveDlgItemProperties(1836404, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000321	20:06:18.984	[856] CopyFileData::free()	
+00000322	20:06:18.984	[856] FmLocalFree (151fa0)	
+00000323	20:06:18.984	[856] FmLocalFree (1e9ee0)	
+00000324	20:06:18.984	[856] FmLocalFree (1ff5a0)	
+00000325	20:06:19.640	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000326	20:06:19.640	[856] FmLocalAlloc (260):1ff5a0	
+00000327	20:06:19.640	[856] FmLocalAlloc (40):151fa0	
+00000328	20:06:19.640	[856] FmLocalAlloc (260):1fc628	
+00000329	20:06:19.640	[856] FmLocalFree (1fc628)	
+00000330	20:06:19.640	[856] FmLocalFree (151fa0)	
+00000331	20:06:19.640	[856] CopyFileData :: addPathSrc (E:\temp\ClientDiag.zip)	
+00000332	20:06:19.640	[856] FmLocalAlloc (46):1e9ee0	
+00000333	20:06:19.640	[856] FmLocalAlloc (40):151fa0	
+00000334	20:06:19.640	[856] FmLocalAlloc (260):1fc628	
+00000335	20:06:19.640	[856] FmLocalFree (1fc628)	
+00000336	20:06:19.656	[856] FmLocalFree (151fa0)	
+00000337	20:06:19.656	[856] Создан диалог 1901940	
+00000338	20:06:19.656	[856] CopyFileData :: setPathDst (E:\temp\1\ClientDiag.zip)	
+00000339	20:06:19.656	[856] FmLocalAlloc (50):152028	
+00000340	20:06:19.656	[856] loadDlgItemProperties (1901940, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000341	20:06:19.656	[856] addCopyDialogThread (1901940, 288, 1)	
+00000342	20:06:19.656	[856] resumeCopyDialogThread (1901940)	
+00000343	20:06:19.656	[856] findCopyDialogNode (1901940)	
+00000344	20:06:19.656	[856] copyFileWorker() 1 файлов в E:\temp\1\ClientDiag.zip 	
+00000345	20:06:19.656	[856] Первый вызов copyProgressRoutine() hCopyDlg:1901940 hParentDlg:1639666	
+00000346	20:06:19.656	[856] FmLocalAlloc (260):1fc628	
+00000347	20:06:19.656	[856] FmLocalAlloc (22):24ff88	
+00000348	20:06:19.656	[856] FmLocalFree (1fc628)	
+00000349	20:06:19.656	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000350	20:06:19.656	[856] addFileToListView (1639666, ., ...)	
+00000351	20:06:19.656	[856] addFileToListView (1639666, .., ...)	
+00000352	20:06:19.656	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000353	20:06:19.656	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000354	20:06:19.656	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000355	20:06:19.656	[856] addFileToListView (1639666, clean1.bat, ...)	
+00000356	20:06:19.656	[856] addFileToListView (1639666, ClientDiag.zip, ...)	
+00000357	20:06:19.656	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000358	20:06:19.656	[856] onCopyDialogFinished (1901940, 0, 3877472)	
+00000359	20:06:19.671	[856] saveDlgItemProperties(1901940, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000360	20:06:19.671	[856] CopyFileData::free()	
+00000361	20:06:19.671	[856] FmLocalFree (1e9ee0)	
+00000362	20:06:19.671	[856] FmLocalFree (152028)	
+00000363	20:06:19.671	[856] FmLocalFree (1ff5a0)	
+00000364	20:06:20.265	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000365	20:06:20.265	[856] FmLocalAlloc (260):1ff5a0	
+00000366	20:06:20.265	[856] FmLocalAlloc (40):151fa0	
+00000367	20:06:20.281	[856] FmLocalAlloc (260):1fc628	
+00000368	20:06:20.281	[856] FmLocalFree (1fc628)	
+00000369	20:06:20.281	[856] FmLocalFree (151fa0)	
+00000370	20:06:20.281	[856] CopyFileData :: addPathSrc (E:\temp\cs16patch_full_v29.exe)	
+00000371	20:06:20.281	[856] FmLocalAlloc (62):24f888	
+00000372	20:06:20.281	[856] FmLocalAlloc (40):151fa0	
+00000373	20:06:20.281	[856] FmLocalAlloc (260):1fc628	
+00000374	20:06:20.281	[856] FmLocalFree (1fc628)	
+00000375	20:06:20.296	[856] FmLocalFree (151fa0)	
+00000376	20:06:20.296	[856] Создан диалог 1967476	
+00000377	20:06:20.296	[856] CopyFileData :: setPathDst (E:\temp\1\cs16patch_full_v29.exe)	
+00000378	20:06:20.296	[856] FmLocalAlloc (66):1fd300	
+00000379	20:06:20.296	[856] loadDlgItemProperties (1967476, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000380	20:06:20.296	[856] addCopyDialogThread (1967476, 292, 1)	
+00000381	20:06:20.296	[856] resumeCopyDialogThread (1967476)	
+00000382	20:06:20.296	[856] findCopyDialogNode (1967476)	
+00000383	20:06:20.296	[856] copyFileWorker() 1 файлов в E:\temp\1\cs16patch_full_v29.exe 	
+00000384	20:06:20.359	[856] Первый вызов copyProgressRoutine() hCopyDlg:1967476 hParentDlg:1639666	
+00000385	20:06:20.359	[856] FmLocalAlloc (260):1fc628	
+00000386	20:06:20.359	[856] FmLocalAlloc (22):24ff08	
+00000387	20:06:20.359	[856] FmLocalFree (1fc628)	
+00000388	20:06:20.359	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000389	20:06:20.359	[856] addFileToListView (1639666, ., ...)	
+00000390	20:06:20.359	[856] addFileToListView (1639666, .., ...)	
+00000391	20:06:20.375	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000392	20:06:20.375	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000393	20:06:20.375	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000394	20:06:20.375	[856] addFileToListView (1639666, clean1.bat, ...)	
+00000395	20:06:20.375	[856] addFileToListView (1639666, ClientDiag.zip, ...)	
+00000396	20:06:20.375	[856] addFileToListView (1639666, cs16patch_full_v29.exe, ...)	
+00000397	20:06:20.375	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000398	20:06:20.375	[856] onCopyDialogFinished (1967476, 0, 3877472)	
+00000399	20:06:20.375	[856] saveDlgItemProperties(1967476, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000400	20:06:20.375	[856] CopyFileData::free()	
+00000401	20:06:20.375	[856] FmLocalFree (24f888)	
+00000402	20:06:20.375	[856] FmLocalFree (1fd300)	
+00000403	20:06:20.375	[856] FmLocalFree (1ff5a0)	
+00000404	20:06:20.890	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000405	20:06:20.890	[856] FmLocalAlloc (260):1ff5a0	
+00000406	20:06:20.890	[856] FmLocalAlloc (40):151fa0	
+00000407	20:06:20.890	[856] FmLocalAlloc (260):1fc628	
+00000408	20:06:20.890	[856] FmLocalFree (1fc628)	
+00000409	20:06:20.890	[856] FmLocalFree (151fa0)	
+00000410	20:06:20.890	[856] CopyFileData :: addPathSrc (E:\temp\daemon4303-lite.exe)	
+00000411	20:06:20.890	[856] FmLocalAlloc (56):152028	
+00000412	20:06:20.890	[856] FmLocalAlloc (40):151fa0	
+00000413	20:06:20.890	[856] FmLocalAlloc (260):1fc628	
+00000414	20:06:20.890	[856] FmLocalFree (1fc628)	
+00000415	20:06:20.890	[856] FmLocalFree (151fa0)	
+00000416	20:06:20.890	[856] Создан диалог 2033012	
+00000417	20:06:20.890	[856] CopyFileData :: setPathDst (E:\temp\1\daemon4303-lite.exe)	
+00000418	20:06:20.890	[856] FmLocalAlloc (60):24f888	
+00000419	20:06:20.906	[856] loadDlgItemProperties (2033012, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000420	20:06:20.906	[856] addCopyDialogThread (2033012, 296, 1)	
+00000421	20:06:20.906	[856] resumeCopyDialogThread (2033012)	
+00000422	20:06:20.906	[856] findCopyDialogNode (2033012)	
+00000423	20:06:20.906	[856] copyFileWorker() 1 файлов в E:\temp\1\daemon4303-lite.exe 	
+00000424	20:06:20.921	[856] Первый вызов copyProgressRoutine() hCopyDlg:2033012 hParentDlg:1639666	
+00000425	20:06:20.921	[856] FmLocalAlloc (260):1fc628	
+00000426	20:06:20.921	[856] FmLocalAlloc (22):24ff38	
+00000427	20:06:20.921	[856] FmLocalFree (1fc628)	
+00000428	20:06:20.921	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000429	20:06:20.921	[856] addFileToListView (1639666, ., ...)	
+00000430	20:06:20.921	[856] addFileToListView (1639666, .., ...)	
+00000431	20:06:20.921	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000432	20:06:20.921	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000433	20:06:20.921	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000434	20:06:20.921	[856] addFileToListView (1639666, clean1.bat, ...)	
+00000435	20:06:20.921	[856] addFileToListView (1639666, ClientDiag.zip, ...)	
+00000436	20:06:20.921	[856] addFileToListView (1639666, cs16patch_full_v29.exe, ...)	
+00000437	20:06:20.921	[856] addFileToListView (1639666, daemon4303-lite.exe, ...)	
+00000438	20:06:20.921	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000439	20:06:20.921	[856] onCopyDialogFinished (2033012, 0, 3877472)	
+00000440	20:06:20.937	[856] saveDlgItemProperties(2033012, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000441	20:06:20.937	[856] CopyFileData::free()	
+00000442	20:06:20.937	[856] FmLocalFree (152028)	
+00000443	20:06:20.937	[856] FmLocalFree (24f888)	
+00000444	20:06:20.937	[856] FmLocalFree (1ff5a0)	
+00000445	20:06:21.562	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000446	20:06:21.562	[856] FmLocalAlloc (260):1ff5a0	
+00000447	20:06:21.562	[856] FmLocalAlloc (40):151fa0	
+00000448	20:06:21.562	[856] FmLocalAlloc (260):1fc628	
+00000449	20:06:21.562	[856] FmLocalFree (1fc628)	
+00000450	20:06:21.562	[856] FmLocalFree (151fa0)	
+00000451	20:06:21.562	[856] CopyFileData :: addPathSrc (E:\temp\dll2lib.zip)	
+00000452	20:06:21.562	[856] FmLocalAlloc (40):151fa0	
+00000453	20:06:21.562	[856] FmLocalAlloc (40):ebe988	
+00000454	20:06:21.562	[856] FmLocalAlloc (260):1fc628	
+00000455	20:06:21.562	[856] FmLocalFree (1fc628)	
+00000456	20:06:21.578	[856] FmLocalFree (ebe988)	
+00000457	20:06:21.578	[856] Создан диалог 2098548	
+00000458	20:06:21.578	[856] CopyFileData :: setPathDst (E:\temp\1\dll2lib.zip)	
+00000459	20:06:21.578	[856] FmLocalAlloc (44):1e9ee0	
+00000460	20:06:21.593	[856] loadDlgItemProperties (2098548, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000461	20:06:21.593	[856] addCopyDialogThread (2098548, 300, 1)	
+00000462	20:06:21.593	[856] resumeCopyDialogThread (2098548)	
+00000463	20:06:21.593	[856] findCopyDialogNode (2098548)	
+00000464	20:06:21.593	[856] copyFileWorker() 1 файлов в E:\temp\1\dll2lib.zip 	
+00000465	20:06:21.609	[856] Первый вызов copyProgressRoutine() hCopyDlg:2098548 hParentDlg:1639666	
+00000466	20:06:21.609	[856] FmLocalAlloc (260):1fc628	
+00000467	20:06:21.609	[856] FmLocalAlloc (22):ebe9d8	
+00000468	20:06:21.609	[856] FmLocalFree (1fc628)	
+00000469	20:06:21.609	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000470	20:06:21.609	[856] addFileToListView (1639666, ., ...)	
+00000471	20:06:21.609	[856] addFileToListView (1639666, .., ...)	
+00000472	20:06:21.609	[856] addFileToListView (1639666, cabpck14.zip, ...)	
+00000473	20:06:21.609	[856] addFileToListView (1639666, cabsdk.exe, ...)	
+00000474	20:06:21.609	[856] addFileToListView (1639666, cdex_170b2_src.zip, ...)	
+00000475	20:06:21.609	[856] addFileToListView (1639666, clean1.bat, ...)	
+00000476	20:06:21.609	[856] addFileToListView (1639666, ClientDiag.zip, ...)	
+00000477	20:06:21.609	[856] addFileToListView (1639666, cs16patch_full_v29.exe, ...)	
+00000478	20:06:21.609	[856] addFileToListView (1639666, daemon4303-lite.exe, ...)	
+00000479	20:06:21.609	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000480	20:06:21.609	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000481	20:06:21.609	[856] onCopyDialogFinished (2098548, 0, 3877472)	
+00000482	20:06:21.625	[856] saveDlgItemProperties(2098548, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000483	20:06:21.625	[856] CopyFileData::free()	
+00000484	20:06:21.625	[856] FmLocalFree (151fa0)	
+00000485	20:06:21.625	[856] FmLocalFree (1e9ee0)	
+00000486	20:06:21.625	[856] FmLocalFree (1ff5a0)	
+00000487	20:06:22.171	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000488	20:06:22.171	[856] FmLocalAlloc (260):1ff5a0	
+00000489	20:06:22.171	[856] FmLocalAlloc (40):151fa0	
+00000490	20:06:22.171	[856] FmLocalAlloc (260):1fc628	
+00000491	20:06:22.171	[856] FmLocalFree (1fc628)	
+00000492	20:06:22.171	[856] FmLocalFree (151fa0)	
+00000493	20:06:22.171	[856] CopyFileData :: addPathSrc (E:\temp\dll2lib.zip)	
+00000494	20:06:22.171	[856] FmLocalAlloc (40):151fa0	
+00000495	20:06:22.171	[856] FmLocalAlloc (40):ebe988	
+00000496	20:06:22.171	[856] FmLocalAlloc (260):1fc628	
+00000497	20:06:22.171	[856] FmLocalFree (1fc628)	
+00000498	20:06:22.171	[856] FmLocalFree (ebe988)	
+00000499	20:06:22.171	[856] Создан диалог 2164084	
+00000500	20:06:22.171	[856] CopyFileData :: setPathDst (E:\temp\1\dll2lib.zip)	
+00000501	20:06:22.171	[856] FmLocalAlloc (44):1e9ee0	
+00000502	20:06:22.187	[856] loadDlgItemProperties (2164084, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000503	20:06:22.187	[856] addCopyDialogThread (2164084, 304, 1)	
+00000504	20:06:22.187	[856] resumeCopyDialogThread (2164084)	
+00000505	20:06:22.187	[856] findCopyDialogNode (2164084)	
+00000506	20:06:22.187	[856] copyFileWorker() 1 файлов в E:\temp\1\dll2lib.zip 	
+00000507	20:06:22.187	[856] Первый вызов copyProgressRoutine() hCopyDlg:2164084 hParentDlg:1639666	
+00000508	20:06:22.187	[856] FmLocalAlloc (260):1fc628	
+00000509	20:06:22.187	[856] FmLocalAlloc (22):f20048	
+00000510	20:06:22.187	[856] FmLocalFree (1fc628)	
+00000511	20:06:22.187	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000512	20:06:22.187	[856] addFileToListView (1639666, ., ...)	
+00000513	20:06:22.187	[856] addFileToListView (1639666, .., ...)	
+00000514	20:06:22.187	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000515	20:06:22.203	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000516	20:06:22.203	[856] onCopyDialogFinished (2164084, 0, 3877472)	
+00000517	20:06:22.203	[856] saveDlgItemProperties(2164084, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000518	20:06:22.203	[856] CopyFileData::free()	
+00000519	20:06:22.203	[856] FmLocalFree (151fa0)	
+00000520	20:06:22.203	[856] FmLocalFree (1e9ee0)	
+00000521	20:06:22.203	[856] FmLocalFree (1ff5a0)	
+00000522	20:06:22.953	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000523	20:06:22.953	[856] FmLocalAlloc (260):1ff5a0	
+00000524	20:06:22.953	[856] FmLocalAlloc (40):151fa0	
+00000525	20:06:22.953	[856] FmLocalAlloc (260):1fc628	
+00000526	20:06:22.953	[856] FmLocalFree (1fc628)	
+00000527	20:06:22.953	[856] FmLocalFree (151fa0)	
+00000528	20:06:22.953	[856] CopyFileData :: addPathSrc (E:\temp\dllinfo_dll.rar)	
+00000529	20:06:22.953	[856] FmLocalAlloc (48):1e9ee0	
+00000530	20:06:22.953	[856] FmLocalAlloc (40):151fa0	
+00000531	20:06:22.953	[856] FmLocalAlloc (260):1fc628	
+00000532	20:06:22.953	[856] FmLocalFree (1fc628)	
+00000533	20:06:22.953	[856] FmLocalFree (151fa0)	
+00000534	20:06:22.953	[856] Создан диалог 2229620	
+00000535	20:06:22.953	[856] CopyFileData :: setPathDst (E:\temp\1\dllinfo_dll.rar)	
+00000536	20:06:22.953	[856] FmLocalAlloc (52):152028	
+00000537	20:06:22.968	[856] loadDlgItemProperties (2229620, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000538	20:06:22.968	[856] addCopyDialogThread (2229620, 308, 1)	
+00000539	20:06:22.968	[856] resumeCopyDialogThread (2229620)	
+00000540	20:06:22.968	[856] findCopyDialogNode (2229620)	
+00000541	20:06:22.968	[856] copyFileWorker() 1 файлов в E:\temp\1\dllinfo_dll.rar 	
+00000542	20:06:22.968	[856] Первый вызов copyProgressRoutine() hCopyDlg:2229620 hParentDlg:1639666	
+00000543	20:06:22.968	[856] FmLocalAlloc (260):1fc628	
+00000544	20:06:22.968	[856] FmLocalAlloc (22):1fe5e8	
+00000545	20:06:22.968	[856] FmLocalFree (1fc628)	
+00000546	20:06:22.968	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000547	20:06:22.968	[856] addFileToListView (1639666, ., ...)	
+00000548	20:06:22.968	[856] addFileToListView (1639666, .., ...)	
+00000549	20:06:22.968	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000550	20:06:22.968	[856] addFileToListView (1639666, dllinfo_dll.rar, ...)	
+00000551	20:06:22.968	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000552	20:06:22.968	[856] onCopyDialogFinished (2229620, 0, 3877472)	
+00000553	20:06:22.968	[856] saveDlgItemProperties(2229620, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000554	20:06:22.968	[856] CopyFileData::free()	
+00000555	20:06:22.968	[856] FmLocalFree (1e9ee0)	
+00000556	20:06:22.984	[856] FmLocalFree (152028)	
+00000557	20:06:22.984	[856] FmLocalFree (1ff5a0)	
+00000558	20:06:23.968	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000559	20:06:23.968	[856] FmLocalAlloc (260):1ff5a0	
+00000560	20:06:23.968	[856] FmLocalAlloc (40):151fa0	
+00000561	20:06:23.968	[856] FmLocalAlloc (260):1fc628	
+00000562	20:06:23.968	[856] FmLocalFree (1fc628)	
+00000563	20:06:23.968	[856] FmLocalFree (151fa0)	
+00000564	20:06:23.968	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00000565	20:06:23.968	[856] FmLocalAlloc (70):24f838	
+00000566	20:06:23.968	[856] FmLocalAlloc (40):151fa0	
+00000567	20:06:23.968	[856] FmLocalAlloc (260):1fc628	
+00000568	20:06:23.968	[856] FmLocalFree (1fc628)	
+00000569	20:06:23.968	[856] FmLocalFree (151fa0)	
+00000570	20:06:23.968	[856] Создан диалог 2295156	
+00000571	20:06:23.968	[856] CopyFileData :: setPathDst (E:\temp\1\33359c_geodelxdb800_pb.pdf)	
+00000572	20:06:23.968	[856] FmLocalAlloc (74):154cd8	
+00000573	20:06:23.968	[856] loadDlgItemProperties (2295156, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000574	20:06:23.968	[856] addCopyDialogThread (2295156, 312, 1)	
+00000575	20:06:23.968	[856] resumeCopyDialogThread (2295156)	
+00000576	20:06:23.968	[856] findCopyDialogNode (2295156)	
+00000577	20:06:23.968	[856] copyFileWorker() 1 файлов в E:\temp\1\33359c_geodelxdb800_pb.pdf 	
+00000578	20:06:23.968	[856] Первый вызов copyProgressRoutine() hCopyDlg:2295156 hParentDlg:1639666	
+00000579	20:06:23.968	[856] FmLocalAlloc (260):1fc628	
+00000580	20:06:23.968	[856] FmLocalAlloc (22):24ffe8	
+00000581	20:06:23.968	[856] FmLocalFree (1fc628)	
+00000582	20:06:23.968	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000583	20:06:23.968	[856] addFileToListView (1639666, ., ...)	
+00000584	20:06:23.984	[856] addFileToListView (1639666, .., ...)	
+00000585	20:06:23.984	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00000586	20:06:23.984	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000587	20:06:23.984	[856] addFileToListView (1639666, dllinfo_dll.rar, ...)	
+00000588	20:06:23.984	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000589	20:06:23.984	[856] onCopyDialogFinished (2295156, 0, 3877472)	
+00000590	20:06:23.984	[856] saveDlgItemProperties(2295156, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000591	20:06:23.984	[856] CopyFileData::free()	
+00000592	20:06:23.984	[856] FmLocalFree (24f838)	
+00000593	20:06:23.984	[856] FmLocalFree (154cd8)	
+00000594	20:06:23.984	[856] FmLocalFree (1ff5a0)	
+00000595	20:06:24.781	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000596	20:06:24.781	[856] FmLocalAlloc (260):1ff5a0	
+00000597	20:06:24.781	[856] FmLocalAlloc (40):151fa0	
+00000598	20:06:24.781	[856] FmLocalAlloc (260):1fc628	
+00000599	20:06:24.781	[856] FmLocalFree (1fc628)	
+00000600	20:06:24.781	[856] FmLocalFree (151fa0)	
+00000601	20:06:24.781	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00000602	20:06:24.781	[856] FmLocalAlloc (38):151fa0	
+00000603	20:06:24.781	[856] FmLocalAlloc (40):f20c80	
+00000604	20:06:24.781	[856] FmLocalAlloc (260):1fc628	
+00000605	20:06:24.781	[856] FmLocalFree (1fc628)	
+00000606	20:06:24.781	[856] FmLocalFree (f20c80)	
+00000607	20:06:24.781	[856] Создан диалог 2360692	
+00000608	20:06:24.781	[856] CopyFileData :: setPathDst (E:\temp\1\378894.pdf)	
+00000609	20:06:24.781	[856] FmLocalAlloc (42):1e9ee0	
+00000610	20:06:24.781	[856] loadDlgItemProperties (2360692, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000611	20:06:24.781	[856] addCopyDialogThread (2360692, 316, 1)	
+00000612	20:06:24.781	[856] resumeCopyDialogThread (2360692)	
+00000613	20:06:24.781	[856] findCopyDialogNode (2360692)	
+00000614	20:06:24.781	[856] copyFileWorker() 1 файлов в E:\temp\1\378894.pdf 	
+00000615	20:06:24.781	[856] Первый вызов copyProgressRoutine() hCopyDlg:2360692 hParentDlg:1639666	
+00000616	20:06:24.781	[856] FmLocalAlloc (260):1fc628	
+00000617	20:06:24.781	[856] FmLocalAlloc (22):f3ee00	
+00000618	20:06:24.781	[856] FmLocalFree (1fc628)	
+00000619	20:06:24.781	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000620	20:06:24.781	[856] addFileToListView (1639666, ., ...)	
+00000621	20:06:24.781	[856] addFileToListView (1639666, .., ...)	
+00000622	20:06:24.781	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00000623	20:06:24.781	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00000624	20:06:24.796	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000625	20:06:24.796	[856] addFileToListView (1639666, dllinfo_dll.rar, ...)	
+00000626	20:06:24.796	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000627	20:06:24.796	[856] onCopyDialogFinished (2360692, 0, 3877472)	
+00000628	20:06:24.796	[856] saveDlgItemProperties(2360692, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000629	20:06:24.796	[856] CopyFileData::free()	
+00000630	20:06:24.796	[856] FmLocalFree (151fa0)	
+00000631	20:06:24.796	[856] FmLocalFree (1e9ee0)	
+00000632	20:06:24.796	[856] FmLocalFree (1ff5a0)	
+00000633	20:06:25.390	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000634	20:06:25.390	[856] FmLocalAlloc (260):1ff5a0	
+00000635	20:06:25.390	[856] FmLocalAlloc (40):151fa0	
+00000636	20:06:25.390	[856] FmLocalAlloc (260):1fc628	
+00000637	20:06:25.390	[856] FmLocalFree (1fc628)	
+00000638	20:06:25.390	[856] FmLocalFree (151fa0)	
+00000639	20:06:25.390	[856] CopyFileData :: addPathSrc (E:\temp\5B-0.6.1-Windows.zip)	
+00000640	20:06:25.390	[856] FmLocalAlloc (58):24f998	
+00000641	20:06:25.390	[856] FmLocalAlloc (40):151fa0	
+00000642	20:06:25.390	[856] FmLocalAlloc (260):1fc628	
+00000643	20:06:25.390	[856] FmLocalFree (1fc628)	
+00000644	20:06:25.406	[856] FmLocalFree (151fa0)	
+00000645	20:06:25.406	[856] Создан диалог 2426228	
+00000646	20:06:25.406	[856] CopyFileData :: setPathDst (E:\temp\1\5B-0.6.1-Windows.zip)	
+00000647	20:06:25.406	[856] FmLocalAlloc (62):ee6b80	
+00000648	20:06:25.406	[856] loadDlgItemProperties (2426228, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000649	20:06:25.406	[856] addCopyDialogThread (2426228, 320, 1)	
+00000650	20:06:25.406	[856] resumeCopyDialogThread (2426228)	
+00000651	20:06:25.406	[856] findCopyDialogNode (2426228)	
+00000652	20:06:25.406	[856] copyFileWorker() 1 файлов в E:\temp\1\5B-0.6.1-Windows.zip 	
+00000653	20:06:25.421	[856] Первый вызов copyProgressRoutine() hCopyDlg:2426228 hParentDlg:1639666	
+00000654	20:06:25.421	[856] FmLocalAlloc (260):1fc628	
+00000655	20:06:25.421	[856] FmLocalAlloc (22):189740	
+00000656	20:06:25.421	[856] FmLocalFree (1fc628)	
+00000657	20:06:25.421	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000658	20:06:25.421	[856] addFileToListView (1639666, ., ...)	
+00000659	20:06:25.421	[856] addFileToListView (1639666, .., ...)	
+00000660	20:06:25.421	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00000661	20:06:25.421	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00000662	20:06:25.421	[856] addFileToListView (1639666, 5B-0.6.1-Windows.zip, ...)	
+00000663	20:06:25.421	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000664	20:06:25.421	[856] addFileToListView (1639666, dllinfo_dll.rar, ...)	
+00000665	20:06:25.421	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000666	20:06:25.421	[856] onCopyDialogFinished (2426228, 0, 3877472)	
+00000667	20:06:25.421	[856] saveDlgItemProperties(2426228, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000668	20:06:25.421	[856] CopyFileData::free()	
+00000669	20:06:25.421	[856] FmLocalFree (24f998)	
+00000670	20:06:25.421	[856] FmLocalFree (ee6b80)	
+00000671	20:06:25.437	[856] FmLocalFree (1ff5a0)	
+00000672	20:06:26.359	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000673	20:06:26.359	[856] FmLocalAlloc (260):1ff5a0	
+00000674	20:06:26.359	[856] FmLocalAlloc (40):151fa0	
+00000675	20:06:26.359	[856] FmLocalAlloc (260):1fc628	
+00000676	20:06:26.359	[856] FmLocalFree (1fc628)	
+00000677	20:06:26.359	[856] FmLocalFree (151fa0)	
+00000678	20:06:26.359	[856] CopyFileData :: addPathSrc (E:\temp\82660.pdf)	
+00000679	20:06:26.359	[856] FmLocalAlloc (36):151fa0	
+00000680	20:06:26.359	[856] FmLocalAlloc (40):1fedf0	
+00000681	20:06:26.359	[856] FmLocalAlloc (260):1fc628	
+00000682	20:06:26.359	[856] FmLocalFree (1fc628)	
+00000683	20:06:26.359	[856] FmLocalFree (1fedf0)	
+00000684	20:06:26.359	[856] Создан диалог 2491764	
+00000685	20:06:26.359	[856] CopyFileData :: setPathDst (E:\temp\1\82660.pdf)	
+00000686	20:06:26.359	[856] FmLocalAlloc (40):f0cdb8	
+00000687	20:06:26.359	[856] loadDlgItemProperties (2491764, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000688	20:06:26.359	[856] addCopyDialogThread (2491764, 324, 1)	
+00000689	20:06:26.359	[856] resumeCopyDialogThread (2491764)	
+00000690	20:06:26.359	[856] findCopyDialogNode (2491764)	
+00000691	20:06:26.359	[856] copyFileWorker() 1 файлов в E:\temp\1\82660.pdf 	
+00000692	20:06:26.359	[856] Первый вызов copyProgressRoutine() hCopyDlg:2491764 hParentDlg:1639666	
+00000693	20:06:26.359	[856] FmLocalAlloc (260):1fc628	
+00000694	20:06:26.359	[856] FmLocalAlloc (22):1895f0	
+00000695	20:06:26.359	[856] FmLocalFree (1fc628)	
+00000696	20:06:26.359	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000697	20:06:26.359	[856] addFileToListView (1639666, ., ...)	
+00000698	20:06:26.359	[856] addFileToListView (1639666, .., ...)	
+00000699	20:06:26.359	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00000700	20:06:26.359	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00000701	20:06:26.359	[856] addFileToListView (1639666, 5B-0.6.1-Windows.zip, ...)	
+00000702	20:06:26.375	[856] addFileToListView (1639666, 82660.pdf, ...)	
+00000703	20:06:26.375	[856] addFileToListView (1639666, dll2lib.zip, ...)	
+00000704	20:06:26.375	[856] addFileToListView (1639666, dllinfo_dll.rar, ...)	
+00000705	20:06:26.375	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000706	20:06:26.375	[856] onCopyDialogFinished (2491764, 0, 3877472)	
+00000707	20:06:26.375	[856] saveDlgItemProperties(2491764, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000708	20:06:26.375	[856] CopyFileData::free()	
+00000709	20:06:26.375	[856] FmLocalFree (151fa0)	
+00000710	20:06:26.375	[856] FmLocalFree (f0cdb8)	
+00000711	20:06:26.375	[856] FmLocalFree (1ff5a0)	
+00000712	20:06:26.843	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000713	20:06:26.843	[856] FmLocalAlloc (260):1ff5a0	
+00000714	20:06:26.843	[856] FmLocalAlloc (40):f0cdb8	
+00000715	20:06:26.843	[856] FmLocalAlloc (260):1fc628	
+00000716	20:06:26.843	[856] FmLocalFree (1fc628)	
+00000717	20:06:26.843	[856] FmLocalFree (f0cdb8)	
+00000718	20:06:26.843	[856] CopyFileData :: addPathSrc (E:\temp\9-2agp-hotfix_xp32_dd_ccc_75984.exe)	
+00000719	20:06:26.843	[856] FmLocalAlloc (88):1fbf48	
+00000720	20:06:26.843	[856] FmLocalAlloc (40):f0cdb8	
+00000721	20:06:26.843	[856] FmLocalAlloc (260):1fc628	
+00000722	20:06:26.843	[856] FmLocalFree (1fc628)	
+00000723	20:06:26.843	[856] FmLocalFree (f0cdb8)	
+00000724	20:06:26.843	[856] Создан диалог 2557300	
+00000725	20:06:26.843	[856] CopyFileData :: setPathDst (E:\temp\1\9-2agp-hotfix_xp32_dd_ccc_75984.exe)	
+00000726	20:06:26.843	[856] FmLocalAlloc (92):1ce470	
+00000727	20:06:26.843	[856] loadDlgItemProperties (2557300, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000728	20:06:26.843	[856] addCopyDialogThread (2557300, 328, 1)	
+00000729	20:06:26.843	[856] resumeCopyDialogThread (2557300)	
+00000730	20:06:26.843	[856] findCopyDialogNode (2557300)	
+00000731	20:06:26.843	[856] copyFileWorker() 1 файлов в E:\temp\1\9-2agp-hotfix_xp32_dd_ccc_75984.exe 	
+00000732	20:06:26.937	[856] Первый вызов copyProgressRoutine() hCopyDlg:2557300 hParentDlg:1639666	
+00000733	20:06:26.937	[856] FmLocalAlloc (260):1fc628	
+00000734	20:06:26.937	[856] FmLocalAlloc (22):ef5c70	
+00000735	20:06:26.937	[856] FmLocalFree (1fc628)	
+00000736	20:06:26.937	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000737	20:06:26.937	[856] addFileToListView (1639666, ., ...)	
+00000738	20:06:26.937	[856] addFileToListView (1639666, .., ...)	
+00000739	20:06:26.937	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000740	20:06:26.937	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000741	20:06:26.937	[856] onCopyDialogFinished (2557300, 0, 3877472)	
+00000742	20:06:26.937	[856] saveDlgItemProperties(2557300, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000743	20:06:26.937	[856] CopyFileData::free()	
+00000744	20:06:26.937	[856] FmLocalFree (1fbf48)	
+00000745	20:06:26.937	[856] FmLocalFree (1ce470)	
+00000746	20:06:26.937	[856] FmLocalFree (1ff5a0)	
+00000747	20:06:27.218	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000748	20:06:27.218	[856] FmLocalAlloc (260):1ff5a0	
+00000749	20:06:27.218	[856] FmLocalAlloc (40):f0cdb8	
+00000750	20:06:27.218	[856] FmLocalAlloc (260):1fc628	
+00000751	20:06:27.218	[856] FmLocalFree (1fc628)	
+00000752	20:06:27.218	[856] FmLocalFree (f0cdb8)	
+00000753	20:06:27.218	[856] CopyFileData :: addPathSrc (E:\temp\a460-100d-0.9.7-727-full.zip)	
+00000754	20:06:27.218	[856] FmLocalAlloc (74):154cd8	
+00000755	20:06:27.218	[856] FmLocalAlloc (40):f0cdb8	
+00000756	20:06:27.218	[856] FmLocalAlloc (260):1fc628	
+00000757	20:06:27.218	[856] FmLocalFree (1fc628)	
+00000758	20:06:27.218	[856] FmLocalFree (f0cdb8)	
+00000759	20:06:27.218	[856] Создан диалог 2622836	
+00000760	20:06:27.218	[856] CopyFileData :: setPathDst (E:\temp\1\a460-100d-0.9.7-727-full.zip)	
+00000761	20:06:27.218	[856] FmLocalAlloc (78):151fd0	
+00000762	20:06:27.234	[856] loadDlgItemProperties (2622836, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000763	20:06:27.234	[856] addCopyDialogThread (2622836, 332, 1)	
+00000764	20:06:27.234	[856] resumeCopyDialogThread (2622836)	
+00000765	20:06:27.234	[856] findCopyDialogNode (2622836)	
+00000766	20:06:27.234	[856] copyFileWorker() 1 файлов в E:\temp\1\a460-100d-0.9.7-727-full.zip 	
+00000767	20:06:27.234	[856] Первый вызов copyProgressRoutine() hCopyDlg:2622836 hParentDlg:1639666	
+00000768	20:06:27.234	[856] FmLocalAlloc (260):1fc628	
+00000769	20:06:27.234	[856] FmLocalAlloc (22):f07d50	
+00000770	20:06:27.234	[856] FmLocalFree (1fc628)	
+00000771	20:06:27.234	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000772	20:06:27.234	[856] addFileToListView (1639666, ., ...)	
+00000773	20:06:27.234	[856] addFileToListView (1639666, .., ...)	
+00000774	20:06:27.234	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000775	20:06:27.234	[856] addFileToListView (1639666, a460-100d-0.9.7-727-full.zip, ...)	
+00000776	20:06:27.234	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000777	20:06:27.234	[856] onCopyDialogFinished (2622836, 0, 3877472)	
+00000778	20:06:27.234	[856] saveDlgItemProperties(2622836, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000779	20:06:27.234	[856] CopyFileData::free()	
+00000780	20:06:27.234	[856] FmLocalFree (154cd8)	
+00000781	20:06:27.234	[856] FmLocalFree (151fd0)	
+00000782	20:06:27.234	[856] FmLocalFree (1ff5a0)	
+00000783	20:06:27.609	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000784	20:06:27.609	[856] FmLocalAlloc (260):1ff5a0	
+00000785	20:06:27.609	[856] FmLocalAlloc (40):f0cdb8	
+00000786	20:06:27.609	[856] FmLocalAlloc (260):1fc628	
+00000787	20:06:27.609	[856] FmLocalFree (1fc628)	
+00000788	20:06:27.609	[856] FmLocalFree (f0cdb8)	
+00000789	20:06:27.609	[856] CopyFileData :: addPathSrc (E:\temp\accelman35.msi)	
+00000790	20:06:27.609	[856] FmLocalAlloc (46):1fe608	
+00000791	20:06:27.609	[856] FmLocalAlloc (40):f0cdb8	
+00000792	20:06:27.609	[856] FmLocalAlloc (260):1fc628	
+00000793	20:06:27.609	[856] FmLocalFree (1fc628)	
+00000794	20:06:27.609	[856] FmLocalFree (f0cdb8)	
+00000795	20:06:27.609	[856] Создан диалог 2688372	
+00000796	20:06:27.609	[856] CopyFileData :: setPathDst (E:\temp\1\accelman35.msi)	
+00000797	20:06:27.609	[856] FmLocalAlloc (50):1f2cb8	
+00000798	20:06:27.609	[856] loadDlgItemProperties (2688372, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000799	20:06:27.609	[856] addCopyDialogThread (2688372, 336, 1)	
+00000800	20:06:27.609	[856] resumeCopyDialogThread (2688372)	
+00000801	20:06:27.609	[856] findCopyDialogNode (2688372)	
+00000802	20:06:27.609	[856] copyFileWorker() 1 файлов в E:\temp\1\accelman35.msi 	
+00000803	20:06:27.625	[856] Первый вызов copyProgressRoutine() hCopyDlg:2688372 hParentDlg:1639666	
+00000804	20:06:27.625	[856] FmLocalAlloc (260):1fc628	
+00000805	20:06:27.625	[856] FmLocalAlloc (22):f07d70	
+00000806	20:06:27.625	[856] FmLocalFree (1fc628)	
+00000807	20:06:27.625	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000808	20:06:27.625	[856] addFileToListView (1639666, ., ...)	
+00000809	20:06:27.625	[856] addFileToListView (1639666, .., ...)	
+00000810	20:06:27.625	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000811	20:06:27.625	[856] addFileToListView (1639666, a460-100d-0.9.7-727-full.zip, ...)	
+00000812	20:06:27.625	[856] addFileToListView (1639666, accelman35.msi, ...)	
+00000813	20:06:27.625	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000814	20:06:27.625	[856] onCopyDialogFinished (2688372, 0, 3877472)	
+00000815	20:06:27.640	[856] saveDlgItemProperties(2688372, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000816	20:06:27.640	[856] CopyFileData::free()	
+00000817	20:06:27.640	[856] FmLocalFree (1fe608)	
+00000818	20:06:27.640	[856] FmLocalFree (1f2cb8)	
+00000819	20:06:27.640	[856] FmLocalFree (1ff5a0)	
+00000820	20:06:27.968	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000821	20:06:27.968	[856] FmLocalAlloc (260):1ff5a0	
+00000822	20:06:27.968	[856] FmLocalAlloc (40):f0cdb8	
+00000823	20:06:27.968	[856] FmLocalAlloc (260):1fc628	
+00000824	20:06:27.968	[856] FmLocalFree (1fc628)	
+00000825	20:06:27.968	[856] FmLocalFree (f0cdb8)	
+00000826	20:06:27.968	[856] CopyFileData :: addPathSrc (E:\temp\AD7170A_GN_105_080415.ZIP)	
+00000827	20:06:27.968	[856] FmLocalAlloc (68):24f838	
+00000828	20:06:27.968	[856] FmLocalAlloc (40):f0cdb8	
+00000829	20:06:27.968	[856] FmLocalAlloc (260):1fc628	
+00000830	20:06:27.968	[856] FmLocalFree (1fc628)	
+00000831	20:06:27.968	[856] FmLocalFree (f0cdb8)	
+00000832	20:06:27.968	[856] Создан диалог 2753908	
+00000833	20:06:27.968	[856] CopyFileData :: setPathDst (E:\temp\1\AD7170A_GN_105_080415.ZIP)	
+00000834	20:06:27.968	[856] FmLocalAlloc (72):1fd300	
+00000835	20:06:27.984	[856] loadDlgItemProperties (2753908, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000836	20:06:27.984	[856] addCopyDialogThread (2753908, 340, 1)	
+00000837	20:06:27.984	[856] resumeCopyDialogThread (2753908)	
+00000838	20:06:27.984	[856] findCopyDialogNode (2753908)	
+00000839	20:06:27.984	[856] copyFileWorker() 1 файлов в E:\temp\1\AD7170A_GN_105_080415.ZIP 	
+00000840	20:06:27.984	[856] Первый вызов copyProgressRoutine() hCopyDlg:2753908 hParentDlg:1639666	
+00000841	20:06:27.984	[856] FmLocalAlloc (260):1fc628	
+00000842	20:06:27.984	[856] FmLocalAlloc (22):24ff58	
+00000843	20:06:27.984	[856] FmLocalFree (1fc628)	
+00000844	20:06:27.984	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000845	20:06:27.984	[856] addFileToListView (1639666, ., ...)	
+00000846	20:06:27.984	[856] addFileToListView (1639666, .., ...)	
+00000847	20:06:27.984	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000848	20:06:27.984	[856] addFileToListView (1639666, a460-100d-0.9.7-727-full.zip, ...)	
+00000849	20:06:27.984	[856] addFileToListView (1639666, accelman35.msi, ...)	
+00000850	20:06:27.984	[856] addFileToListView (1639666, AD7170A_GN_105_080415.ZIP, ...)	
+00000851	20:06:27.984	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000852	20:06:27.984	[856] onCopyDialogFinished (2753908, 0, 3877472)	
+00000853	20:06:28.000	[856] saveDlgItemProperties(2753908, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000854	20:06:28.000	[856] CopyFileData::free()	
+00000855	20:06:28.000	[856] FmLocalFree (24f838)	
+00000856	20:06:28.000	[856] FmLocalFree (1fd300)	
+00000857	20:06:28.000	[856] FmLocalFree (1ff5a0)	
+00000858	20:06:28.343	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000859	20:06:28.343	[856] FmLocalAlloc (260):1ff5a0	
+00000860	20:06:28.343	[856] FmLocalAlloc (40):f0cdb8	
+00000861	20:06:28.343	[856] FmLocalAlloc (260):1fc628	
+00000862	20:06:28.343	[856] FmLocalFree (1fc628)	
+00000863	20:06:28.343	[856] FmLocalFree (f0cdb8)	
+00000864	20:06:28.343	[856] CopyFileData :: addPathSrc (E:\temp\APISpy32.zip)	
+00000865	20:06:28.343	[856] FmLocalAlloc (42):1fe608	
+00000866	20:06:28.343	[856] FmLocalAlloc (40):f0cdb8	
+00000867	20:06:28.343	[856] FmLocalAlloc (260):1fc628	
+00000868	20:06:28.343	[856] FmLocalFree (1fc628)	
+00000869	20:06:28.343	[856] FmLocalFree (f0cdb8)	
+00000870	20:06:28.359	[856] Создан диалог 2819444	
+00000871	20:06:28.359	[856] CopyFileData :: setPathDst (E:\temp\1\APISpy32.zip)	
+00000872	20:06:28.359	[856] FmLocalAlloc (46):17f0b0	
+00000873	20:06:28.359	[856] loadDlgItemProperties (2819444, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000874	20:06:28.390	[856] addCopyDialogThread (2819444, 344, 1)	
+00000875	20:06:28.390	[856] resumeCopyDialogThread (2819444)	
+00000876	20:06:28.390	[856] findCopyDialogNode (2819444)	
+00000877	20:06:28.390	[856] copyFileWorker() 1 файлов в E:\temp\1\APISpy32.zip 	
+00000878	20:06:28.406	[856] Первый вызов copyProgressRoutine() hCopyDlg:2819444 hParentDlg:1639666	
+00000879	20:06:28.406	[856] FmLocalAlloc (260):1fc628	
+00000880	20:06:28.406	[856] FmLocalAlloc (22):189630	
+00000881	20:06:28.406	[856] FmLocalFree (1fc628)	
+00000882	20:06:28.406	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000883	20:06:28.406	[856] addFileToListView (1639666, ., ...)	
+00000884	20:06:28.421	[856] addFileToListView (1639666, .., ...)	
+00000885	20:06:28.421	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000886	20:06:28.421	[856] addFileToListView (1639666, a460-100d-0.9.7-727-full.zip, ...)	
+00000887	20:06:28.421	[856] addFileToListView (1639666, accelman35.msi, ...)	
+00000888	20:06:28.421	[856] addFileToListView (1639666, AD7170A_GN_105_080415.ZIP, ...)	
+00000889	20:06:28.421	[856] addFileToListView (1639666, APISpy32.zip, ...)	
+00000890	20:06:28.437	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000891	20:06:28.437	[856] onCopyDialogFinished (2819444, 0, 3877472)	
+00000892	20:06:28.468	[856] saveDlgItemProperties(2819444, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000893	20:06:28.468	[856] CopyFileData::free()	
+00000894	20:06:28.468	[856] FmLocalFree (1fe608)	
+00000895	20:06:28.468	[856] FmLocalFree (17f0b0)	
+00000896	20:06:28.468	[856] FmLocalFree (1ff5a0)	
+00000897	20:06:28.718	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000898	20:06:28.718	[856] FmLocalAlloc (260):1ff5a0	
+00000899	20:06:28.718	[856] FmLocalAlloc (40):f0cdb8	
+00000900	20:06:28.718	[856] FmLocalAlloc (260):1fc628	
+00000901	20:06:28.718	[856] FmLocalFree (1fc628)	
+00000902	20:06:28.718	[856] FmLocalFree (f0cdb8)	
+00000903	20:06:28.718	[856] CopyFileData :: addPathSrc (E:\temp\arch_file_system.<DIR>)	
+00000904	20:06:28.718	[856] FmLocalAlloc (62):24f998	
+00000905	20:06:28.718	[856] FmLocalAlloc (40):f0cdb8	
+00000906	20:06:28.718	[856] FmLocalAlloc (260):1fc628	
+00000907	20:06:28.718	[856] FmLocalFree (1fc628)	
+00000908	20:06:28.718	[856] FmLocalFree (f0cdb8)	
+00000909	20:06:28.718	[856] Создан диалог 2884980	
+00000910	20:06:28.718	[856] CopyFileData :: setPathDst (E:\temp\1\arch_file_system.<DIR>)	
+00000911	20:06:28.718	[856] FmLocalAlloc (66):1fd300	
+00000912	20:06:28.734	[856] loadDlgItemProperties (2884980, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000913	20:06:28.734	[856] addCopyDialogThread (2884980, 348, 1)	
+00000914	20:06:28.734	[856] resumeCopyDialogThread (2884980)	
+00000915	20:06:28.734	[856] findCopyDialogNode (2884980)	
+00000916	20:06:28.734	[856] copyFileWorker() 1 файлов в E:\temp\1\arch_file_system.<DIR> 	
+00000917	20:06:30.640	[856] FmLocalAlloc (260):1fc628	
+00000918	20:06:30.640	[856] FmLocalAlloc (22):f32d50	
+00000919	20:06:30.640	[856] FmLocalFree (1fc628)	
+00000920	20:06:30.640	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000921	20:06:30.640	[856] addFileToListView (1639666, ., ...)	
+00000922	20:06:30.640	[856] addFileToListView (1639666, .., ...)	
+00000923	20:06:30.640	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000924	20:06:30.640	[856] addFileToListView (1639666, a460-100d-0.9.7-727-full.zip, ...)	
+00000925	20:06:30.640	[856] addFileToListView (1639666, accelman35.msi, ...)	
+00000926	20:06:30.640	[856] addFileToListView (1639666, AD7170A_GN_105_080415.ZIP, ...)	
+00000927	20:06:30.640	[856] addFileToListView (1639666, APISpy32.zip, ...)	
+00000928	20:06:30.640	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000929	20:06:30.640	[856] onCopyDialogFinished (2884980, 0, 3877472)	
+00000930	20:06:30.656	[856] saveDlgItemProperties(2884980, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000931	20:06:30.656	[856] CopyFileData::free()	
+00000932	20:06:30.656	[856] FmLocalFree (24f998)	
+00000933	20:06:30.656	[856] FmLocalFree (1fd300)	
+00000934	20:06:30.656	[856] FmLocalFree (1ff5a0)	
+00000935	20:06:31.390	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000936	20:06:31.390	[856] FmLocalAlloc (260):1ff5a0	
+00000937	20:06:31.390	[856] FmLocalAlloc (40):f0cdb8	
+00000938	20:06:31.390	[856] FmLocalAlloc (260):1fc628	
+00000939	20:06:31.390	[856] FmLocalFree (1fc628)	
+00000940	20:06:31.390	[856] FmLocalFree (f0cdb8)	
+00000941	20:06:31.390	[856] CopyFileData :: addPathSrc (E:\temp\APISpy32.zip)	
+00000942	20:06:31.390	[856] FmLocalAlloc (42):17f0b0	
+00000943	20:06:31.390	[856] FmLocalAlloc (40):f0cdb8	
+00000944	20:06:31.390	[856] FmLocalAlloc (260):1fc628	
+00000945	20:06:31.390	[856] FmLocalFree (1fc628)	
+00000946	20:06:31.390	[856] FmLocalFree (f0cdb8)	
+00000947	20:06:31.406	[856] Создан диалог 2950516	
+00000948	20:06:31.406	[856] CopyFileData :: setPathDst (E:\temp\1\APISpy32.zip)	
+00000949	20:06:31.406	[856] FmLocalAlloc (46):1e9ee0	
+00000950	20:06:31.406	[856] loadDlgItemProperties (2950516, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000951	20:06:31.406	[856] addCopyDialogThread (2950516, 352, 1)	
+00000952	20:06:31.406	[856] resumeCopyDialogThread (2950516)	
+00000953	20:06:31.406	[856] findCopyDialogNode (2950516)	
+00000954	20:06:31.406	[856] copyFileWorker() 1 файлов в E:\temp\1\APISpy32.zip 	
+00000955	20:06:32.062	[856] FmLocalAlloc (260):1fc628	
+00000956	20:06:32.062	[856] FmLocalAlloc (22):1fc4a8	
+00000957	20:06:32.062	[856] FmLocalFree (1fc628)	
+00000958	20:06:32.062	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000959	20:06:32.062	[856] addFileToListView (1639666, ., ...)	
+00000960	20:06:32.062	[856] addFileToListView (1639666, .., ...)	
+00000961	20:06:32.078	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000962	20:06:32.078	[856] onCopyDialogFinished (2950516, 0, 3877472)	
+00000963	20:06:32.078	[856] saveDlgItemProperties(2950516, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000964	20:06:32.078	[856] CopyFileData::free()	
+00000965	20:06:32.078	[856] FmLocalFree (17f0b0)	
+00000966	20:06:32.078	[856] FmLocalFree (1e9ee0)	
+00000967	20:06:32.078	[856] FmLocalFree (1ff5a0)	
+00000968	20:06:33.453	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00000969	20:06:33.453	[856] FmLocalAlloc (260):1ff5a0	
+00000970	20:06:33.453	[856] FmLocalAlloc (40):f0cdb8	
+00000971	20:06:33.453	[856] FmLocalAlloc (260):1fc628	
+00000972	20:06:33.453	[856] FmLocalFree (1fc628)	
+00000973	20:06:33.453	[856] FmLocalFree (f0cdb8)	
+00000974	20:06:33.453	[856] CopyFileData :: addPathSrc (E:\temp\9-2agp-hotfix_xp32_dd_ccc_75984.exe)	
+00000975	20:06:33.453	[856] FmLocalAlloc (88):1fbf48	
+00000976	20:06:33.453	[856] FmLocalAlloc (40):f0cdb8	
+00000977	20:06:33.453	[856] FmLocalAlloc (260):1fc628	
+00000978	20:06:33.453	[856] FmLocalFree (1fc628)	
+00000979	20:06:33.453	[856] FmLocalFree (f0cdb8)	
+00000980	20:06:33.453	[856] Создан диалог 3016052	
+00000981	20:06:33.453	[856] CopyFileData :: setPathDst (E:\temp\1\9-2agp-hotfix_xp32_dd_ccc_75984.exe)	
+00000982	20:06:33.453	[856] FmLocalAlloc (92):1ce470	
+00000983	20:06:33.453	[856] loadDlgItemProperties (3016052, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000984	20:06:33.453	[856] addCopyDialogThread (3016052, 272, 1)	
+00000985	20:06:33.453	[856] resumeCopyDialogThread (3016052)	
+00000986	20:06:33.453	[856] findCopyDialogNode (3016052)	
+00000987	20:06:33.453	[856] copyFileWorker() 1 файлов в E:\temp\1\9-2agp-hotfix_xp32_dd_ccc_75984.exe 	
+00000988	20:06:33.546	[856] Первый вызов copyProgressRoutine() hCopyDlg:3016052 hParentDlg:1639666	
+00000989	20:06:33.546	[856] FmLocalAlloc (260):1fc628	
+00000990	20:06:33.546	[856] FmLocalAlloc (22):1f4710	
+00000991	20:06:33.546	[856] FmLocalFree (1fc628)	
+00000992	20:06:33.546	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00000993	20:06:33.546	[856] addFileToListView (1639666, ., ...)	
+00000994	20:06:33.562	[856] addFileToListView (1639666, .., ...)	
+00000995	20:06:33.562	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00000996	20:06:33.562	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00000997	20:06:33.562	[856] onCopyDialogFinished (3016052, 0, 3877472)	
+00000998	20:06:33.562	[856] saveDlgItemProperties(3016052, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00000999	20:06:33.562	[856] CopyFileData::free()	
+00001000	20:06:33.562	[856] FmLocalFree (1fbf48)	
+00001001	20:06:33.562	[856] FmLocalFree (1ce470)	
+00001002	20:06:33.562	[856] FmLocalFree (1ff5a0)	
+00001003	20:06:34.593	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001004	20:06:34.593	[856] FmLocalAlloc (260):1ff5a0	
+00001005	20:06:34.609	[856] FmLocalAlloc (40):f0cdb8	
+00001006	20:06:34.609	[856] FmLocalAlloc (260):1fc628	
+00001007	20:06:34.609	[856] FmLocalFree (1fc628)	
+00001008	20:06:34.609	[856] FmLocalFree (f0cdb8)	
+00001009	20:06:34.609	[856] CopyFileData :: addPathSrc (E:\temp\82660.pdf)	
+00001010	20:06:34.609	[856] FmLocalAlloc (36):f0cdb8	
+00001011	20:06:34.609	[856] FmLocalAlloc (40):ebe988	
+00001012	20:06:34.609	[856] FmLocalAlloc (260):1fc628	
+00001013	20:06:34.609	[856] FmLocalFree (1fc628)	
+00001014	20:06:34.609	[856] FmLocalFree (ebe988)	
+00001015	20:06:34.609	[856] Создан диалог 3081588	
+00001016	20:06:34.609	[856] CopyFileData :: setPathDst (E:\temp\1\82660.pdf)	
+00001017	20:06:34.609	[856] FmLocalAlloc (40):24f968	
+00001018	20:06:34.609	[856] loadDlgItemProperties (3081588, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001019	20:06:34.609	[856] addCopyDialogThread (3081588, 356, 1)	
+00001020	20:06:34.609	[856] resumeCopyDialogThread (3081588)	
+00001021	20:06:34.609	[856] findCopyDialogNode (3081588)	
+00001022	20:06:34.609	[856] copyFileWorker() 1 файлов в E:\temp\1\82660.pdf 	
+00001023	20:06:34.609	[856] Первый вызов copyProgressRoutine() hCopyDlg:3081588 hParentDlg:1639666	
+00001024	20:06:34.609	[856] FmLocalAlloc (260):1fc628	
+00001025	20:06:34.609	[856] FmLocalAlloc (22):1fc3e0	
+00001026	20:06:34.609	[856] FmLocalFree (1fc628)	
+00001027	20:06:34.609	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001028	20:06:34.609	[856] addFileToListView (1639666, ., ...)	
+00001029	20:06:34.609	[856] addFileToListView (1639666, .., ...)	
+00001030	20:06:34.609	[856] addFileToListView (1639666, 82660.pdf, ...)	
+00001031	20:06:34.609	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00001032	20:06:34.609	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001033	20:06:34.609	[856] onCopyDialogFinished (3081588, 0, 3877472)	
+00001034	20:06:34.625	[856] saveDlgItemProperties(3081588, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001035	20:06:34.625	[856] CopyFileData::free()	
+00001036	20:06:34.625	[856] FmLocalFree (f0cdb8)	
+00001037	20:06:34.625	[856] FmLocalFree (24f968)	
+00001038	20:06:34.625	[856] FmLocalFree (1ff5a0)	
+00001039	20:06:35.125	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001040	20:06:35.125	[856] FmLocalAlloc (260):1ff5a0	
+00001041	20:06:35.125	[856] FmLocalAlloc (40):24f968	
+00001042	20:06:35.125	[856] FmLocalAlloc (260):1fc628	
+00001043	20:06:35.125	[856] FmLocalFree (1fc628)	
+00001044	20:06:35.125	[856] FmLocalFree (24f968)	
+00001045	20:06:35.125	[856] CopyFileData :: addPathSrc (E:\temp\5B-0.6.1-Windows.zip)	
+00001046	20:06:35.125	[856] FmLocalAlloc (58):24fe58	
+00001047	20:06:35.125	[856] FmLocalAlloc (40):24f968	
+00001048	20:06:35.125	[856] FmLocalAlloc (260):1fc628	
+00001049	20:06:35.125	[856] FmLocalFree (1fc628)	
+00001050	20:06:35.125	[856] FmLocalFree (24f968)	
+00001051	20:06:35.125	[856] Создан диалог 3147124	
+00001052	20:06:35.125	[856] CopyFileData :: setPathDst (E:\temp\1\5B-0.6.1-Windows.zip)	
+00001053	20:06:35.125	[856] FmLocalAlloc (62):1f2cf8	
+00001054	20:06:35.125	[856] loadDlgItemProperties (3147124, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001055	20:06:35.125	[856] addCopyDialogThread (3147124, 364, 1)	
+00001056	20:06:35.125	[856] resumeCopyDialogThread (3147124)	
+00001057	20:06:35.125	[856] findCopyDialogNode (3147124)	
+00001058	20:06:35.125	[856] copyFileWorker() 1 файлов в E:\temp\1\5B-0.6.1-Windows.zip 	
+00001059	20:06:35.140	[856] Первый вызов copyProgressRoutine() hCopyDlg:3147124 hParentDlg:1639666	
+00001060	20:06:35.140	[856] FmLocalAlloc (260):1fc628	
+00001061	20:06:35.140	[856] FmLocalAlloc (22):1fc468	
+00001062	20:06:35.140	[856] FmLocalFree (1fc628)	
+00001063	20:06:35.140	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001064	20:06:35.140	[856] addFileToListView (1639666, ., ...)	
+00001065	20:06:35.140	[856] addFileToListView (1639666, .., ...)	
+00001066	20:06:35.140	[856] addFileToListView (1639666, 5B-0.6.1-Windows.zip, ...)	
+00001067	20:06:35.140	[856] addFileToListView (1639666, 82660.pdf, ...)	
+00001068	20:06:35.140	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00001069	20:06:35.140	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001070	20:06:35.140	[856] onCopyDialogFinished (3147124, 0, 3877472)	
+00001071	20:06:35.140	[856] saveDlgItemProperties(3147124, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001072	20:06:35.140	[856] CopyFileData::free()	
+00001073	20:06:35.140	[856] FmLocalFree (24fe58)	
+00001074	20:06:35.140	[856] FmLocalFree (1f2cf8)	
+00001075	20:06:35.156	[856] FmLocalFree (1ff5a0)	
+00001076	20:06:35.531	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001077	20:06:35.531	[856] FmLocalAlloc (260):1ff5a0	
+00001078	20:06:35.531	[856] FmLocalAlloc (40):24f968	
+00001079	20:06:35.531	[856] FmLocalAlloc (260):1fc628	
+00001080	20:06:35.531	[856] FmLocalFree (1fc628)	
+00001081	20:06:35.531	[856] FmLocalFree (24f968)	
+00001082	20:06:35.531	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001083	20:06:35.531	[856] FmLocalAlloc (38):24f968	
+00001084	20:06:35.531	[856] FmLocalAlloc (40):1fc3b0	
+00001085	20:06:35.531	[856] FmLocalAlloc (260):1fc628	
+00001086	20:06:35.531	[856] FmLocalFree (1fc628)	
+00001087	20:06:35.531	[856] FmLocalFree (1fc3b0)	
+00001088	20:06:35.531	[856] Создан диалог 3212660	
+00001089	20:06:35.531	[856] CopyFileData :: setPathDst (E:\temp\1\378894.pdf)	
+00001090	20:06:35.531	[856] FmLocalAlloc (42):1e9ee0	
+00001091	20:06:35.546	[856] loadDlgItemProperties (3212660, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001092	20:06:35.546	[856] addCopyDialogThread (3212660, 368, 1)	
+00001093	20:06:35.546	[856] resumeCopyDialogThread (3212660)	
+00001094	20:06:35.546	[856] findCopyDialogNode (3212660)	
+00001095	20:06:35.546	[856] copyFileWorker() 1 файлов в E:\temp\1\378894.pdf 	
+00001096	20:06:35.546	[856] Первый вызов copyProgressRoutine() hCopyDlg:3212660 hParentDlg:1639666	
+00001097	20:06:35.546	[856] FmLocalAlloc (260):1fc628	
+00001098	20:06:35.546	[856] FmLocalAlloc (22):1fc488	
+00001099	20:06:35.546	[856] FmLocalFree (1fc628)	
+00001100	20:06:35.546	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001101	20:06:35.546	[856] addFileToListView (1639666, ., ...)	
+00001102	20:06:35.546	[856] addFileToListView (1639666, .., ...)	
+00001103	20:06:35.546	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001104	20:06:35.546	[856] addFileToListView (1639666, 5B-0.6.1-Windows.zip, ...)	
+00001105	20:06:35.546	[856] addFileToListView (1639666, 82660.pdf, ...)	
+00001106	20:06:35.546	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00001107	20:06:35.546	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001108	20:06:35.546	[856] onCopyDialogFinished (3212660, 0, 3877472)	
+00001109	20:06:35.562	[856] saveDlgItemProperties(3212660, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001110	20:06:35.562	[856] CopyFileData::free()	
+00001111	20:06:35.562	[856] FmLocalFree (24f968)	
+00001112	20:06:35.562	[856] FmLocalFree (1e9ee0)	
+00001113	20:06:35.562	[856] FmLocalFree (1ff5a0)	
+00001114	20:06:35.921	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001115	20:06:35.921	[856] FmLocalAlloc (260):1ff5a0	
+00001116	20:06:35.921	[856] FmLocalAlloc (40):24f968	
+00001117	20:06:35.921	[856] FmLocalAlloc (260):1fc628	
+00001118	20:06:35.921	[856] FmLocalFree (1fc628)	
+00001119	20:06:35.921	[856] FmLocalFree (24f968)	
+00001120	20:06:35.921	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001121	20:06:35.921	[856] FmLocalAlloc (70):1fd300	
+00001122	20:06:35.921	[856] FmLocalAlloc (40):24f968	
+00001123	20:06:35.921	[856] FmLocalAlloc (260):1fc628	
+00001124	20:06:35.921	[856] FmLocalFree (1fc628)	
+00001125	20:06:35.921	[856] FmLocalFree (24f968)	
+00001126	20:06:35.921	[856] Создан диалог 3278196	
+00001127	20:06:35.921	[856] CopyFileData :: setPathDst (E:\temp\1\33359c_geodelxdb800_pb.pdf)	
+00001128	20:06:35.921	[856] FmLocalAlloc (74):151fd0	
+00001129	20:06:35.921	[856] loadDlgItemProperties (3278196, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001130	20:06:35.921	[856] addCopyDialogThread (3278196, 372, 1)	
+00001131	20:06:35.921	[856] resumeCopyDialogThread (3278196)	
+00001132	20:06:35.921	[856] findCopyDialogNode (3278196)	
+00001133	20:06:35.921	[856] copyFileWorker() 1 файлов в E:\temp\1\33359c_geodelxdb800_pb.pdf 	
+00001134	20:06:35.921	[856] Первый вызов copyProgressRoutine() hCopyDlg:3278196 hParentDlg:1639666	
+00001135	20:06:35.937	[856] FmLocalAlloc (260):1fc628	
+00001136	20:06:35.937	[856] FmLocalAlloc (22):ffcac8	
+00001137	20:06:35.937	[856] FmLocalFree (1fc628)	
+00001138	20:06:35.937	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001139	20:06:35.937	[856] addFileToListView (1639666, ., ...)	
+00001140	20:06:35.937	[856] addFileToListView (1639666, .., ...)	
+00001141	20:06:35.937	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001142	20:06:35.937	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001143	20:06:35.937	[856] addFileToListView (1639666, 5B-0.6.1-Windows.zip, ...)	
+00001144	20:06:35.937	[856] addFileToListView (1639666, 82660.pdf, ...)	
+00001145	20:06:35.937	[856] addFileToListView (1639666, 9-2agp-hotfix_xp32_dd_ccc_75984.exe, ...)	
+00001146	20:06:35.937	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001147	20:06:35.937	[856] onCopyDialogFinished (3278196, 0, 3877472)	
+00001148	20:06:35.937	[856] saveDlgItemProperties(3278196, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001149	20:06:35.937	[856] CopyFileData::free()	
+00001150	20:06:35.937	[856] FmLocalFree (1fd300)	
+00001151	20:06:35.937	[856] FmLocalFree (151fd0)	
+00001152	20:06:35.937	[856] FmLocalFree (1ff5a0)	
+00001153	20:06:38.234	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001154	20:06:38.234	[856] FmLocalAlloc (260):1ff5a0	
+00001155	20:06:38.234	[856] FmLocalAlloc (40):24f968	
+00001156	20:06:38.234	[856] FmLocalAlloc (260):1fc628	
+00001157	20:06:38.234	[856] FmLocalFree (1fc628)	
+00001158	20:06:38.234	[856] FmLocalFree (24f968)	
+00001159	20:06:38.234	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001160	20:06:38.234	[856] FmLocalAlloc (42):1e9ee0	
+00001161	20:06:38.234	[856] FmLocalAlloc (40):24f968	
+00001162	20:06:38.234	[856] FmLocalAlloc (260):1fc628	
+00001163	20:06:38.234	[856] FmLocalFree (1fc628)	
+00001164	20:06:38.234	[856] FmLocalFree (24f968)	
+00001165	20:06:38.234	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001166	20:06:38.234	[856] FmLocalAlloc (70):1fd300	
+00001167	20:06:38.234	[856] FmLocalAlloc (40):24f968	
+00001168	20:06:38.234	[856] FmLocalAlloc (260):1fc628	
+00001169	20:06:38.234	[856] FmLocalFree (1fc628)	
+00001170	20:06:38.234	[856] FmLocalFree (24f968)	
+00001171	20:06:38.234	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001172	20:06:38.234	[856] FmLocalAlloc (38):24f968	
+00001173	20:06:38.234	[856] FmLocalAlloc (40):1fc438	
+00001174	20:06:38.234	[856] FmLocalAlloc (260):1fc628	
+00001175	20:06:38.234	[856] FmLocalFree (1fc628)	
+00001176	20:06:38.234	[856] FmLocalFree (1fc438)	
+00001177	20:06:38.234	[856] Создан диалог 3343732	
+00001178	20:06:38.234	[856] CopyFileData :: setPathDst (E:\temp\1\2xex1412.zip)	
+00001179	20:06:38.234	[856] FmLocalAlloc (46):1fe608	
+00001180	20:06:38.234	[856] loadDlgItemProperties (3343732, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001181	20:06:38.234	[856] addCopyDialogThread (3343732, 376, 1)	
+00001182	20:06:38.234	[856] resumeCopyDialogThread (3343732)	
+00001183	20:06:38.234	[856] findCopyDialogNode (3343732)	
+00001184	20:06:38.234	[856] copyFileWorker() 3 файлов в E:\temp\1\2xex1412.zip 	
+00001185	20:06:38.234	[856] Первый вызов copyProgressRoutine() hCopyDlg:3343732 hParentDlg:1639666	
+00001186	20:06:38.234	[856] FmLocalAlloc (260):1fc628	
+00001187	20:06:38.234	[856] FmLocalAlloc (22):ffcbd8	
+00001188	20:06:38.250	[856] FmLocalFree (1fc628)	
+00001189	20:06:38.250	[856] Первый вызов copyProgressRoutine() hCopyDlg:3343732 hParentDlg:1639666	
+00001190	20:06:38.250	[856] FmLocalAlloc (260):1fc628	
+00001191	20:06:38.250	[856] FmLocalAlloc (22):ffcb90	
+00001192	20:06:38.250	[856] FmLocalFree (1fc628)	
+00001193	20:06:38.250	[856] Первый вызов copyProgressRoutine() hCopyDlg:3343732 hParentDlg:1639666	
+00001194	20:06:38.250	[856] FmLocalAlloc (260):1fc628	
+00001195	20:06:38.250	[856] FmLocalAlloc (22):24f8d0	
+00001196	20:06:38.250	[856] FmLocalFree (1fc628)	
+00001197	20:06:38.250	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001198	20:06:38.250	[856] addFileToListView (1639666, ., ...)	
+00001199	20:06:38.250	[856] addFileToListView (1639666, .., ...)	
+00001200	20:06:38.250	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001201	20:06:38.250	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001202	20:06:38.250	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001203	20:06:38.250	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001204	20:06:38.250	[856] onCopyDialogFinished (3343732, 0, 3877472)	
+00001205	20:06:38.250	[856] saveDlgItemProperties(3343732, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001206	20:06:38.250	[856] CopyFileData::free()	
+00001207	20:06:38.250	[856] FmLocalFree (1e9ee0)	
+00001208	20:06:38.250	[856] FmLocalFree (1fd300)	
+00001209	20:06:38.250	[856] FmLocalFree (24f968)	
+00001210	20:06:38.250	[856] FmLocalFree (1fe608)	
+00001211	20:06:38.265	[856] FmLocalFree (1ff5a0)	
+00001212	20:06:41.640	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001213	20:06:41.640	[856] FmLocalAlloc (260):1ff5a0	
+00001214	20:06:41.640	[856] FmLocalAlloc (40):24f968	
+00001215	20:06:41.640	[856] FmLocalAlloc (260):1fc628	
+00001216	20:06:41.640	[856] FmLocalFree (1fc628)	
+00001217	20:06:41.640	[856] FmLocalFree (24f968)	
+00001218	20:06:41.640	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001219	20:06:41.640	[856] FmLocalAlloc (38):24f968	
+00001220	20:06:41.640	[856] FmLocalAlloc (40):1fc438	
+00001221	20:06:41.640	[856] FmLocalAlloc (260):1fc628	
+00001222	20:06:41.640	[856] FmLocalFree (1fc628)	
+00001223	20:06:41.640	[856] FmLocalFree (1fc438)	
+00001224	20:06:41.640	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001225	20:06:41.640	[856] FmLocalAlloc (42):1fe608	
+00001226	20:06:41.640	[856] FmLocalAlloc (40):1fc438	
+00001227	20:06:41.640	[856] FmLocalAlloc (260):1fc628	
+00001228	20:06:41.640	[856] FmLocalFree (1fc628)	
+00001229	20:06:41.640	[856] FmLocalFree (1fc438)	
+00001230	20:06:41.640	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001231	20:06:41.640	[856] FmLocalAlloc (70):1fd300	
+00001232	20:06:41.640	[856] FmLocalAlloc (40):1fc438	
+00001233	20:06:41.640	[856] FmLocalAlloc (260):1fc628	
+00001234	20:06:41.640	[856] FmLocalFree (1fc628)	
+00001235	20:06:41.640	[856] FmLocalFree (1fc438)	
+00001236	20:06:41.640	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001237	20:06:41.640	[856] FmLocalAlloc (38):1fc438	
+00001238	20:06:41.640	[856] FmLocalAlloc (40):ee3b38	
+00001239	20:06:41.640	[856] FmLocalAlloc (260):1fc628	
+00001240	20:06:41.640	[856] FmLocalFree (1fc628)	
+00001241	20:06:41.640	[856] FmLocalFree (ee3b38)	
+00001242	20:06:41.640	[856] Создан диалог 3409268	
+00001243	20:06:41.640	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001244	20:06:41.640	[856] FmLocalAlloc (42):1e9ee0	
+00001245	20:06:41.640	[856] loadDlgItemProperties (3409268, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001246	20:06:41.640	[856] addCopyDialogThread (3409268, 380, 1)	
+00001247	20:06:41.640	[856] resumeCopyDialogThread (3409268)	
+00001248	20:06:41.640	[856] findCopyDialogNode (3409268)	
+00001249	20:06:41.640	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001250	20:06:41.656	[856] Первый вызов copyProgressRoutine() hCopyDlg:3409268 hParentDlg:1639666	
+00001251	20:06:41.656	[856] FmLocalAlloc (260):1fc628	
+00001252	20:06:41.656	[856] FmLocalAlloc (22):24f8f0	
+00001253	20:06:41.656	[856] FmLocalFree (1fc628)	
+00001254	20:06:42.375	[856] FmLocalAlloc (260):1fc628	
+00001255	20:06:42.375	[856] FmLocalAlloc (22):f20b78	
+00001256	20:06:42.375	[856] FmLocalFree (1fc628)	
+00001257	20:06:42.375	[856] Первый вызов copyProgressRoutine() hCopyDlg:3409268 hParentDlg:1639666	
+00001258	20:06:42.375	[856] FmLocalAlloc (260):1fc628	
+00001259	20:06:42.375	[856] FmLocalAlloc (22):f20b98	
+00001260	20:06:42.375	[856] FmLocalFree (1fc628)	
+00001261	20:06:42.375	[856] Первый вызов copyProgressRoutine() hCopyDlg:3409268 hParentDlg:1639666	
+00001262	20:06:42.390	[856] FmLocalAlloc (260):1fc628	
+00001263	20:06:42.390	[856] FmLocalAlloc (22):ffcb18	
+00001264	20:06:42.390	[856] FmLocalFree (1fc628)	
+00001265	20:06:42.390	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001266	20:06:42.390	[856] addFileToListView (1639666, ., ...)	
+00001267	20:06:42.390	[856] addFileToListView (1639666, .., ...)	
+00001268	20:06:42.390	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001269	20:06:42.390	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001270	20:06:42.390	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001271	20:06:42.390	[856] onCopyDialogFinished (3409268, 0, 3877472)	
+00001272	20:06:42.390	[856] saveDlgItemProperties(3409268, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001273	20:06:42.390	[856] CopyFileData::free()	
+00001274	20:06:42.390	[856] FmLocalFree (24f968)	
+00001275	20:06:42.390	[856] FmLocalFree (1fe608)	
+00001276	20:06:42.390	[856] FmLocalFree (1fd300)	
+00001277	20:06:42.390	[856] FmLocalFree (1fc438)	
+00001278	20:06:42.390	[856] FmLocalFree (1e9ee0)	
+00001279	20:06:42.390	[856] FmLocalFree (1ff5a0)	
+00001280	20:06:44.093	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001281	20:06:44.093	[856] FmLocalAlloc (260):1ff5a0	
+00001282	20:06:44.093	[856] FmLocalAlloc (40):1fc438	
+00001283	20:06:44.093	[856] FmLocalAlloc (260):1fc628	
+00001284	20:06:44.093	[856] FmLocalFree (1fc628)	
+00001285	20:06:44.093	[856] FmLocalFree (1fc438)	
+00001286	20:06:44.093	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001287	20:06:44.093	[856] FmLocalAlloc (38):1fc438	
+00001288	20:06:44.093	[856] FmLocalAlloc (40):24f968	
+00001289	20:06:44.093	[856] FmLocalAlloc (260):1fc628	
+00001290	20:06:44.093	[856] FmLocalFree (1fc628)	
+00001291	20:06:44.093	[856] FmLocalFree (24f968)	
+00001292	20:06:44.093	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001293	20:06:44.093	[856] FmLocalAlloc (42):1e9ee0	
+00001294	20:06:44.093	[856] FmLocalAlloc (40):24f968	
+00001295	20:06:44.093	[856] FmLocalAlloc (260):1fc628	
+00001296	20:06:44.093	[856] FmLocalFree (1fc628)	
+00001297	20:06:44.093	[856] FmLocalFree (24f968)	
+00001298	20:06:44.093	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001299	20:06:44.093	[856] FmLocalAlloc (70):1fd300	
+00001300	20:06:44.093	[856] FmLocalAlloc (40):24f968	
+00001301	20:06:44.093	[856] FmLocalAlloc (260):1fc628	
+00001302	20:06:44.093	[856] FmLocalFree (1fc628)	
+00001303	20:06:44.093	[856] FmLocalFree (24f968)	
+00001304	20:06:44.093	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001305	20:06:44.093	[856] FmLocalAlloc (38):24f968	
+00001306	20:06:44.093	[856] FmLocalAlloc (40):ee3b38	
+00001307	20:06:44.093	[856] FmLocalAlloc (260):1fc628	
+00001308	20:06:44.093	[856] FmLocalFree (1fc628)	
+00001309	20:06:44.093	[856] FmLocalFree (ee3b38)	
+00001310	20:06:44.093	[856] Создан диалог 3474804	
+00001311	20:06:44.093	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001312	20:06:44.093	[856] FmLocalAlloc (42):1fe608	
+00001313	20:06:44.093	[856] loadDlgItemProperties (3474804, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001314	20:06:44.109	[856] addCopyDialogThread (3474804, 228, 1)	
+00001315	20:06:44.109	[856] resumeCopyDialogThread (3474804)	
+00001316	20:06:44.109	[856] findCopyDialogNode (3474804)	
+00001317	20:06:44.109	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001318	20:06:44.109	[856] Первый вызов copyProgressRoutine() hCopyDlg:3474804 hParentDlg:1639666	
+00001319	20:06:44.109	[856] FmLocalAlloc (260):1fc628	
+00001320	20:06:44.109	[856] FmLocalAlloc (22):1f2d80	
+00001321	20:06:44.109	[856] FmLocalFree (1fc628)	
+00001322	20:06:44.109	[856] Первый вызов copyProgressRoutine() hCopyDlg:3474804 hParentDlg:1639666	
+00001323	20:06:44.109	[856] FmLocalAlloc (260):1fc628	
+00001324	20:06:44.109	[856] FmLocalAlloc (22):ffcb38	
+00001325	20:06:44.109	[856] FmLocalFree (1fc628)	
+00001326	20:06:44.906	[856] FmLocalAlloc (260):1fc628	
+00001327	20:06:44.906	[856] FmLocalAlloc (22):f20c08	
+00001328	20:06:44.906	[856] FmLocalFree (1fc628)	
+00001329	20:06:45.484	[856] FmLocalAlloc (260):1fc628	
+00001330	20:06:45.484	[856] FmLocalAlloc (22):f20bb8	
+00001331	20:06:45.484	[856] FmLocalFree (1fc628)	
+00001332	20:06:45.484	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001333	20:06:45.484	[856] addFileToListView (1639666, ., ...)	
+00001334	20:06:45.484	[856] addFileToListView (1639666, .., ...)	
+00001335	20:06:45.484	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001336	20:06:45.484	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001337	20:06:45.484	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001338	20:06:45.484	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001339	20:06:45.484	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001340	20:06:45.484	[856] onCopyDialogFinished (3474804, 0, 3877472)	
+00001341	20:06:45.484	[856] saveDlgItemProperties(3474804, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001342	20:06:45.484	[856] CopyFileData::free()	
+00001343	20:06:45.484	[856] FmLocalFree (1fc438)	
+00001344	20:06:45.484	[856] FmLocalFree (1e9ee0)	
+00001345	20:06:45.484	[856] FmLocalFree (1fd300)	
+00001346	20:06:45.484	[856] FmLocalFree (24f968)	
+00001347	20:06:45.484	[856] FmLocalFree (1fe608)	
+00001348	20:06:45.484	[856] FmLocalFree (1ff5a0)	
+00001349	20:06:46.250	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001350	20:06:46.250	[856] FmLocalAlloc (260):1ff5a0	
+00001351	20:06:46.250	[856] FmLocalAlloc (40):24f968	
+00001352	20:06:46.250	[856] FmLocalAlloc (260):1fc628	
+00001353	20:06:46.250	[856] FmLocalFree (1fc628)	
+00001354	20:06:46.250	[856] FmLocalFree (24f968)	
+00001355	20:06:46.250	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001356	20:06:46.250	[856] FmLocalAlloc (38):24f968	
+00001357	20:06:46.250	[856] FmLocalAlloc (40):1fc438	
+00001358	20:06:46.250	[856] FmLocalAlloc (260):1fc628	
+00001359	20:06:46.250	[856] FmLocalFree (1fc628)	
+00001360	20:06:46.250	[856] FmLocalFree (1fc438)	
+00001361	20:06:46.250	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001362	20:06:46.250	[856] FmLocalAlloc (42):1fe608	
+00001363	20:06:46.250	[856] FmLocalAlloc (40):1fc438	
+00001364	20:06:46.250	[856] FmLocalAlloc (260):1fc628	
+00001365	20:06:46.250	[856] FmLocalFree (1fc628)	
+00001366	20:06:46.250	[856] FmLocalFree (1fc438)	
+00001367	20:06:46.250	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001368	20:06:46.250	[856] FmLocalAlloc (70):1fd300	
+00001369	20:06:46.250	[856] FmLocalAlloc (40):1fc438	
+00001370	20:06:46.250	[856] FmLocalAlloc (260):1fc628	
+00001371	20:06:46.250	[856] FmLocalFree (1fc628)	
+00001372	20:06:46.250	[856] FmLocalFree (1fc438)	
+00001373	20:06:46.250	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001374	20:06:46.250	[856] FmLocalAlloc (38):1fc438	
+00001375	20:06:46.250	[856] FmLocalAlloc (40):ee3b38	
+00001376	20:06:46.250	[856] FmLocalAlloc (260):1fc628	
+00001377	20:06:46.250	[856] FmLocalFree (1fc628)	
+00001378	20:06:46.250	[856] FmLocalFree (ee3b38)	
+00001379	20:06:46.250	[856] Создан диалог 3540340	
+00001380	20:06:46.250	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001381	20:06:46.250	[856] FmLocalAlloc (42):1e9ee0	
+00001382	20:06:46.281	[856] loadDlgItemProperties (3540340, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001383	20:06:46.281	[856] addCopyDialogThread (3540340, 240, 1)	
+00001384	20:06:46.281	[856] resumeCopyDialogThread (3540340)	
+00001385	20:06:46.281	[856] findCopyDialogNode (3540340)	
+00001386	20:06:46.281	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001387	20:06:46.859	[856] FmLocalAlloc (260):1fc628	
+00001388	20:06:46.859	[856] FmLocalAlloc (22):f20c28	
+00001389	20:06:46.859	[856] FmLocalFree (1fc628)	
+00001390	20:06:46.859	[856] Первый вызов copyProgressRoutine() hCopyDlg:3540340 hParentDlg:1639666	
+00001391	20:06:46.859	[856] FmLocalAlloc (260):1fc628	
+00001392	20:06:46.859	[856] FmLocalAlloc (22):1330cc8	
+00001393	20:06:46.859	[856] FmLocalFree (1fc628)	
+00001394	20:06:46.875	[856] Первый вызов copyProgressRoutine() hCopyDlg:3540340 hParentDlg:1639666	
+00001395	20:06:46.875	[856] FmLocalAlloc (260):1fc628	
+00001396	20:06:46.875	[856] FmLocalAlloc (22):1334d08	
+00001397	20:06:46.875	[856] FmLocalFree (1fc628)	
+00001398	20:06:46.875	[856] Первый вызов copyProgressRoutine() hCopyDlg:3540340 hParentDlg:1639666	
+00001399	20:06:46.875	[856] FmLocalAlloc (260):1fc628	
+00001400	20:06:46.875	[856] FmLocalAlloc (22):f20c48	
+00001401	20:06:46.875	[856] FmLocalFree (1fc628)	
+00001402	20:06:46.875	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001403	20:06:46.875	[856] addFileToListView (1639666, ., ...)	
+00001404	20:06:46.875	[856] addFileToListView (1639666, .., ...)	
+00001405	20:06:46.875	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001406	20:06:46.875	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001407	20:06:46.875	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001408	20:06:46.875	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001409	20:06:46.875	[856] onCopyDialogFinished (3540340, 0, 3877472)	
+00001410	20:06:46.875	[856] saveDlgItemProperties(3540340, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001411	20:06:46.875	[856] CopyFileData::free()	
+00001412	20:06:46.875	[856] FmLocalFree (24f968)	
+00001413	20:06:46.875	[856] FmLocalFree (1fe608)	
+00001414	20:06:46.875	[856] FmLocalFree (1fd300)	
+00001415	20:06:46.875	[856] FmLocalFree (1fc438)	
+00001416	20:06:46.875	[856] FmLocalFree (1e9ee0)	
+00001417	20:06:46.875	[856] FmLocalFree (1ff5a0)	
+00001418	20:06:54.062	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001419	20:06:54.062	[856] FmLocalAlloc (260):1ff5a0	
+00001420	20:06:54.062	[856] FmLocalAlloc (40):1fc438	
+00001421	20:06:54.062	[856] FmLocalAlloc (260):1fc628	
+00001422	20:06:54.062	[856] FmLocalFree (1fc628)	
+00001423	20:06:54.062	[856] FmLocalFree (1fc438)	
+00001424	20:06:54.062	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001425	20:06:54.062	[856] FmLocalAlloc (38):1fc438	
+00001426	20:06:54.062	[856] FmLocalAlloc (40):24f968	
+00001427	20:06:54.062	[856] FmLocalAlloc (260):1fc628	
+00001428	20:06:54.062	[856] FmLocalFree (1fc628)	
+00001429	20:06:54.062	[856] FmLocalFree (24f968)	
+00001430	20:06:54.062	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001431	20:06:54.062	[856] FmLocalAlloc (42):1e9ee0	
+00001432	20:06:54.062	[856] FmLocalAlloc (40):24f968	
+00001433	20:06:54.062	[856] FmLocalAlloc (260):1fc628	
+00001434	20:06:54.062	[856] FmLocalFree (1fc628)	
+00001435	20:06:54.062	[856] FmLocalFree (24f968)	
+00001436	20:06:54.062	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001437	20:06:54.062	[856] FmLocalAlloc (70):1fd300	
+00001438	20:06:54.062	[856] FmLocalAlloc (40):24f968	
+00001439	20:06:54.062	[856] FmLocalAlloc (260):1fc628	
+00001440	20:06:54.062	[856] FmLocalFree (1fc628)	
+00001441	20:06:54.062	[856] FmLocalFree (24f968)	
+00001442	20:06:54.062	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001443	20:06:54.062	[856] FmLocalAlloc (38):24f968	
+00001444	20:06:54.062	[856] FmLocalAlloc (40):ee3b38	
+00001445	20:06:54.062	[856] FmLocalAlloc (260):1fc628	
+00001446	20:06:54.062	[856] FmLocalFree (1fc628)	
+00001447	20:06:54.062	[856] FmLocalFree (ee3b38)	
+00001448	20:06:54.062	[856] Создан диалог 3605876	
+00001449	20:06:54.062	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001450	20:06:54.062	[856] FmLocalAlloc (42):1fe608	
+00001451	20:06:54.062	[856] loadDlgItemProperties (3605876, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001452	20:06:54.062	[856] addCopyDialogThread (3605876, 388, 1)	
+00001453	20:06:54.062	[856] resumeCopyDialogThread (3605876)	
+00001454	20:06:54.078	[856] findCopyDialogNode (3605876)	
+00001455	20:06:54.078	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001456	20:06:54.078	[856] Первый вызов copyProgressRoutine() hCopyDlg:3605876 hParentDlg:1639666	
+00001457	20:06:54.078	[856] FmLocalAlloc (260):1fc628	
+00001458	20:06:54.078	[856] FmLocalAlloc (22):f20c68	
+00001459	20:06:54.078	[856] FmLocalFree (1fc628)	
+00001460	20:06:54.078	[856] Первый вызов copyProgressRoutine() hCopyDlg:3605876 hParentDlg:1639666	
+00001461	20:06:54.078	[856] FmLocalAlloc (260):1fc628	
+00001462	20:06:54.078	[856] FmLocalAlloc (22):f20c88	
+00001463	20:06:54.078	[856] FmLocalFree (1fc628)	
+00001464	20:06:54.078	[856] Первый вызов copyProgressRoutine() hCopyDlg:3605876 hParentDlg:1639666	
+00001465	20:06:54.078	[856] FmLocalAlloc (260):1fc628	
+00001466	20:06:54.078	[856] FmLocalAlloc (22):1338dc0	
+00001467	20:06:54.078	[856] FmLocalFree (1fc628)	
+00001468	20:06:54.078	[856] Первый вызов copyProgressRoutine() hCopyDlg:3605876 hParentDlg:1639666	
+00001469	20:06:54.078	[856] FmLocalAlloc (260):1fc628	
+00001470	20:06:54.078	[856] FmLocalAlloc (22):1334d28	
+00001471	20:06:54.078	[856] FmLocalFree (1fc628)	
+00001472	20:06:54.078	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001473	20:06:54.078	[856] addFileToListView (1639666, ., ...)	
+00001474	20:06:54.093	[856] addFileToListView (1639666, .., ...)	
+00001475	20:06:54.093	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001476	20:06:54.093	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001477	20:06:54.093	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001478	20:06:54.093	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001479	20:06:54.093	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001480	20:06:54.093	[856] onCopyDialogFinished (3605876, 0, 3877472)	
+00001481	20:06:54.093	[856] saveDlgItemProperties(3605876, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001482	20:06:54.093	[856] CopyFileData::free()	
+00001483	20:06:54.093	[856] FmLocalFree (1fc438)	
+00001484	20:06:54.093	[856] FmLocalFree (1e9ee0)	
+00001485	20:06:54.093	[856] FmLocalFree (1fd300)	
+00001486	20:06:54.093	[856] FmLocalFree (24f968)	
+00001487	20:06:54.093	[856] FmLocalFree (1fe608)	
+00001488	20:06:54.093	[856] FmLocalFree (1ff5a0)	
+00001489	20:07:03.953	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001490	20:07:03.953	[856] FmLocalAlloc (260):1ff5a0	
+00001491	20:07:03.953	[856] FmLocalAlloc (40):24f968	
+00001492	20:07:03.953	[856] FmLocalAlloc (260):1fc628	
+00001493	20:07:03.953	[856] FmLocalFree (1fc628)	
+00001494	20:07:03.953	[856] FmLocalFree (24f968)	
+00001495	20:07:03.953	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001496	20:07:03.953	[856] FmLocalAlloc (38):24f968	
+00001497	20:07:03.953	[856] FmLocalAlloc (40):1fc438	
+00001498	20:07:03.953	[856] FmLocalAlloc (260):1fc628	
+00001499	20:07:03.953	[856] FmLocalFree (1fc628)	
+00001500	20:07:03.953	[856] FmLocalFree (1fc438)	
+00001501	20:07:03.953	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001502	20:07:03.953	[856] FmLocalAlloc (42):1fe608	
+00001503	20:07:03.953	[856] FmLocalAlloc (40):1fc438	
+00001504	20:07:03.953	[856] FmLocalAlloc (260):1fc628	
+00001505	20:07:03.953	[856] FmLocalFree (1fc628)	
+00001506	20:07:03.953	[856] FmLocalFree (1fc438)	
+00001507	20:07:03.953	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001508	20:07:03.953	[856] FmLocalAlloc (70):1fd300	
+00001509	20:07:03.953	[856] FmLocalAlloc (40):1fc438	
+00001510	20:07:03.953	[856] FmLocalAlloc (260):1fc628	
+00001511	20:07:03.953	[856] FmLocalFree (1fc628)	
+00001512	20:07:03.953	[856] FmLocalFree (1fc438)	
+00001513	20:07:03.953	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001514	20:07:03.953	[856] FmLocalAlloc (38):1fc438	
+00001515	20:07:03.953	[856] FmLocalAlloc (40):ee3b38	
+00001516	20:07:03.953	[856] FmLocalAlloc (260):1fc628	
+00001517	20:07:03.953	[856] FmLocalFree (1fc628)	
+00001518	20:07:03.953	[856] FmLocalFree (ee3b38)	
+00001519	20:07:03.953	[856] Создан диалог 3671412	
+00001520	20:07:03.953	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001521	20:07:03.953	[856] FmLocalAlloc (42):1e9ee0	
+00001522	20:07:03.953	[856] loadDlgItemProperties (3671412, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001523	20:07:03.953	[856] addCopyDialogThread (3671412, 384, 1)	
+00001524	20:07:03.953	[856] resumeCopyDialogThread (3671412)	
+00001525	20:07:03.953	[856] findCopyDialogNode (3671412)	
+00001526	20:07:03.953	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001527	20:07:03.968	[856] Первый вызов copyProgressRoutine() hCopyDlg:3671412 hParentDlg:1639666	
+00001528	20:07:03.968	[856] FmLocalAlloc (260):1fc628	
+00001529	20:07:03.968	[856] FmLocalAlloc (22):1334d48	
+00001530	20:07:03.968	[856] FmLocalFree (1fc628)	
+00001531	20:07:03.968	[856] Первый вызов copyProgressRoutine() hCopyDlg:3671412 hParentDlg:1639666	
+00001532	20:07:03.968	[856] FmLocalAlloc (260):1fc628	
+00001533	20:07:03.968	[856] FmLocalAlloc (22):111f570	
+00001534	20:07:03.968	[856] FmLocalFree (1fc628)	
+00001535	20:07:03.968	[856] Первый вызов copyProgressRoutine() hCopyDlg:3671412 hParentDlg:1639666	
+00001536	20:07:03.968	[856] FmLocalAlloc (260):1fc628	
+00001537	20:07:03.968	[856] FmLocalAlloc (22):111f590	
+00001538	20:07:03.968	[856] FmLocalFree (1fc628)	
+00001539	20:07:03.984	[856] Первый вызов copyProgressRoutine() hCopyDlg:3671412 hParentDlg:1639666	
+00001540	20:07:03.984	[856] FmLocalAlloc (260):1fc628	
+00001541	20:07:03.984	[856] FmLocalAlloc (22):1338de0	
+00001542	20:07:03.984	[856] FmLocalFree (1fc628)	
+00001543	20:07:03.984	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001544	20:07:03.984	[856] addFileToListView (1639666, ., ...)	
+00001545	20:07:03.984	[856] addFileToListView (1639666, .., ...)	
+00001546	20:07:03.984	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001547	20:07:03.984	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001548	20:07:03.984	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001549	20:07:03.984	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001550	20:07:03.984	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001551	20:07:03.984	[856] onCopyDialogFinished (3671412, 0, 3877472)	
+00001552	20:07:03.984	[856] saveDlgItemProperties(3671412, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001553	20:07:03.984	[856] CopyFileData::free()	
+00001554	20:07:03.984	[856] FmLocalFree (24f968)	
+00001555	20:07:03.984	[856] FmLocalFree (1fe608)	
+00001556	20:07:03.984	[856] FmLocalFree (1fd300)	
+00001557	20:07:03.984	[856] FmLocalFree (1fc438)	
+00001558	20:07:03.984	[856] FmLocalFree (1e9ee0)	
+00001559	20:07:03.984	[856] FmLocalFree (1ff5a0)	
+00001560	20:07:07.421	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001561	20:07:07.421	[856] FmLocalAlloc (260):1ff5a0	
+00001562	20:07:07.421	[856] FmLocalAlloc (40):1fc438	
+00001563	20:07:07.421	[856] FmLocalAlloc (260):1fc628	
+00001564	20:07:07.421	[856] FmLocalFree (1fc628)	
+00001565	20:07:07.421	[856] FmLocalFree (1fc438)	
+00001566	20:07:07.421	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001567	20:07:07.421	[856] FmLocalAlloc (38):1fc438	
+00001568	20:07:07.421	[856] FmLocalAlloc (40):24f968	
+00001569	20:07:07.421	[856] FmLocalAlloc (260):1fc628	
+00001570	20:07:07.421	[856] FmLocalFree (1fc628)	
+00001571	20:07:07.421	[856] FmLocalFree (24f968)	
+00001572	20:07:07.421	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001573	20:07:07.421	[856] FmLocalAlloc (42):1e9ee0	
+00001574	20:07:07.421	[856] FmLocalAlloc (40):24f968	
+00001575	20:07:07.421	[856] FmLocalAlloc (260):1fc628	
+00001576	20:07:07.421	[856] FmLocalFree (1fc628)	
+00001577	20:07:07.421	[856] FmLocalFree (24f968)	
+00001578	20:07:07.421	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001579	20:07:07.421	[856] FmLocalAlloc (70):1fd300	
+00001580	20:07:07.421	[856] FmLocalAlloc (40):24f968	
+00001581	20:07:07.421	[856] FmLocalAlloc (260):1fc628	
+00001582	20:07:07.421	[856] FmLocalFree (1fc628)	
+00001583	20:07:07.421	[856] FmLocalFree (24f968)	
+00001584	20:07:07.421	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001585	20:07:07.421	[856] FmLocalAlloc (38):24f968	
+00001586	20:07:07.421	[856] FmLocalAlloc (40):ee3b38	
+00001587	20:07:07.421	[856] FmLocalAlloc (260):1fc628	
+00001588	20:07:07.421	[856] FmLocalFree (1fc628)	
+00001589	20:07:07.421	[856] FmLocalFree (ee3b38)	
+00001590	20:07:07.421	[856] Создан диалог 3736948	
+00001591	20:07:07.421	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001592	20:07:07.421	[856] FmLocalAlloc (42):1fe608	
+00001593	20:07:07.421	[856] loadDlgItemProperties (3736948, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001594	20:07:07.421	[856] addCopyDialogThread (3736948, 400, 1)	
+00001595	20:07:07.421	[856] resumeCopyDialogThread (3736948)	
+00001596	20:07:07.421	[856] findCopyDialogNode (3736948)	
+00001597	20:07:07.421	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001598	20:07:07.437	[856] Первый вызов copyProgressRoutine() hCopyDlg:3736948 hParentDlg:1639666	
+00001599	20:07:07.437	[856] FmLocalAlloc (260):1fc628	
+00001600	20:07:07.437	[856] FmLocalAlloc (22):1338e00	
+00001601	20:07:07.437	[856] FmLocalFree (1fc628)	
+00001602	20:07:07.437	[856] Первый вызов copyProgressRoutine() hCopyDlg:3736948 hParentDlg:1639666	
+00001603	20:07:07.437	[856] FmLocalAlloc (260):1fc628	
+00001604	20:07:07.437	[856] FmLocalAlloc (22):111f600	
+00001605	20:07:07.437	[856] FmLocalFree (1fc628)	
+00001606	20:07:07.437	[856] Первый вызов copyProgressRoutine() hCopyDlg:3736948 hParentDlg:1639666	
+00001607	20:07:07.437	[856] FmLocalAlloc (260):1fc628	
+00001608	20:07:07.437	[856] FmLocalAlloc (22):111f620	
+00001609	20:07:07.437	[856] FmLocalFree (1fc628)	
+00001610	20:07:07.437	[856] Первый вызов copyProgressRoutine() hCopyDlg:3736948 hParentDlg:1639666	
+00001611	20:07:07.437	[856] FmLocalAlloc (260):1fc628	
+00001612	20:07:07.437	[856] FmLocalAlloc (22):f20470	
+00001613	20:07:07.437	[856] FmLocalFree (1fc628)	
+00001614	20:07:07.437	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001615	20:07:07.437	[856] addFileToListView (1639666, ., ...)	
+00001616	20:07:07.437	[856] addFileToListView (1639666, .., ...)	
+00001617	20:07:07.437	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001618	20:07:07.437	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001619	20:07:07.437	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001620	20:07:07.453	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001621	20:07:07.453	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001622	20:07:07.453	[856] onCopyDialogFinished (3736948, 0, 3877472)	
+00001623	20:07:07.453	[856] saveDlgItemProperties(3736948, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001624	20:07:07.453	[856] CopyFileData::free()	
+00001625	20:07:07.453	[856] FmLocalFree (1fc438)	
+00001626	20:07:07.453	[856] FmLocalFree (1e9ee0)	
+00001627	20:07:07.453	[856] FmLocalFree (1fd300)	
+00001628	20:07:07.453	[856] FmLocalFree (24f968)	
+00001629	20:07:07.453	[856] FmLocalFree (1fe608)	
+00001630	20:07:07.453	[856] FmLocalFree (1ff5a0)	
+00001631	20:07:12.531	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001632	20:07:12.531	[856] FmLocalAlloc (260):1ff5a0	
+00001633	20:07:12.531	[856] FmLocalAlloc (40):24f968	
+00001634	20:07:12.531	[856] FmLocalAlloc (260):1fc628	
+00001635	20:07:12.531	[856] FmLocalFree (1fc628)	
+00001636	20:07:12.531	[856] FmLocalFree (24f968)	
+00001637	20:07:12.531	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001638	20:07:12.531	[856] FmLocalAlloc (38):24f968	
+00001639	20:07:12.531	[856] FmLocalAlloc (40):1fc438	
+00001640	20:07:12.531	[856] FmLocalAlloc (260):1fc628	
+00001641	20:07:12.531	[856] FmLocalFree (1fc628)	
+00001642	20:07:12.531	[856] FmLocalFree (1fc438)	
+00001643	20:07:12.531	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001644	20:07:12.531	[856] FmLocalAlloc (42):1fe608	
+00001645	20:07:12.531	[856] FmLocalAlloc (40):1fc438	
+00001646	20:07:12.531	[856] FmLocalAlloc (260):1fc628	
+00001647	20:07:12.531	[856] FmLocalFree (1fc628)	
+00001648	20:07:12.531	[856] FmLocalFree (1fc438)	
+00001649	20:07:12.531	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001650	20:07:12.531	[856] FmLocalAlloc (70):1fd300	
+00001651	20:07:12.531	[856] FmLocalAlloc (40):1fc438	
+00001652	20:07:12.531	[856] FmLocalAlloc (260):1fc628	
+00001653	20:07:12.531	[856] FmLocalFree (1fc628)	
+00001654	20:07:12.531	[856] FmLocalFree (1fc438)	
+00001655	20:07:12.531	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001656	20:07:12.531	[856] FmLocalAlloc (38):1fc438	
+00001657	20:07:12.531	[856] FmLocalAlloc (40):ee3b38	
+00001658	20:07:12.531	[856] FmLocalAlloc (260):1fc628	
+00001659	20:07:12.531	[856] FmLocalFree (1fc628)	
+00001660	20:07:12.531	[856] FmLocalFree (ee3b38)	
+00001661	20:07:12.531	[856] Создан диалог 3802484	
+00001662	20:07:12.531	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001663	20:07:12.531	[856] FmLocalAlloc (42):1e9ee0	
+00001664	20:07:12.531	[856] loadDlgItemProperties (3802484, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001665	20:07:12.546	[856] addCopyDialogThread (3802484, 404, 1)	
+00001666	20:07:12.546	[856] resumeCopyDialogThread (3802484)	
+00001667	20:07:12.546	[856] findCopyDialogNode (3802484)	
+00001668	20:07:12.546	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001669	20:07:12.546	[856] Первый вызов copyProgressRoutine() hCopyDlg:3802484 hParentDlg:1639666	
+00001670	20:07:12.546	[856] FmLocalAlloc (260):1fc628	
+00001671	20:07:12.546	[856] FmLocalAlloc (22):f20490	
+00001672	20:07:12.546	[856] FmLocalFree (1fc628)	
+00001673	20:07:12.546	[856] Первый вызов copyProgressRoutine() hCopyDlg:3802484 hParentDlg:1639666	
+00001674	20:07:12.546	[856] FmLocalAlloc (260):1fc628	
+00001675	20:07:12.546	[856] FmLocalAlloc (22):144c6d0	
+00001676	20:07:12.546	[856] FmLocalFree (1fc628)	
+00001677	20:07:12.546	[856] Первый вызов copyProgressRoutine() hCopyDlg:3802484 hParentDlg:1639666	
+00001678	20:07:12.546	[856] FmLocalAlloc (260):1fc628	
+00001679	20:07:12.546	[856] FmLocalAlloc (22):1450710	
+00001680	20:07:12.546	[856] FmLocalFree (1fc628)	
+00001681	20:07:12.546	[856] Первый вызов copyProgressRoutine() hCopyDlg:3802484 hParentDlg:1639666	
+00001682	20:07:12.562	[856] FmLocalAlloc (260):1fc628	
+00001683	20:07:12.562	[856] FmLocalAlloc (22):111f5b0	
+00001684	20:07:12.562	[856] FmLocalFree (1fc628)	
+00001685	20:07:12.562	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001686	20:07:12.562	[856] addFileToListView (1639666, ., ...)	
+00001687	20:07:12.562	[856] addFileToListView (1639666, .., ...)	
+00001688	20:07:12.562	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001689	20:07:12.562	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001690	20:07:12.562	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001691	20:07:12.562	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001692	20:07:12.562	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001693	20:07:12.562	[856] onCopyDialogFinished (3802484, 0, 3877472)	
+00001694	20:07:12.562	[856] saveDlgItemProperties(3802484, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001695	20:07:12.562	[856] CopyFileData::free()	
+00001696	20:07:12.562	[856] FmLocalFree (24f968)	
+00001697	20:07:12.562	[856] FmLocalFree (1fe608)	
+00001698	20:07:12.562	[856] FmLocalFree (1fd300)	
+00001699	20:07:12.562	[856] FmLocalFree (1fc438)	
+00001700	20:07:12.562	[856] FmLocalFree (1e9ee0)	
+00001701	20:07:12.562	[856] FmLocalFree (1ff5a0)	
+00001702	20:07:13.109	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001703	20:07:13.109	[856] FmLocalAlloc (260):1ff5a0	
+00001704	20:07:13.109	[856] FmLocalAlloc (40):1fc438	
+00001705	20:07:13.109	[856] FmLocalAlloc (260):1fc628	
+00001706	20:07:13.109	[856] FmLocalFree (1fc628)	
+00001707	20:07:13.109	[856] FmLocalFree (1fc438)	
+00001708	20:07:13.109	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001709	20:07:13.109	[856] FmLocalAlloc (38):1fc438	
+00001710	20:07:13.109	[856] FmLocalAlloc (40):24f968	
+00001711	20:07:13.109	[856] FmLocalAlloc (260):1fc628	
+00001712	20:07:13.109	[856] FmLocalFree (1fc628)	
+00001713	20:07:13.109	[856] FmLocalFree (24f968)	
+00001714	20:07:13.109	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001715	20:07:13.109	[856] FmLocalAlloc (42):1e9ee0	
+00001716	20:07:13.109	[856] FmLocalAlloc (40):24f968	
+00001717	20:07:13.109	[856] FmLocalAlloc (260):1fc628	
+00001718	20:07:13.109	[856] FmLocalFree (1fc628)	
+00001719	20:07:13.109	[856] FmLocalFree (24f968)	
+00001720	20:07:13.109	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001721	20:07:13.109	[856] FmLocalAlloc (70):1fd300	
+00001722	20:07:13.109	[856] FmLocalAlloc (40):24f968	
+00001723	20:07:13.109	[856] FmLocalAlloc (260):1fc628	
+00001724	20:07:13.109	[856] FmLocalFree (1fc628)	
+00001725	20:07:13.109	[856] FmLocalFree (24f968)	
+00001726	20:07:13.109	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001727	20:07:13.109	[856] FmLocalAlloc (38):24f968	
+00001728	20:07:13.109	[856] FmLocalAlloc (40):ee3b38	
+00001729	20:07:13.109	[856] FmLocalAlloc (260):1fc628	
+00001730	20:07:13.109	[856] FmLocalFree (1fc628)	
+00001731	20:07:13.109	[856] FmLocalFree (ee3b38)	
+00001732	20:07:13.109	[856] Создан диалог 3868020	
+00001733	20:07:13.109	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001734	20:07:13.109	[856] FmLocalAlloc (42):1fe608	
+00001735	20:07:13.109	[856] loadDlgItemProperties (3868020, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001736	20:07:13.109	[856] addCopyDialogThread (3868020, 408, 1)	
+00001737	20:07:13.109	[856] resumeCopyDialogThread (3868020)	
+00001738	20:07:13.109	[856] findCopyDialogNode (3868020)	
+00001739	20:07:13.109	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001740	20:07:15.078	[856] FmLocalAlloc (260):1fc628	
+00001741	20:07:15.078	[856] FmLocalAlloc (22):111f5d0	
+00001742	20:07:15.078	[856] FmLocalFree (1fc628)	
+00001743	20:07:15.562	[856] FmLocalAlloc (260):1fc628	
+00001744	20:07:15.562	[856] FmLocalAlloc (22):111f690	
+00001745	20:07:15.562	[856] FmLocalFree (1fc628)	
+00001746	20:07:15.828	[856] FmLocalAlloc (260):1fc628	
+00001747	20:07:15.828	[856] FmLocalAlloc (22):111f6b0	
+00001748	20:07:15.828	[856] FmLocalFree (1fc628)	
+00001749	20:07:16.046	[856] FmLocalAlloc (260):1fc628	
+00001750	20:07:16.046	[856] FmLocalAlloc (22):1450730	
+00001751	20:07:16.046	[856] FmLocalFree (1fc628)	
+00001752	20:07:16.046	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001753	20:07:16.046	[856] addFileToListView (1639666, ., ...)	
+00001754	20:07:16.046	[856] addFileToListView (1639666, .., ...)	
+00001755	20:07:16.046	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001756	20:07:16.046	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001757	20:07:16.046	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001758	20:07:16.062	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001759	20:07:16.062	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001760	20:07:16.062	[856] onCopyDialogFinished (3868020, 0, 3877472)	
+00001761	20:07:16.062	[856] saveDlgItemProperties(3868020, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001762	20:07:16.062	[856] CopyFileData::free()	
+00001763	20:07:16.062	[856] FmLocalFree (1fc438)	
+00001764	20:07:16.062	[856] FmLocalFree (1e9ee0)	
+00001765	20:07:16.062	[856] FmLocalFree (1fd300)	
+00001766	20:07:16.062	[856] FmLocalFree (24f968)	
+00001767	20:07:16.062	[856] FmLocalFree (1fe608)	
+00001768	20:07:16.062	[856] FmLocalFree (1ff5a0)	
+00001769	20:07:17.578	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001770	20:07:17.578	[856] FmLocalAlloc (260):1ff5a0	
+00001771	20:07:17.578	[856] FmLocalAlloc (40):24f968	
+00001772	20:07:17.578	[856] FmLocalAlloc (260):1fc628	
+00001773	20:07:17.578	[856] FmLocalFree (1fc628)	
+00001774	20:07:17.578	[856] FmLocalFree (24f968)	
+00001775	20:07:17.578	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001776	20:07:17.578	[856] FmLocalAlloc (38):24f968	
+00001777	20:07:17.578	[856] FmLocalAlloc (40):1fc438	
+00001778	20:07:17.578	[856] FmLocalAlloc (260):1fc628	
+00001779	20:07:17.578	[856] FmLocalFree (1fc628)	
+00001780	20:07:17.578	[856] FmLocalFree (1fc438)	
+00001781	20:07:17.578	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001782	20:07:17.578	[856] FmLocalAlloc (42):1fe608	
+00001783	20:07:17.578	[856] FmLocalAlloc (40):1fc438	
+00001784	20:07:17.578	[856] FmLocalAlloc (260):1fc628	
+00001785	20:07:17.578	[856] FmLocalFree (1fc628)	
+00001786	20:07:17.578	[856] FmLocalFree (1fc438)	
+00001787	20:07:17.578	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001788	20:07:17.578	[856] FmLocalAlloc (70):1fd300	
+00001789	20:07:17.578	[856] FmLocalAlloc (40):1fc438	
+00001790	20:07:17.578	[856] FmLocalAlloc (260):1fc628	
+00001791	20:07:17.578	[856] FmLocalFree (1fc628)	
+00001792	20:07:17.578	[856] FmLocalFree (1fc438)	
+00001793	20:07:17.578	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001794	20:07:17.578	[856] FmLocalAlloc (38):1fc438	
+00001795	20:07:17.578	[856] FmLocalAlloc (40):ee3b38	
+00001796	20:07:17.578	[856] FmLocalAlloc (260):1fc628	
+00001797	20:07:17.578	[856] FmLocalFree (1fc628)	
+00001798	20:07:17.578	[856] FmLocalFree (ee3b38)	
+00001799	20:07:17.578	[856] Создан диалог 3933556	
+00001800	20:07:17.578	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001801	20:07:17.578	[856] FmLocalAlloc (42):1e9ee0	
+00001802	20:07:17.578	[856] loadDlgItemProperties (3933556, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001803	20:07:17.593	[856] addCopyDialogThread (3933556, 412, 1)	
+00001804	20:07:17.593	[856] resumeCopyDialogThread (3933556)	
+00001805	20:07:17.593	[856] findCopyDialogNode (3933556)	
+00001806	20:07:17.593	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001807	20:07:17.593	[856] Первый вызов copyProgressRoutine() hCopyDlg:3933556 hParentDlg:1639666	
+00001808	20:07:17.593	[856] FmLocalAlloc (260):1fc628	
+00001809	20:07:17.593	[856] FmLocalAlloc (22):1450750	
+00001810	20:07:17.593	[856] FmLocalFree (1fc628)	
+00001811	20:07:17.593	[856] Первый вызов copyProgressRoutine() hCopyDlg:3933556 hParentDlg:1639666	
+00001812	20:07:17.593	[856] FmLocalAlloc (260):1fc628	
+00001813	20:07:17.593	[856] FmLocalAlloc (22):14d8c60	
+00001814	20:07:17.593	[856] FmLocalFree (1fc628)	
+00001815	20:07:17.593	[856] Первый вызов copyProgressRoutine() hCopyDlg:3933556 hParentDlg:1639666	
+00001816	20:07:17.593	[856] FmLocalAlloc (260):1fc628	
+00001817	20:07:17.593	[856] FmLocalAlloc (22):14dac90	
+00001818	20:07:17.609	[856] FmLocalFree (1fc628)	
+00001819	20:07:17.609	[856] Первый вызов copyProgressRoutine() hCopyDlg:3933556 hParentDlg:1639666	
+00001820	20:07:17.609	[856] FmLocalAlloc (260):1fc628	
+00001821	20:07:17.609	[856] FmLocalAlloc (22):111f640	
+00001822	20:07:17.609	[856] FmLocalFree (1fc628)	
+00001823	20:07:17.609	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001824	20:07:17.609	[856] addFileToListView (1639666, ., ...)	
+00001825	20:07:17.609	[856] addFileToListView (1639666, .., ...)	
+00001826	20:07:17.609	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001827	20:07:17.609	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001828	20:07:17.609	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001829	20:07:17.609	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001830	20:07:17.609	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001831	20:07:17.609	[856] onCopyDialogFinished (3933556, 0, 3877472)	
+00001832	20:07:17.609	[856] saveDlgItemProperties(3933556, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001833	20:07:17.609	[856] CopyFileData::free()	
+00001834	20:07:17.609	[856] FmLocalFree (24f968)	
+00001835	20:07:17.609	[856] FmLocalFree (1fe608)	
+00001836	20:07:17.609	[856] FmLocalFree (1fd300)	
+00001837	20:07:17.609	[856] FmLocalFree (1fc438)	
+00001838	20:07:17.609	[856] FmLocalFree (1e9ee0)	
+00001839	20:07:17.609	[856] FmLocalFree (1ff5a0)	
+00001840	20:07:18.015	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001841	20:07:18.015	[856] FmLocalAlloc (260):1ff5a0	
+00001842	20:07:18.015	[856] FmLocalAlloc (40):1fc438	
+00001843	20:07:18.015	[856] FmLocalAlloc (260):1fc628	
+00001844	20:07:18.015	[856] FmLocalFree (1fc628)	
+00001845	20:07:18.015	[856] FmLocalFree (1fc438)	
+00001846	20:07:18.015	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001847	20:07:18.015	[856] FmLocalAlloc (38):1fc438	
+00001848	20:07:18.015	[856] FmLocalAlloc (40):24f968	
+00001849	20:07:18.015	[856] FmLocalAlloc (260):1fc628	
+00001850	20:07:18.015	[856] FmLocalFree (1fc628)	
+00001851	20:07:18.015	[856] FmLocalFree (24f968)	
+00001852	20:07:18.015	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001853	20:07:18.015	[856] FmLocalAlloc (42):1e9ee0	
+00001854	20:07:18.015	[856] FmLocalAlloc (40):24f968	
+00001855	20:07:18.015	[856] FmLocalAlloc (260):1fc628	
+00001856	20:07:18.015	[856] FmLocalFree (1fc628)	
+00001857	20:07:18.015	[856] FmLocalFree (24f968)	
+00001858	20:07:18.015	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001859	20:07:18.015	[856] FmLocalAlloc (70):1fd300	
+00001860	20:07:18.015	[856] FmLocalAlloc (40):24f968	
+00001861	20:07:18.015	[856] FmLocalAlloc (260):1fc628	
+00001862	20:07:18.015	[856] FmLocalFree (1fc628)	
+00001863	20:07:18.015	[856] FmLocalFree (24f968)	
+00001864	20:07:18.015	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001865	20:07:18.015	[856] FmLocalAlloc (38):24f968	
+00001866	20:07:18.015	[856] FmLocalAlloc (40):ee3b38	
+00001867	20:07:18.015	[856] FmLocalAlloc (260):1fc628	
+00001868	20:07:18.015	[856] FmLocalFree (1fc628)	
+00001869	20:07:18.031	[856] FmLocalFree (ee3b38)	
+00001870	20:07:18.031	[856] Создан диалог 3999092	
+00001871	20:07:18.031	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001872	20:07:18.031	[856] FmLocalAlloc (42):1fe608	
+00001873	20:07:18.031	[856] loadDlgItemProperties (3999092, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001874	20:07:18.031	[856] addCopyDialogThread (3999092, 392, 1)	
+00001875	20:07:18.031	[856] resumeCopyDialogThread (3999092)	
+00001876	20:07:18.031	[856] findCopyDialogNode (3999092)	
+00001877	20:07:18.031	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001878	20:07:19.109	[856] FmLocalAlloc (260):1fc628	
+00001879	20:07:19.125	[856] FmLocalAlloc (22):111f660	
+00001880	20:07:19.125	[856] FmLocalFree (1fc628)	
+00001881	20:07:19.468	[856] FmLocalAlloc (260):1fc628	
+00001882	20:07:19.468	[856] FmLocalAlloc (22):14ded48	
+00001883	20:07:19.468	[856] FmLocalFree (1fc628)	
+00001884	20:07:19.671	[856] FmLocalAlloc (260):1fc628	
+00001885	20:07:19.671	[856] FmLocalAlloc (22):14ded68	
+00001886	20:07:19.671	[856] FmLocalFree (1fc628)	
+00001887	20:07:19.843	[856] FmLocalAlloc (260):1fc628	
+00001888	20:07:19.843	[856] FmLocalAlloc (22):14ded88	
+00001889	20:07:19.843	[856] FmLocalFree (1fc628)	
+00001890	20:07:19.843	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001891	20:07:19.843	[856] addFileToListView (1639666, ., ...)	
+00001892	20:07:19.843	[856] addFileToListView (1639666, .., ...)	
+00001893	20:07:19.843	[856] addFileToListView (1639666, 298657.pdf, ...)	
+00001894	20:07:19.843	[856] addFileToListView (1639666, 2xex1412.zip, ...)	
+00001895	20:07:19.843	[856] addFileToListView (1639666, 33359c_geodelxdb800_pb.pdf, ...)	
+00001896	20:07:19.859	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001897	20:07:19.859	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001898	20:07:19.859	[856] onCopyDialogFinished (3999092, 0, 3877472)	
+00001899	20:07:19.859	[856] saveDlgItemProperties(3999092, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001900	20:07:19.859	[856] CopyFileData::free()	
+00001901	20:07:19.859	[856] FmLocalFree (1fc438)	
+00001902	20:07:19.859	[856] FmLocalFree (1e9ee0)	
+00001903	20:07:19.859	[856] FmLocalFree (1fd300)	
+00001904	20:07:19.859	[856] FmLocalFree (24f968)	
+00001905	20:07:19.859	[856] FmLocalFree (1fe608)	
+00001906	20:07:19.859	[856] FmLocalFree (1ff5a0)	
+00001907	20:07:20.687	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001908	20:07:20.703	[856] FmLocalAlloc (260):1ff5a0	
+00001909	20:07:20.703	[856] FmLocalAlloc (40):24f968	
+00001910	20:07:20.703	[856] FmLocalAlloc (260):1fc628	
+00001911	20:07:20.703	[856] FmLocalFree (1fc628)	
+00001912	20:07:20.703	[856] FmLocalFree (24f968)	
+00001913	20:07:20.703	[856] CopyFileData :: addPathSrc (E:\temp\298657.pdf)	
+00001914	20:07:20.703	[856] FmLocalAlloc (38):24f968	
+00001915	20:07:20.703	[856] FmLocalAlloc (40):1fc438	
+00001916	20:07:20.703	[856] FmLocalAlloc (260):1fc628	
+00001917	20:07:20.703	[856] FmLocalFree (1fc628)	
+00001918	20:07:20.703	[856] FmLocalFree (1fc438)	
+00001919	20:07:20.703	[856] CopyFileData :: addPathSrc (E:\temp\2xex1412.zip)	
+00001920	20:07:20.703	[856] FmLocalAlloc (42):1fe608	
+00001921	20:07:20.703	[856] FmLocalAlloc (40):1fc438	
+00001922	20:07:20.703	[856] FmLocalAlloc (260):1fc628	
+00001923	20:07:20.703	[856] FmLocalFree (1fc628)	
+00001924	20:07:20.703	[856] FmLocalFree (1fc438)	
+00001925	20:07:20.703	[856] CopyFileData :: addPathSrc (E:\temp\33359c_geodelxdb800_pb.pdf)	
+00001926	20:07:20.703	[856] FmLocalAlloc (70):1fd300	
+00001927	20:07:20.703	[856] FmLocalAlloc (40):1fc438	
+00001928	20:07:20.703	[856] FmLocalAlloc (260):1fc628	
+00001929	20:07:20.703	[856] FmLocalFree (1fc628)	
+00001930	20:07:20.703	[856] FmLocalFree (1fc438)	
+00001931	20:07:20.703	[856] CopyFileData :: addPathSrc (E:\temp\378894.pdf)	
+00001932	20:07:20.703	[856] FmLocalAlloc (38):1fc438	
+00001933	20:07:20.703	[856] FmLocalAlloc (40):ee3b38	
+00001934	20:07:20.703	[856] FmLocalAlloc (260):1fc628	
+00001935	20:07:20.703	[856] FmLocalFree (1fc628)	
+00001936	20:07:20.703	[856] FmLocalFree (ee3b38)	
+00001937	20:07:20.703	[856] Создан диалог 4064628	
+00001938	20:07:20.703	[856] CopyFileData :: setPathDst (E:\temp\1\298657.pdf)	
+00001939	20:07:20.703	[856] FmLocalAlloc (42):1e9ee0	
+00001940	20:07:20.703	[856] loadDlgItemProperties (4064628, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001941	20:07:20.703	[856] addCopyDialogThread (4064628, 420, 1)	
+00001942	20:07:20.703	[856] resumeCopyDialogThread (4064628)	
+00001943	20:07:20.703	[856] findCopyDialogNode (4064628)	
+00001944	20:07:20.703	[856] copyFileWorker() 4 файлов в E:\temp\1\298657.pdf 	
+00001945	20:07:21.500	[856] FmLocalAlloc (260):1fc628	
+00001946	20:07:21.500	[856] FmLocalAlloc (22):14dacb0	
+00001947	20:07:21.500	[856] FmLocalFree (1fc628)	
+00001948	20:07:21.843	[856] FmLocalAlloc (260):1fc628	
+00001949	20:07:21.843	[856] FmLocalAlloc (22):14dacd0	
+00001950	20:07:21.843	[856] FmLocalFree (1fc628)	
+00001951	20:07:22.046	[856] FmLocalAlloc (260):1fc628	
+00001952	20:07:22.046	[856] FmLocalAlloc (22):111f720	
+00001953	20:07:22.046	[856] FmLocalFree (1fc628)	
+00001954	20:07:22.046	[856] Первый вызов copyProgressRoutine() hCopyDlg:4064628 hParentDlg:1639666	
+00001955	20:07:22.046	[856] FmLocalAlloc (260):1fc628	
+00001956	20:07:22.046	[856] FmLocalAlloc (22):14989e8	
+00001957	20:07:22.046	[856] FmLocalFree (1fc628)	
+00001958	20:07:22.046	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00001959	20:07:22.046	[856] addFileToListView (1639666, ., ...)	
+00001960	20:07:22.046	[856] addFileToListView (1639666, .., ...)	
+00001961	20:07:22.046	[856] addFileToListView (1639666, 378894.pdf, ...)	
+00001962	20:07:22.046	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00001963	20:07:22.046	[856] onCopyDialogFinished (4064628, 0, 3877472)	
+00001964	20:07:22.046	[856] saveDlgItemProperties(4064628, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00001965	20:07:22.046	[856] CopyFileData::free()	
+00001966	20:07:22.046	[856] FmLocalFree (24f968)	
+00001967	20:07:22.046	[856] FmLocalFree (1fe608)	
+00001968	20:07:22.046	[856] FmLocalFree (1fd300)	
+00001969	20:07:22.046	[856] FmLocalFree (1fc438)	
+00001970	20:07:22.046	[856] FmLocalFree (1e9ee0)	
+00001971	20:07:22.078	[856] FmLocalFree (1ff5a0)	
+00001972	20:07:22.859	[856] copySelected (1639666, 1010, 1003, 1009, 1002)	
+00001973	20:07:22.859	[856] FmLocalAlloc (260):1ff5a0	
+00001974	20:07:22.859	[856] CopyFileData::free()	
+00001975	20:07:22.859	[856] FmLocalFree (cdcdcdcd)	
+00001976	20:07:22.859	[856] FmLocalFree (1ff5a0)	
+00001977	20:07:25.906	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001978	20:07:25.906	[856] FmLocalAlloc (260):1ff5a0	
+00001979	20:07:25.906	[856] FmLocalAlloc (40):1fc438	
+00001980	20:07:25.906	[856] FmLocalAlloc (260):1fc628	
+00001981	20:07:25.906	[856] FmLocalFree (1fc628)	
+00001982	20:07:25.906	[856] FmLocalFree (1fc438)	
+00001983	20:07:25.906	[856] CopyFileData :: addPathSrc (E:\temp\accelman35.msi)	
+00001984	20:07:25.906	[856] FmLocalAlloc (46):1fe608	
+00001985	20:07:25.906	[856] FmLocalAlloc (40):1fc438	
+00001986	20:07:25.906	[856] FmLocalAlloc (260):1fc628	
+00001987	20:07:25.906	[856] FmLocalFree (1fc628)	
+00001988	20:07:25.906	[856] FmLocalFree (1fc438)	
+00001989	20:07:25.906	[856] Ошибка 8 при вызове CreateDialogParam(...)	
+00001990	20:07:25.906	[856] CopyFileData::free()	
+00001991	20:07:25.906	[856] FmLocalFree (1fe608)	
+00001992	20:07:25.906	[856] FmLocalFree (cdcdcdcd)	
+00001993	20:07:25.906	[856] FmLocalFree (1ff5a0)	
+00001994	20:07:27.156	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00001995	20:07:27.156	[856] FmLocalAlloc (260):1ff5a0	
+00001996	20:07:27.156	[856] FmLocalAlloc (40):1fc438	
+00001997	20:07:27.156	[856] FmLocalAlloc (260):1fc628	
+00001998	20:07:27.156	[856] FmLocalFree (1fc628)	
+00001999	20:07:27.156	[856] FmLocalFree (1fc438)	
+00002000	20:07:27.156	[856] CopyFileData :: addPathSrc (E:\temp\AD7170A_GN_105_080415.ZIP)	
+00002001	20:07:27.156	[856] FmLocalAlloc (68):1fd300	
+00002002	20:07:27.156	[856] FmLocalAlloc (40):1fc438	
+00002003	20:07:27.156	[856] FmLocalAlloc (260):1fc628	
+00002004	20:07:27.156	[856] FmLocalFree (1fc628)	
+00002005	20:07:27.156	[856] FmLocalFree (1fc438)	
+00002006	20:07:27.156	[856] Создан диалог 4195700	
+00002007	20:07:27.156	[856] CopyFileData :: setPathDst (E:\temp\1\AD7170A_GN_105_080415.ZIP)	
+00002008	20:07:27.156	[856] FmLocalAlloc (72):24f838	
+00002009	20:07:27.171	[856] loadDlgItemProperties (4195700, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002010	20:07:27.171	[856] addCopyDialogThread (4195700, 396, 1)	
+00002011	20:07:27.171	[856] resumeCopyDialogThread (4195700)	
+00002012	20:07:27.171	[856] findCopyDialogNode (4195700)	
+00002013	20:07:27.171	[856] copyFileWorker() 1 файлов в E:\temp\1\AD7170A_GN_105_080415.ZIP 	
+00002014	20:07:27.171	[856] Первый вызов copyProgressRoutine() hCopyDlg:4195700 hParentDlg:1639666	
+00002015	20:07:27.171	[856] FmLocalAlloc (260):1fc628	
+00002016	20:07:27.171	[856] FmLocalAlloc (22):f20bd8	
+00002017	20:07:27.171	[856] FmLocalFree (1fc628)	
+00002018	20:07:27.171	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00002019	20:07:27.171	[856] addFileToListView (1639666, ., ...)	
+00002020	20:07:27.171	[856] addFileToListView (1639666, .., ...)	
+00002021	20:07:27.171	[856] addFileToListView (1639666, AD7170A_GN_105_080415.ZIP, ...)	
+00002022	20:07:27.171	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00002023	20:07:27.171	[856] onCopyDialogFinished (4195700, 0, 3877472)	
+00002024	20:07:27.171	[856] saveDlgItemProperties(4195700, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002025	20:07:27.171	[856] CopyFileData::free()	
+00002026	20:07:27.171	[856] FmLocalFree (1fd300)	
+00002027	20:07:27.171	[856] FmLocalFree (24f838)	
+00002028	20:07:27.171	[856] FmLocalFree (1ff5a0)	
+00002029	20:07:29.218	[856] copySelected (1639666, 1009, 1002, 1010, 1003)	
+00002030	20:07:29.218	[856] FmLocalAlloc (260):1ff5a0	
+00002031	20:07:29.218	[856] FmLocalAlloc (40):1fc438	
+00002032	20:07:29.218	[856] FmLocalAlloc (260):1fc628	
+00002033	20:07:29.218	[856] FmLocalFree (1fc628)	
+00002034	20:07:29.218	[856] FmLocalFree (1fc438)	
+00002035	20:07:29.218	[856] CopyFileData :: addPathSrc (E:\temp\APISpy32.zip)	
+00002036	20:07:29.218	[856] FmLocalAlloc (42):1fe608	
+00002037	20:07:29.218	[856] FmLocalAlloc (40):1fc438	
+00002038	20:07:29.218	[856] FmLocalAlloc (260):1fc628	
+00002039	20:07:29.218	[856] FmLocalFree (1fc628)	
+00002040	20:07:29.218	[856] FmLocalFree (1fc438)	
+00002041	20:07:29.218	[856] Создан диалог 4261236	
+00002042	20:07:29.218	[856] CopyFileData :: setPathDst (E:\temp\1\APISpy32.zip)	
+00002043	20:07:29.218	[856] FmLocalAlloc (46):17f0b0	
+00002044	20:07:29.218	[856] loadDlgItemProperties (4261236, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002045	20:07:29.218	[856] addCopyDialogThread (4261236, 428, 1)	
+00002046	20:07:29.218	[856] resumeCopyDialogThread (4261236)	
+00002047	20:07:29.218	[856] findCopyDialogNode (4261236)	
+00002048	20:07:29.218	[856] copyFileWorker() 1 файлов в E:\temp\1\APISpy32.zip 	
+00002049	20:07:29.218	[856] Первый вызов copyProgressRoutine() hCopyDlg:4261236 hParentDlg:1639666	
+00002050	20:07:29.218	[856] FmLocalAlloc (260):1fc628	
+00002051	20:07:29.218	[856] FmLocalAlloc (22):1498a08	
+00002052	20:07:29.218	[856] FmLocalFree (1fc628)	
+00002053	20:07:29.218	[856] listDirectoryToPanelWorker (E:\temp\1\)	
+00002054	20:07:29.218	[856] addFileToListView (1639666, ., ...)	
+00002055	20:07:29.218	[856] addFileToListView (1639666, .., ...)	
+00002056	20:07:29.218	[856] addFileToListView (1639666, AD7170A_GN_105_080415.ZIP, ...)	
+00002057	20:07:29.218	[856] addFileToListView (1639666, APISpy32.zip, ...)	
+00002058	20:07:29.218	[856] listDirectoryToPanelWorker (E:\temp\1\) done	
+00002059	20:07:29.218	[856] onCopyDialogFinished (4261236, 0, 3877472)	
+00002060	20:07:29.234	[856] saveDlgItemProperties(4261236, 104, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002061	20:07:29.234	[856] CopyFileData::free()	
+00002062	20:07:29.234	[856] FmLocalFree (1fe608)	
+00002063	20:07:29.234	[856] FmLocalFree (17f0b0)	
+00002064	20:07:29.234	[856] FmLocalFree (1ff5a0)	
+00002065	20:13:20.953	[856] onDialogCancel(1639666, 2, 0)	
+00002066	20:13:20.953	[856] saveDlgItemProperties(1639666, 103, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002067	20:13:21.000	[856] saveDlgItemProperties(1639666, 1006, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002068	20:13:21.000	[856] saveDlgItemProperties(1639666, 1007, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002069	20:13:21.000	[856] saveDlgItemProperties(1639666, 1002, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002070	20:13:21.000	[856] saveDlgItemProperties(1639666, 1009, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002071	20:13:21.000	[856] saveDlgItemProperties(1639666, 1010, E:\My Documents\Visual Studio 2005\Projects\Fileman\debug\fileman.ini)	
+00002072	20:13:21.000	[856] Fileman завершение 998	

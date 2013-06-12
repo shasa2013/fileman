@@ -1,0 +1,281 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+//#include "windows.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "Fileman.exe.manifest"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 374, 251
+STYLE DS_ABSALIGN | DS_LOCALEDIT | DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Fileman"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_LEFTPANEL,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,26,185,207,WS_EX_ACCEPTFILES
+    CONTROL         "",IDC_RIGHTPANEL,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,189,26,181,207,WS_EX_ACCEPTFILES
+    COMBOBOX        IDC_DISK_LIST_LEFT,0,0,184,84,CBS_DROPDOWN | WS_VSCROLL
+    COMBOBOX        IDC_DISK_LIST_RIGHT,189,0,181,87,CBS_DROPDOWN | WS_VSCROLL
+    LTEXT           "Выделено 0 байт",IDC_BYTES_SELECTED_LEFT,0,233,104,8
+    LTEXT           "Выделено 0 байт",IDC_BYTES_SELECTED_RIGHT,189,234,101,8
+    LTEXT           "Свободно 0 из 0 байт",IDC_FREE_LEFT,0,14,131,10
+    LTEXT           "Свободно 0 из 0 байт",IDC_FREE_RIGHT,189,14,131,10
+END
+
+IDD_COPY_PROGRESS DIALOGEX 0, 0, 243, 74
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_APPWINDOW
+CAPTION "Копирование"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_COPY_PROGRESS_BAR,"msctls_progress32",0x1,5,38,233,14,WS_EX_STATICEDGE
+    PUSHBUTTON      "Пауза",IDC_PAUSE_TOGGLE,179,56,59,14
+    EDITTEXT        IDC_COPY_SOURCE,5,3,233,14,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_COPY_DEST,5,20,233,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_COPY_SPEED,5,56,78,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_COPY_TIME,88,56,78,14,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_NEW_FOLDER DIALOGEX 0, 0, 240, 21
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Новая папка"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Создать",IDC_NEW_FOLDER_OK,185,2,50,14
+    EDITTEXT        IDC_NEW_FOLDER_NAME,4,2,175,14,ES_AUTOHSCROLL
+END
+
+IDD_DELETE_PROGRESS DIALOGEX 0, 0, 240, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Удаление"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DEL_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,4,26,175,14
+    PUSHBUTTON      "Пауза",IDC_BUTTON1,185,26,50,14
+    EDITTEXT        IDC_CUR_DEL_FILENAME,4,5,231,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+ID_DLG_SETTINGS DIALOGEX 0, 0, 415, 268
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+CAPTION "Fileman :: Настройки"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         ID_LB_PAGE_SEL,3,2,89,262,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Здесь будет отображаться краткое описание выбранной страницы настроек",IDC_STATIC,106,2,302,31,SS_SUNKEN
+END
+
+ID_DLG_COLORS DIALOGEX 0, 0, 317, 244
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_CLIENTEDGE
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LTEXT           "TODO: layout dialog bar",IDC_STATIC,126,4,77,8
+    CONTROL         "",ID_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,62,303,155
+    PUSHBUTTON      "Выбрать ...",IDC_BUTTON1,260,17,50,14
+    PUSHBUTTON      "Выбрать ...",IDC_BUTTON2,260,40,50,14
+    PUSHBUTTON      "Добвить",IDC_BUTTON3,7,223,50,14
+    PUSHBUTTON      "Удалить",IDC_BUTTON4,67,223,50,14
+    LTEXT           "Цвет фона нечётных строк",IDC_STATIC,21,43,105,8
+    LTEXT           "Цвет фона чётных строк",IDC_STATIC,21,21,100,8
+    EDITTEXT        IDC_EDIT1,137,17,113,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,137,40,113,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "Файл"
+    BEGIN
+        MENUITEM "Сравнить",                    ID_40013
+        MENUITEM "Разделить",                   ID_40026
+        MENUITEM "Объеденить",                  ID_40027
+        MENUITEM "Создать файл ...",            ID_40028
+        MENUITEM "Создать папку ...",           ID_40030
+    END
+    POPUP "Инструменты"
+    BEGIN
+        MENUITEM "Настройка ...",               ID_M_SETTINGS
+    END
+    POPUP "Помощь"
+    BEGIN
+        MENUITEM "О программе ...",             ID_HELP_ABOUT
+    END
+END
+
+IDC_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "Fileman"
+    BEGIN
+        MENUITEM "Цвет фона ...",               FM_SELBKCOLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 370
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_COPY_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 238
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_NEW_FOLDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 235
+        BOTTOMMARGIN, 16
+    END
+
+    IDD_DELETE_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 235
+        BOTTOMMARGIN, 40
+    END
+
+    ID_DLG_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 408
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 264
+    END
+
+    ID_DLG_COLORS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+IDI_ICON3               ICON                    "icon3.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CAPTION             "Fileman"
+    IDS_SHURE_CANCEL_COPY   "Прервать копирование?"
+    IDS_COPY_PAUSE          "Пауза"
+    IDS_DRIVE_UNKNOWN       "Неизвестный тип"
+    IDS_DRIVE_NO_ROOT_DIR   "Не корневая директория"
+    IDS_DRIVE_REMOVABLE     "Съёмный диск"
+    IDS_DRIVE_FIXED         "Жёсткий диск"
+    IDS_DRIVE_REMOTE        "Сетевой диск"
+    IDS_DRIVE_CDROM         "CD-дисковод"
+    IDS_DRIVE_RAMDISK       "RAM-диск"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPY_RESUME         "Продолжить"
+    IDS_NOTHING_SELECTED    "Ничего не выбрано"
+    IDS_EXECUTE_ERR_MSG_TITLE "Fileman - Windows сообщает:"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

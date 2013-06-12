@@ -1,0 +1,1158 @@
+// Выбранная строка в панели
+LVITEM lvi;
+// 1. Установить рабочие флаги
+lvi.mask = LVIF_STATE;			// Работаем с полем LVITEM::state
+
+// 2. Получить флаги состояния нулевой строки
+lvi.iItem = 0;
+SendMessage (hPanel, LVM_GETITEM, 0, (LPARAM)&lvi);
+
+// 3. Снять флаг LVIS_SELECTED нулевой строки
+lvi.state = 0;
+lvi.stateMask = LVIS_SELECTED;
+SendMessage (hPanel, LVM_SETITEM, 0, (LPARAM)&lvi);
+
+
+---------------------------------------------------------------------------------------
+
+
+BOOL setOperationThread (HWND hDlg, UINT itemId, HANDLE hThread, BOOL isSuspended)
+{
+	TCHAR propName [32];
+	TCHAR itemStr  [32];
+	
+	_itow (itemId, itemStr, 10);
+	
+	wsprintf (propName, L"hThread %s", itemStr);
+	if (!SetProp (hDlg, propName, hThread)) return FALSE;
+	
+	wsprintf (propName, L"isSuspended %s", itemStr);
+	if (!SetProp (hDlg, propName, (HANDLE) isSuspended)) return FALSE;
+	
+	return TRUE;
+}
+
+// Удаляет дескриптор потока копирования
+// HWND hDlg - дескриптор диалога прогесса операции
+// Возвращает - TRUE если для указанного диалга, поток копирования был удалён,
+// FALSE - если для указанного диалга, нет потока копирования
+BOOL removeOperationThread (HWND hDlg, UINT itemId)
+{
+	TCHAR propName [32];
+	TCHAR itemStr [32];
+	BOOL retCode = FALSE;
+	
+	_itow (itemId, itemStr, 10);
+	
+	wsprintf (propName, L"hThread %s", itemStr);
+	HANDLE hThread = RemoveProp (hDlg, propName);
+	
+	if (hThread)
+	{
+		retCode = CloseHandle (hThread);
+	}
+
+	wsprintf (propName, L"isSuspended %s", itemStr);
+	RemoveProp (hDlg, propName);
+	
+	return retCode;
+}
+
+// Возвращает состояние диалога копирования
+// HWND hOperDlg - дескриптор диалога копирования
+BOOL isOperationThreadSuspended (HWND hDlg, UINT itemId)
+{
+	TCHAR propName [32];
+	TCHAR itemStr  [32];
+	
+	_itow (itemId, itemStr, 10);
+	
+	wsprintf (propName, L"isSuspended %s", itemStr);
+	BOOL retCode = (BOOL) GetProp (hDlg, propName);
+	
+	return retCode;
+}
+
+// Останавливает поток копирования
+// HWND hDlg - дескриптор диалога прогресса операции
+BOOL suspendOperationThread (HWND hDlg, UINT itemId)
+{
+	TCHAR propName [32];
+	TCHAR itemStr  [32];
+	BOOL retCode = FALSE;
+	
+	_itow (itemId, itemStr, 10);	
+	
+	wsprintf (propName, L"hThread %s", itemStr);
+	HANDLE hThread = GetProp (hDlg, propName);
+	
+	wsprintf (propName, L"isSuspended %s", itemStr);
+	if (hThread)
+	{
+		retCode = SuspendThread (hThread) != (DWORD) - 1;
+		retCode &= SetProp (hDlg, propName, (HANDLE) TRUE);
+	}
+	return retCode;
+}
+
+// Возобновляет поток копирования
+// HWND hDlg - дескриптор диалога прогресса операции
+BOOL resumeOperationThread (HWND hDlg, UINT itemId)
+{
+	TCHAR propName [32];
+	TCHAR itemStr  [32];
+	BOOL retCode = FALSE;
+	
+	_itow (itemId, itemStr, 10);
+	
+	wsprintf (propName, L"hThread %s", itemStr);
+	HANDLE hThread = GetProp (hDlg, propName);
+	if (hThread)
+	{
+		retCode = ResumeThread (hThread) != (DWORD) - 1;
+		
+		wsprintf (propName, L"isSuspended %s", itemStr);
+		retCode &= SetProp (hDlg, propName, (HANDLE) FALSE);
+	}
+	return retCode;
+}
+
+
+BOOL isThreadExist (HWND hDlg, UINT itemId)
+{
+	TCHAR propName [32];
+	TCHAR itemStr  [32];
+	BOOL retCode = FALSE;
+	
+	_itow (itemId, itemStr, 10);
+
+	wsprintf (propName, L"hThread %s", itemStr);
+	HANDLE hThread = GetProp (hDlg, propName);
+	
+	return hThread != NULL;
+}
+
+
+INT recurseOperation
+	(WIN32_FIND_DATA* findData, TCHAR* beginFolder, TCHAR* dstFolder,
+	LPPROGRESS_ROUTINE routine, VOID* arg, DWORD flags, DWORD operation, DWORDLONG* bytesCount)
+{
+	Progress* progr = (Progress*) arg;
+	LARGE_INTEGER stub = {0};
+	++ progr->indent;
+	if (dstFolder != NULL)
+	{
+		delSlashFromPath (dstFolder);
+		lstrcat (dstFolder, lstrrchr (beginFolder, L'\\'));
+	}
+	if (FILE_ATTRIBUTE_DIRECTORY & GetFileAttributes (beginFolder))
+	{
+		if ((operation == FM_OPERATION_COPY) || (operation == FM_OPERATION_MOVE))
+		{
+			if (!CreateDirectory (dstFolder, NULL))
+			{
+				wprintfd(L"Директория не создана: %s", dstFolder);
+				return progr->indent;
+			}
+		}
+
+		TCHAR* tchar = lstrrchr (beginFolder, L'*');
+		if (tchar == NULL) lstrcat (beginFolder, L"\\*");
+		
+		HANDLE hFile = FindFirstFile (beginFolder, findData);
+		if (hFile == INVALID_HANDLE_VALUE)
+		{
+			return progr->indent;
+		}
+		BOOL next = TRUE;
+		while (next)
+		{
+			if ((lstrcmp (findData->cFileName, L".") == 0)
+				|| (lstrcmp (findData->cFileName, L"..") == 0))
+			{
+				next = FindNextFile (hFile, findData);
+				DWORD err = GetLastError();
+				switch (err)
+				{
+					case NO_ERROR:
+					case ERROR_NO_MORE_FILES:			
+						continue;
+					default:
+						wprintfd (L"Ошибка FindNextFile (...)");
+						FindClose (hFile);
+						return progr->indent;
+				}
+			}
+			
+			addSlashToPath (beginFolder);
+			lstrcat (beginFolder, findData->cFileName);
+		
+			if (findData->dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				if ((operation == FM_OPERATION_COPY) || (operation == FM_OPERATION_MOVE))
+				{
+						addSlashToPath (dstFolder);
+						lstrcat (dstFolder, findData->cFileName);
+				}
+				recurseOperation (findData, beginFolder, dstFolder, routine, arg, flags, operation, bytesCount);
+			}
+			else
+			{
+				switch (operation)
+				{
+					case FM_OPERATION_COPY:
+					{
+						lstrcat (dstFolder, L"\\");
+						lstrcat (dstFolder, findData->cFileName);
+						BOOL result = CopyFileEx (beginFolder, dstFolder, routine, arg, FALSE, flags);
+						wprintfd (L"Копирую файл из %s\nв %s", beginFolder, dstFolder);
+						if (!result)
+						{
+							wprintfd(L"Файл не скопирован: %s", beginFolder);
+						}
+						cutPath (dstFolder);
+					}
+					break;
+					case FM_OPERATION_DELETE:
+					{
+						BOOL result = DeleteFile (beginFolder);
+						wprintfd (L"Удаляю файл: %s", beginFolder);
+						routine (stub, stub, stub, stub, 0, progr->updateRate, 0, (HANDLE)progr->hDlg, beginFolder);
+						if (!result)
+						{
+							wprintfd(L"Файл не удалён: %s", beginFolder);
+						}
+						break;
+					}
+					case FM_OPERATION_MOVE:
+					{
+						lstrcat (dstFolder, L"\\");
+						lstrcat (dstFolder, findData->cFileName);
+						BOOL result = MoveFileEx (beginFolder, dstFolder, flags);
+						wprintfd (L"Перемещаю файл: %s в %s", beginFolder, dstFolder);
+						if (!result)
+						{
+							wprintfd (L"Файл не перемещён: %s", beginFolder);
+						}
+						cutPath (dstFolder);
+						break;
+					}
+					case FM_OPERATION_COUNT:
+					{
+						*bytesCount += (DWORDLONG(findData->nFileSizeHigh) << 32) | findData->nFileSizeLow;
+						SendMessage (progr->hDlg, FM_COUNT_PROGRESS, progr->itemId, (LPARAM)bytesCount);
+						break;
+					}
+				}
+				cutPath (beginFolder);
+			}
+			next = FindNextFile (hFile, findData);
+			DWORD err = GetLastError();
+			switch (err)
+			{
+				case NO_ERROR:
+				case ERROR_NO_MORE_FILES:			
+					continue;
+				default:
+					wprintfd (L"Ошибка FindNextFile (...)");
+					FindClose (hFile);
+					return progr->indent;
+			}
+		}
+		FindClose (hFile);
+		if (operation == FM_OPERATION_DELETE)
+		{
+			lcutrchr (beginFolder, L'*');
+			BOOL result = RemoveDirectory (beginFolder);
+			wprintfd (L"Удаляю папку: %s", beginFolder);
+			if (!result)
+			{
+				wprintfd (L"Папка не удалена: %s", beginFolder);
+			}
+		}
+		else
+		{
+			cutPath (dstFolder);
+		}
+		cutPath (beginFolder);
+		
+	}
+	else 
+	{
+		switch (operation)
+		{
+			case FM_OPERATION_COPY:
+			{
+				BOOL result = CopyFileEx (beginFolder, dstFolder, routine, arg, FALSE, flags);
+				wprintfd (L"Копирую файл из %s в %s", beginFolder, dstFolder);
+				if (!result)
+				{
+					wprintfd (L"Файл не скопирован: %s", beginFolder);
+				}
+			}
+			break;
+			case FM_OPERATION_DELETE:
+			{
+				BOOL result = DeleteFile (beginFolder);
+				wprintfd (L"Удаляю файл: %s", beginFolder);
+				if (!result)
+				{	
+					wprintfd (L"Файл не удалён: %s", beginFolder);
+				}
+				routine (stub, stub, stub, stub, 0, progr->updateRate, 0, progr->hDlg, beginFolder);
+			}
+			break;
+			case FM_OPERATION_MOVE:
+			{
+				MoveFileEx (beginFolder, dstFolder, flags);
+				wprintfd (L"Перемещаю файл: %s в %s", beginFolder, dstFolder);
+			}
+			break;
+			case FM_OPERATION_COUNT:
+			{
+				HANDLE hFile = CreateFile (beginFolder, 0, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+				GetFileSizeEx (hFile, (PLARGE_INTEGER) bytesCount);
+				SendMessage (progr->hDlg, FM_COUNT_PROGRESS, progr->itemId, (LPARAM)bytesCount);
+				CloseHandle (hFile);
+			}
+			break;
+		}
+	}
+	return  -- progr->indent;
+}
+
+
+______________________________________________________________________________________________________
+
+void fillDiskList(HWND hDlg, UINT itemId)
+{
+	TCHAR volStr[MAX_PATH];
+	TCHAR fsnStr[MAX_PATH];
+	TCHAR rootPath[MAX_PATH];
+	
+	DWORD serNum;
+	DWORD maxLen;
+	DWORD flags;
+	
+	static const TCHAR* discNames [] = 
+	{	L"A:\\", L"B:\\", L"C:\\", L"D:\\",	L"E:\\", L"F:\\", L"G:\\", L"H:\\",	L"I:\\",
+		L"J:\\", L"K:\\", L"L:\\", L"M:\\",	L"N:\\", L"O:\\", L"P:\\", L"Q:\\",	L"R:\\",
+		L"S:\\", L"T:\\", L"U:\\", L"V:\\", L"W:\\", L"X:\\", L"Y:\\", L"Z:\\" };
+
+	for (int discSerNum = 0; discSerNum < 26; discSerNum ++)
+	{
+		BOOL result = GetVolumeInformation (discNames[discSerNum], volStr, sizeof(volStr), &serNum, &maxLen, &flags, fsnStr, sizeof(fsnStr));
+		if (result)
+		{
+			wsprintf (rootPath, L"%s (%s, %s)", discNames[discSerNum], volStr, fsnStr);
+			SendDlgItemMessage(hDlg, itemId, CB_ADDSTRING, 0, (LPARAM)rootPath);
+		}
+	}
+}
+------------------------------------------------------------------------------------------------------------
+UINT result = GetPrivateProfileInt(L"PanelLeft", L"IDC_DISK_LIST_RIGHT", 0, L"fileman.ini");
+	result = WritePrivateProfileString(L"PanelLeft", L"IDC_DISK_LIST_RIGHT", L"99", L"fileman.ini");
+	result = GetLastError();
+-------------------------------------------------------------------------------------------------------------
+
+wsprintf (itemName, L"%u", GetDlgCtrlID(hDlg));
+wsprintf (propName, L"flags");
+wsprintf (propValue, L"%u", lpwndpl.flags = 3408);
+result &= WritePrivateProfileString(itemName, propName, propValue, L"fileman.ini");
+
+wsprintf (propName, L"length");
+wsprintf (propValue, L"%u", lpwndpl.length);
+result &= WritePrivateProfileString(itemName, propName, propValue, L"fileman.ini");
+
+wsprintf (propName, L"ptMaxPosition");
+result &= WritePrivateProfileStruct (itemName, propName, &lpwndpl.ptMaxPosition, sizeof(POINT), L"fileman.ini");
+
+wsprintf (propName, L"ptMinPosition");
+result &= WritePrivateProfileStruct (itemName, propName, &lpwndpl.ptMinPosition, sizeof(POINT), L"fileman.ini");
+
+wsprintf (propName, L"rcNormalPosition");
+result &= WritePrivateProfileStruct (itemName, propName, &lpwndpl.rcNormalPosition, sizeof(RECT), L"fileman.ini");
+______________________________________________________________________________________________________________________
+
+ 
+switch (driveType)
+{
+	case DRIVE_UNKNOWN:
+		driveDiscr = L"Неизвестный тип";
+		break;
+	case DRIVE_REMOVABLE:
+		driveDiscr = L"Съёмный диск";
+		break;
+	case DRIVE_FIXED:
+		driveDiscr = L"Жёсткий диск";
+		break;
+	case DRIVE_REMOTE:
+		driveDiscr = L"Сетевой диск";
+		break;
+	case DRIVE_CDROM:
+		driveDiscr = L"CD-дисковод";
+		break;
+	case DRIVE_RAMDISK:
+		driveDiscr = L"RAM-диск";
+		break;
+};
+
+wsprintf(str, L"%s (%s)", driveDiscr, driveName);
+______________________________________________________________________________________________________________________
+
+TCHAR* lastChar = wcsrchr (path, L'\\');
+if (lastChar == NULL)
+{
+	lastChar = path;
+	SendDlgItemMessage (hDlg, fullPathId, WM_SETTEXT, 0, (LPARAM)path);
+}
+
+TCHAR* tempChar = path + wcslen(path) - 1;
+
+if (lastChar != tempChar) 
+{
+	wcscat(path, L"\\");
+}
+if ((wcslen(lastChar) + wcslen(fileName) + wcslen(L"\\")) < sizeof(path))
+{
+	wcscat (lastChar, fileName);
+	wcscat (path, L"\\");
+}	
+
+______________________________________________________________________________________________________________________
+
+// Если первый найденый файл не L"..", то добавим L".." в список первым
+if (wcscmp(findData.cFileName, L"..") != 0)
+{
+	TCHAR* tmpStr = (TCHAR*) malloc (wcslen(findData.cFileName) + findData.cFileName[0]);
+	wcscpy(tmpStr, findData.cFileName);
+	wcscpy(findData.cFileName, L"..");
+	addFileToListView (hDlg, &findData, itemId, &lvI);
+	wcscpy (findData.cFileName, tmpStr);
+	free (tmpStr);
+}
+______________________________________________________________________________________________________________________
+
+IDS_EXECUTE_OUT_OF_MEMORY 
+                        "Операционной системе не хватает памяти или ресурсов"
+IDS_ERROR_FILE_NOT_FOUND "Заданный файл не был найден"
+IDS_ERROR_PATH_NOT_FOUND "Заданный путь не найден"
+IDS_ERROR_BAD_FORMAT    "Файл .exe не годен (не Microsoft Win32 .exe или ошибка в образе .exe)"
+IDS_SE_ERR_ACCESSDENIED "Операционная система запрещает доступ к файлу"
+IDS_SE_ERR_ASSOCINCOMPLETE "Ассоциация имени файла не полна или не годна"
+IDS_SE_ERR_DDEBUSY      "The Dynamic Data Exchange (DDE) transaction could not be completed because other DDE transactions were being processed"
+IDS_SE_ERR_DDEFAIL      "The Dynamic Data Exchange (DDE) transaction failed"
+IDS_SE_ERR_DDETIMEOUT   "The Dynamic Data Exchange (DDE) transaction could not be completed because the request timed out"
+IDS_SE_ERR_DLLNOTFOUND  "The specified dynamic-link library (DLL) was not found"
+IDS_SE_ERR_FNF          "The specified file was not found"
+IDS_SE_ERR_NOASSOC      "There is no application associated with the given file name extension. This error will also be returned if you attempt to print a file that is not printable"
+IDS_SE_ERR_OOM          "There was not enough memory to complete the operation"
+IDS_SE_ERR_PNF          "The specified path was not found"
+IDS_SE_ERR_SHARE        "A sharing violation occurred"
+______________________________________________________________________________________________________________________
+
+// Сообщения окнам
+// Сообщение диалогу копирования, вернуть дескриптор потока копирования
+#define			CCDL_GET_THREADHANDLE			WM_USER + 1
+______________________________________________________________________________________________________________________
+
+
+// Выводит в List View список фалов и папок в директории
+// HWND hDlg - дескриптор диалога
+// DWORD itemId - идентификатор List View
+// TCHAR* path - путь к директории 
+BOOL listDirectoryToPanel (HWND hDlg, UINT panelId, TCHAR* path)
+{
+	ListToPanelData* ltpd = new ListToPanelData (path);
+	ltpd->hDlg = hDlg;
+	ltpd->itemId = panelId;
+	CreateThread (NULL, NULL, listDirectoryToPanelWorker, ltpd, NULL, NULL);
+	return TRUE;
+}
+______________________________________________________________________________________________________________________
+
+else // --> Здесь нужно проверять, тип элемента, и для каждого типа эелемента сохранять свои свойства
+{
+	LRESULT cursel = SendDlgItemMessage(hDlg, itemId, CB_GETCURSEL, 0, 0);
+	if (cursel == -1) return FALSE;
+	wsprintf (itemName, L"%u", itemId);
+	wsprintf (propName, L"%s", L"CURSEL");
+	wsprintf (propValue, L"%u", (DWORD)cursel);
+	result = WritePrivateProfileString (itemName, propName, propValue, fileName);
+}
+
+______________________________________________________________________________________________________________________
+
+else// --> Здесь нужно проверять, тип элемента, и для каждого типа эелемента загружать свои свойства
+{
+	wsprintf (itemName, L"%s %u", L"ComboBox", itemId);
+	wsprintf (propName, L"%s", L"CURSEL");
+	wsprintf (propValue, L"%s", L"");
+	bResult &= GetPrivateProfileString (itemName, propName, L"0", propValue, sizeof(propValue), fileName);
+	bResult &= CB_ERR == SendDlgItemMessage(hDlg, itemId, CB_SETCURSEL, (WPARAM)_wtoi(propValue), 0);
+}
+	
+______________________________________________________________________________________________________________________
+
+TCHAR path [MAX_PATH];
+
+// Установить пути левой панели
+//getPathOfSelectedDisk  (hDlg, IDC_DISK_LIST_LEFT, path);
+//setCurrentPath (hDlg, IDC_DISK_LIST_LEFT, IDC_FULL_PATH_LEFT, IDC_LEFTPANEL);
+listDirectoryToPanel (hDlg, IDC_LEFTPANEL, IDC_FULL_PATH_LEFT);
+
+// Установить пути правой панели
+//getPathOfSelectedDisk (hDlg, IDC_DISK_LIST_RIGHT, path);
+//setCurrentPath (hDlg, IDC_DISK_LIST_RIGHT, IDC_FULL_PATH_RIGHT, IDC_RIGHTPANEL);
+listDirectoryToPanel (hDlg, IDC_RIGHTPANEL, IDC_FULL_PATH_RIGHT);
+______________________________________________________________________________________________________________________
+
+if (CB_ERR == SendDlgItemMessage(hDlg, itemId, CB_SETCURSEL, (WPARAM)_wtoi(propValue), 0))
+{
+	SendDlgItemMessage(hDlg, itemId, CB_SETCURSEL, (WPARAM)0, 0);
+}
+
+______________________________________________________________________________________________________________________
+
+
+case IDC_LEFTPANEL:
+	//if(appendCurrentPath (hDlg, IDC_DISK_LIST_LEFT, IDC_FULL_PATH_LEFT, IDC_LEFTPANEL))
+	if(appendCurrentPath (hDlg, IDC_DISK_LIST_LEFT, IDC_FULL_PATH_LEFT, pNmhdr->idFrom))
+	{
+		listDirectoryToPanel (hDlg, pNmhdr->idFrom, IDC_FULL_PATH_LEFT);
+	}
+	else
+	{
+		executeSelected (hDlg, IDC_FULL_PATH_LEFT, IDC_LEFTPANEL);
+	}
+	break;
+case IDC_RIGHTPANEL:
+	//if (appendCurrentPath (hDlg, IDC_DISK_LIST_RIGHT, IDC_FULL_PATH_RIGHT, IDC_RIGHTPANEL))
+	if (appendCurrentPath (hDlg, IDC_DISK_LIST_RIGHT, IDC_FULL_PATH_RIGHT, pNmhdr->idFrom))
+	{
+		listDirectoryToPanel (hDlg, pNmhdr->idFrom, IDC_FULL_PATH_RIGHT);
+	}
+	else
+	{
+		executeSelected (hDlg, IDC_FULL_PATH_RIGHT, IDC_RIGHTPANEL);
+	}
+	break;
+______________________________________________________________________________________________________________________
+
+
+
+
+/*
+typedef struct _ThreadData
+{
+	void* threadArg;
+	(void)(completionRoutine) (void* completionArg);
+} ThreadData;
+*/
+
+
+
+
+
+/*	SendDlgItemMessage(hDlg, fullPathIdSrc, WM_GETTEXT, sizeof (pathSrc), (LPARAM)pathSrc);
+	
+	// Имя файла источника
+	lvi.iItem = SendDlgItemMessage (hDlg, panelIdSrc, LVM_GETSELECTIONMARK, 0, 0);
+	if (lvi.iItem == -1) return FALSE;
+	
+	lvi.iSubItem = 0;
+	SendDlgItemMessage(hDlg, panelIdSrc, LVM_GETITEM, 0, (LPARAM)&lvi);
+	
+	lstrcat (pathSrc, lvi.pszText);
+	lstrcat (pathSrc, L".");
+
+	// Расширение файла источника
+	lvi.iSubItem = 1;
+	SendDlgItemMessage(hDlg, panelIdSrc, LVM_GETITEM, 0, (LPARAM)&lvi);
+	lstrcat (pathSrc, lvi.pszText);
+*/
+
+
+
+
+
+
+
+
+
+/*	SendDlgItemMessage(hDlg, fullPathIdDst, WM_GETTEXT, (WPARAM)sizeof (pathDst), (LPARAM)pathDst);
+		
+	// Имя файла получателя
+	lvi.iSubItem = 0;
+	SendDlgItemMessage(hDlg, panelIdSrc, LVM_GETITEM, 0, (LPARAM)&lvi);
+	lstrcat(pathDst, lvi.pszText);
+	lstrcat(pathDst, L".");
+
+	// Расширение файла назначения
+	lvi.iSubItem = 1;
+	SendDlgItemMessage(hDlg, panelIdSrc, LVM_GETITEM, 0, (LPARAM)&lvi);
+	lstrcat(pathDst, lvi.pszText);
+*/
+
+
+
+
+
+
+void FmLocker :: init (void)
+{
+	this->mutex = CreateMutex (NULL, FALSE, NULL);
+	wprintf (L"FmLocker :: init ()");
+	if (this->mutex == INVALID_HANDLE_VALUE) throw;
+}
+
+FmLocker :: ~ FmLocker(void)
+{
+	ReleaseMutex (this->mutex);
+	CloseHandle (this->mutex);
+	wprintf(L"FmLocker :: ~ FmLocker()");
+}
+
+void FmLocker :: lock (void)
+{
+	WaitForSingleObject(this->mutex, INFINITE);
+}
+
+void FmLocker :: unlock (void)
+{
+	ReleaseMutex (this->mutex);
+}
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+
+SIZE_T nameLen = lstrlen (this->fileNames[index]);
+SIZE_T dstFolderLen = (lstrlen (this->dstFolder) << 1) + sizeof('\0');
+SIZE_T srcFolderLen = (lstrlen (this->srcFolder) << 1) + sizeof('\0');
+TCHAR* dstFolder = FmLocalAlloc (nameLen + dstFolderLen);
+TCHAR* srcFolder = FmLocalAlloc (nameLen + srcFolderLen);
+
+
+---------------------------------------------------------------------------------------------
+
+
+//BOOL getSrcPath (HWND hDlg, UINT srcPathId, UINT srcPanelId, UINT index, TCHAR* path, UINT pathSize)
+//{
+//	LVITEM* lvi = (LVITEM*) FmLocalAlloc (sizeof (LVITEM));
+//	lvi->mask = LVIF_TEXT; // Флаг - получаем текст
+//	lvi->cchTextMax = MAX_PATH;
+//	lvi->pszText = (TCHAR*) FmLocalAlloc (MAX_PATH);
+//
+//	// Папка источник
+//	SendDlgItemMessage(hDlg, srcPathId, WM_GETTEXT, pathSize, (LPARAM)path);
+//	
+//	// Имя файла источника
+//	lvi->iItem = index; //SendDlgItemMessage (hDlg, srcPanelId, LVM_GETSELECTIONMARK, 0, 0);
+//	if (lvi->iItem == -1)
+//	{	
+//		FmLocalFree(lvi->pszText);
+//		FmLocalFree(lvi);
+//		return FALSE;
+//	}
+//	
+//	lvi->iSubItem = 0;
+//	SendDlgItemMessage(hDlg, srcPanelId, LVM_GETITEM, 0, (LPARAM)lvi);
+//	
+//	lstrcat (path, lvi->pszText);
+//	lstrcat (path, L".");
+//
+//	// Расширение файла источника
+//	lvi->iSubItem = 1;
+//	SendDlgItemMessage(hDlg, srcPanelId, LVM_GETITEM, 0, (LPARAM)lvi);
+//	lstrcat (path, lvi->pszText);
+//	FmLocalFree (lvi->pszText);
+//	FmLocalFree (lvi);
+//	return TRUE;
+//}
+
+
+
+//BOOL getDstPath (HWND hDlg, UINT srcPathId, UINT srcPanelId, UINT dstPathId, TCHAR* path, UINT pathSize)
+//{
+//	LVITEM* lvi = (LVITEM*) FmLocalAlloc (sizeof (LVITEM));
+//	lvi->mask = LVIF_TEXT; // Флаг - получаем текст
+//	lvi->cchTextMax = MAX_PATH;
+//	lvi->pszText = (TCHAR*) FmLocalAlloc (MAX_PATH);
+//	lvi->pszText[0] = L'\0';
+//	
+//	// Папка получатель
+//	SendDlgItemMessage(hDlg, dstPathId, WM_GETTEXT, (WPARAM) pathSize, (LPARAM)path);
+//
+//	// Имя файла получателя
+//	lvi->iSubItem = 0;
+//	SendDlgItemMessage(hDlg, srcPanelId, LVM_GETITEM, 0, (LPARAM)lvi);
+//	lstrcat(path, lvi->pszText);
+//	lstrcat(path, L".");
+//
+//	lstrcat (path, lvi->pszText);
+//	lstrcat (path, L".");
+//
+//	// Расширение файла назначения
+//	lvi->iSubItem = 1;
+//	SendDlgItemMessage(hDlg, srcPanelId, LVM_GETITEM, 0, (LPARAM)lvi);
+//	lstrcat (path, lvi->pszText);
+//	FmLocalFree (lvi->pszText);
+//	FmLocalFree (lvi);
+//	return TRUE;
+//}
+
+
+
+
+
+
+
+
+
+
+// Дескриптор ожидания события "Содержимое папки изменилась"
+HANDLE hDirChange;
+
+// Дескриптор ожидания события "Содержимое диска изменилось"
+HANDLE hDiskChange;
+
+
+
+
+
+
+
+
+
+
+
+
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comctl32.lib psapi.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Fileman.pdb" /debug /machine:I386 /out:"Debug/Fileman.exe" /pdbtype:sept
+
+
+
+
+
+
+
+
+case WM_HOTKEY:
+	return onHotKey (hDlg, wParam, lParam);
+case WM_SYSKEYDOWN:
+	return onSysKey (hDlg, wParam, lParam);
+case WM_KEYDOWN:
+	return onKeyDown (hDlg, wParam, lParam);
+case WM_GETDLGCODE:
+	return DLGC_WANTALLKEYS;
+
+
+
+
+INT_PTR onReturn (HWND hDlg, WPARAM wParam, LPARAM lParam)
+{
+	wprintfd (L"onReturn: %08x, %08x", wParam, lParam);
+	return 0;
+}
+
+
+INT_PTR onRigtPanel (HWND hDlg, WPARAM wParam, LPARAM lParam)
+{
+	wprintfd (L"onRigtPanel: %08x, %08x", wParam, lParam);
+	return 0;
+}
+
+INT_PTR onKeyDown (HWND hDlg, WPARAM wParam, LPARAM lParam)
+{
+	wprintfd (L"onKeyDown: %08x, %08x", wParam, lParam);
+	return 0;
+}
+
+
+INT_PTR onHotKey (HWND hDlg, WPARAM wParam, LPARAM lParam)
+{
+	wprintfd (L"onHotKey: %08x, %08x", wParam, lParam);
+	return 0;
+}
+
+
+INT_PTR onSysKey (HWND hDlg, WPARAM wParam, LPARAM lParam)
+{
+	wprintfd (L"onSysKey: %08x, %08x", wParam, lParam);
+	return 0;
+}
+
+
+
+
+
+
+//case HDN_ENDTRACK:
+//case HDN_ITEMCHANGED:
+case HDN_TRACK:
+{
+	HD_NOTIFY* hDn = (HD_NOTIFY*) lParam;
+	break;
+}
+
+
+//HWND hListView = GetDlgItem (hDlg, IDC_LEFTPANEL);
+//HWND hHeader = (HWND) SendMessage (hListView, LVM_GETHEADER, 0, 0);
+//LONG result = SetWindowLong(hHeader, GWL_WNDPROC, (LONG) headerProc);
+
+
+
+
+
+if ((sort->column == 1) || (sort->column == 2) || (sort->column == 3))
+{
+	if (lstrcmpi (lvi1.pszText, L"") == 0)
+	{
+		return -1;
+	}
+
+	if (lstrcmpi (lvi2.pszText, L"") == 0)
+	{
+		return 1;
+	}
+
+	if (lstrcmpi (lvi1.pszText, L"<DIR>") == 0)
+	{
+		return -1;
+	}
+	
+	if (lstrcmpi (lvi2.pszText, L"<DIR>") == 0)
+	{
+		return 1;
+	}
+}
+
+
+if (sort->column == 0)
+{
+	if (lstrcmpi (lvi1.pszText, L"..") == 0)
+	{
+		return -1;
+	}
+
+	if (lstrcmpi (lvi2.pszText, L"..") == 0)
+	{
+		return 1;
+	}
+}
+
+
+
+
+
+
+INT CALLBACK sortListView (LPARAM lParam1, LPARAM lParam2, LPARAM lParamSort)
+{
+	TCHAR str1 [MAX_PATH];				// Строка для LVITEM
+	TCHAR str2 [MAX_PATH];				// Строка для LVITEM
+	TCHAR cmpStr1 [MAX_PATH * 4];		// Перавая строка для сравнения
+	TCHAR cmpStr2 [MAX_PATH * 4];		// Вторая строка для сравнения
+	LVITEM lvi1 = {0};					// Струтура для чтения элементов ListView
+	LVITEM lvi2 = {0};					// Струтура для чтения элементов ListView
+	DWORD tmpCol;						// Для временного хранения индекса колонки
+	
+	
+	if (lParam1 == 0) return -1;		// Строки ".." всегда первые
+	if (lParam2 == 0) return 1;			// Строки ".." всегда первые
+
+	FmSort* sort = (FmSort*) lParamSort;// Указатель на свою структуру FmSort
+	cmpStr1 [0] = L'\0';
+	cmpStr2 [0] = L'\0';
+	
+	lvi1.mask = LVIF_TEXT;	
+	lvi1.iItem = lParam1;
+	lvi1.pszText = str1;
+	lvi1.cchTextMax = sizeof (str1);
+	
+	lvi2.mask = LVIF_TEXT;	
+	lvi2.iItem = lParam2;	
+	lvi2.pszText = str2;
+	lvi2.cchTextMax = sizeof (str2);
+	
+	tmpCol = sort->column;		
+	
+	// Создать первую строку для сравнения
+	lvi1.iSubItem = sort->column;		// Первое слово - строка из кликнутой колонки
+	SendMessage (sort->hListView, LVM_GETITEM, 0, (LPARAM) &lvi1);
+	lstrcat (cmpStr1, lvi1.pszText);
+	if (tmpCol != 1)
+	{
+		lvi1.iSubItem = 1;				// Второе слово - тип файла
+		SendMessage (sort->hListView, LVM_GETITEM, 0, (LPARAM) &lvi1);
+		lstrcat (cmpStr1, lvi1.pszText);
+	}
+	if (tmpCol != 2)
+	{
+		lvi1.iSubItem = 2;				// Третье слово - дата
+		SendMessage (sort->hListView, LVM_GETITEM, 0, (LPARAM) &lvi1);
+		lstrcat (cmpStr1, lvi1.pszText);
+	}
+	if (tmpCol != 3)
+	{
+		lvi1.iSubItem = 3;				// Четвёртое слово - размер
+		SendMessage (sort->hListView, LVM_GETITEM, 0, (LPARAM) &lvi1);
+		lstrcat (cmpStr1, lvi1.pszText);
+	}
+		
+	
+	lvi2.iSubItem = sort->column;
+	SendMessage (sort->hListView, LVM_GETITEM, 0, (LPARAM) &lvi2);
+	lstrcat (cmpStr2, lvi2.pszText);
+	
+	
+	
+	INT result = CompareString (LOCALE_SYSTEM_DEFAULT, sort->flags,
+		cmpStr1, lstrlen (cmpStr1), cmpStr2, lstrlen (cmpStr2)); 		
+	if (result == CSTR_LESS_THAN) return -1;
+	if (result == CSTR_GREATER_THAN) return 1;
+	return 0;
+}
+
+
+
+
+
+
+----------------------------------------------- 100% рабочая процедура [начало] -----------------------------
+
+// WIN32_FIND_DATA* findData - указатель на структуру WIN32_FIND_DATA
+// TCHAR* beginPath - начальный путь источника
+// TCHAR* dstFolder - начальная папка пути назначения
+// LPPROGRESS_ROUTINE routine - указатель на процедуру отображения хода копирования
+// VOID* arg - аргумент передаваемый в процедуру отображения хода копирования
+// DWORD flags - флаги для CopyFileEx
+INT copyFilesRecurse
+	(WIN32_FIND_DATA* findData, TCHAR* beginPath, TCHAR* dstFolder,
+	LPPROGRESS_ROUTINE routine, VOID* arg, DWORD flags)
+{
+	Progress* progr = (Progress*) arg;
+	++ progr->indent;
+	addSlashToPath (dstFolder);
+	//BOOL isDstCuted = FALSE;
+	if (FILE_ATTRIBUTE_DIRECTORY & GetFileAttributes (beginPath))
+	{
+		
+		TCHAR* tchar = lstrrchr (dstFolder, L'\\');
+		if (tchar) *tchar = L'\0';
+		lstrcat (dstFolder, lstrrchr (beginPath, L'\\'));
+		BOOL result = CreateDirectory (dstFolder, NULL);
+		if (result == FALSE)
+		{
+			return progr->indent;
+		}
+
+		tchar = lstrrchr (beginPath, L'*');
+		if (tchar == NULL) lstrcat (beginPath, L"\\*");
+		
+		HANDLE hFile = FindFirstFileW (beginPath, findData);
+		BOOL next = hFile != INVALID_HANDLE_VALUE;
+		while (next)
+		{
+			if (lstrcmp ((TCHAR*)findData->cFileName, L"..") == 0)
+			{
+				next = FindNextFile (hFile, findData);
+				continue;
+			}
+			if  (lstrcmp ((TCHAR*)findData->cFileName, L".") == 0)
+			{
+				next = FindNextFile (hFile, findData);
+				continue;
+			}
+
+			if (findData->dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				TCHAR* tchar = lstrrchr (beginPath, L'*');
+				if (tchar)
+				{
+					*tchar = '\0';
+				}
+
+				tchar = lstrrchr (beginPath, L'\\');
+				TCHAR* last = beginPath + lstrlen (beginPath) - 1;
+				if (last != tchar)
+				{
+					lstrcat (beginPath, L"\\");
+				}
+				lstrcat (beginPath, findData->cFileName);
+				
+				
+				tchar = lstrrchr (dstFolder, L'\\');
+				last = dstFolder + lstrlen (dstFolder) - 1;
+				if (last != tchar)
+				{
+					lstrcat (dstFolder, L"\\");
+				}
+				lstrcat (dstFolder, findData->cFileName);
+				copyFilesRecurse (findData, beginPath, dstFolder, routine, arg, flags);
+			}
+			else
+			{
+				TCHAR* tc = lstrrchr (beginPath, L'*');
+				if (tc) *tc = L'\0';
+				
+				tc = lstrrchr (beginPath, L'\\');
+				TCHAR* last = beginPath + lstrlen (beginPath) - 1;
+				if (last != tc)
+				{
+					lstrcat (beginPath, L"\\");
+				}
+				
+				lstrcat (beginPath, findData->cFileName);
+				lstrcat (dstFolder, L"\\");
+				lstrcat (dstFolder, findData->cFileName);
+				BOOL result = CopyFileEx (beginPath, dstFolder, routine, arg, FALSE, flags);
+				
+				cutPath (dstFolder);
+				cutPath (beginPath);
+				
+			}
+			next = FindNextFile (hFile, findData);
+		}
+
+		cutPath (beginPath);
+		cutPath (dstFolder);
+		FindClose (hFile);
+		
+	}
+	else 
+	{
+		TCHAR* tc = lstrrchr(dstFolder, L'\\');
+		if (tc) *tc = L'\0';
+		lstrcat (dstFolder, lstrrchr (beginPath, L'\\'));
+		BOOL result = CopyFileEx (beginPath, dstFolder, routine, arg, FALSE, flags);
+	}
+	return  -- progr->indent;
+}
+
+----------------------------------------------- 100% рабочая процедура [конец] -----------------------------
+
+
+
+Здесь всё правильно
+
+
+
+		WINDOWPLACEMENT wpl = {0};
+		GetWindowPlacement (hDlg, &wpl);		
+		DWORD halfWidth = ((wpl.rcNormalPosition.right - wpl.rcNormalPosition.left) >> 1) - 20;
+		LVCOLUMN lvc = {0};
+		lvc.mask = LVCF_WIDTH | LVCF_SUBITEM; 
+		
+		SendMessage (hItem, LVM_GETCOLUMN, 0, LPARAM (&lvc));
+		panelProps->colsRelWidths [0] = lvc.cx / FLOAT (halfWidth);
+
+		SendMessage (hItem, LVM_GETCOLUMN, 1, LPARAM (&lvc));
+		panelProps->colsRelWidths [1] = lvc.cx / FLOAT (halfWidth);
+
+		SendMessage (hItem, LVM_GETCOLUMN, 2, LPARAM (&lvc));
+		panelProps->colsRelWidths [2] = lvc.cx / FLOAT (halfWidth);
+
+		SendMessage (hItem, LVM_GETCOLUMN, 3, LPARAM (&lvc));
+		panelProps->colsRelWidths [3] = lvc.cx / FLOAT (halfWidth);
+
+		lstrcpy (propName, L"colsRelWidths");
+		bResult &= WritePrivateProfileStruct (itemName, propName, &panelProps->colsRelWidths, sizeof (panelProps->colsRelWidths), fileName);
+	
+		return bResult;
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+// WIN32_FIND_DATA* findData - указатель на структуру WIN32_FIND_DATA
+// TCHAR* beginPath - начальный путь источника
+// TCHAR* dstFolder - начальная папка пути назначения
+// LPPROGRESS_ROUTINE routine - указатель на процедуру отображения хода копирования
+// VOID* arg - аргумент передаваемый в процедуру отображения хода копирования
+// DWORD flags - флаги для CopyFileEx
+// DWORD operation - код выполняемой операции. Коды операций приведены в operation.h
+INT recurseOperation
+	(WIN32_FIND_DATA* findData, TCHAR* beginPath, TCHAR* dstFolder,
+	LPPROGRESS_ROUTINE routine, VOID* arg, DWORD flags, DWORD operation)
+{
+	Progress* progr = (Progress*) arg;
+	++ progr->indent;
+	delSlashFromPath (dstFolder);
+	lstrcat (dstFolder, lstrrchr (beginPath, L'\\'));
+	if (FILE_ATTRIBUTE_DIRECTORY & GetFileAttributes (beginPath))
+	{
+		if (!CreateDirectory (dstFolder, NULL))
+		{
+			return progr->indent;
+		}
+
+		TCHAR* tchar = lstrrchr (beginPath, L'*');
+		if (tchar == NULL) lstrcat (beginPath, L"\\*");
+		
+		HANDLE hFile = FindFirstFileW (beginPath, findData);
+		BOOL next = hFile != INVALID_HANDLE_VALUE;
+		while (next)
+		{
+			if (lstrcmp ((TCHAR*)findData->cFileName, L"..") == 0)
+			{
+				next = FindNextFile (hFile, findData);
+				continue;
+			}
+			if  (lstrcmp ((TCHAR*)findData->cFileName, L".") == 0)
+			{
+				next = FindNextFile (hFile, findData);
+				continue;
+			}
+			
+			addSlashToPath (beginPath);
+			lstrcat (beginPath, findData->cFileName);
+		
+			if (findData->dwFileAttributes & FILE_ATTRIBUTE_DIRECTORY)
+			{
+				addSlashToPath (dstFolder);
+				lstrcat (dstFolder, findData->cFileName);
+				recurseOperation (findData, beginPath, dstFolder, routine, arg, flags, operation);
+			}
+			else
+			{
+				lstrcat (dstFolder, L"\\");
+				lstrcat (dstFolder, findData->cFileName);
+				BOOL result = CopyFileEx (beginPath, dstFolder, routine, arg, FALSE, flags);
+				
+				cutPath (dstFolder);
+				cutPath (beginPath);
+			}
+			next = FindNextFile (hFile, findData);
+		}
+		cutPath (beginPath);
+		cutPath (dstFolder);
+		FindClose (hFile);
+	}
+	else 
+	{
+		BOOL result = CopyFileEx (beginPath, dstFolder, routine, arg, FALSE, flags);
+	}
+	return  -- progr->indent;
+}
+
+
+------------------------------------------------------------------------------------------------------
+
+
+
+		/*
+		TCHAR* fullPath = (TCHAR*) fmLocalAlloc ((lstrlen (fileDir) + lstrlen (findData->cFileName))
+								* sizeof (fileDir[0])
+								+ sizeof (L'\0')
+								+ sizeof (L'\\'));
+		*/
+		
+------------------------------------------------------------------------------------------------------
+
+
+
+		

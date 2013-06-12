@@ -1,0 +1,96 @@
+# Project: Fileman
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = Fileman_private.res
+OBJ  = Sources/abstract.o Sources/aspi.o Sources/audio.o Sources/browse.o Sources/cdinfo.o Sources/context.o Sources/copy.o Sources/count.o Sources/delete.o Sources/fileman.o Sources/FmTests.o Sources/folder.o Sources/helper.o Sources/ltpd.o Sources/move.o Sources/notify.o Sources/operation.o Sources/progress.o Sources/settings.o Sources/task.o Sources/user.o Sources/watcher.o $(RES)
+LINKOBJ  = Sources/abstract.o Sources/aspi.o Sources/audio.o Sources/browse.o Sources/cdinfo.o Sources/context.o Sources/copy.o Sources/count.o Sources/delete.o Sources/fileman.o Sources/FmTests.o Sources/folder.o Sources/helper.o Sources/ltpd.o Sources/move.o Sources/notify.o Sources/operation.o Sources/progress.o Sources/settings.o Sources/task.o Sources/user.o Sources/watcher.o $(RES)
+LIBS =  -L"E:/programs/Devcpp/lib"  
+INCS =  -I"E:/programs/Devcpp/include" 
+CXXINCS =  -I"E:/programs/Devcpp/lib/gcc/mingw32/3.4.2/include"  -I"E:/programs/Devcpp/include/c++/3.4.2/backward"  -I"E:/programs/Devcpp/include/c++/3.4.2/mingw32"  -I"E:/programs/Devcpp/include/c++/3.4.2"  -I"E:/programs/Devcpp/include" 
+BIN  = Fileman.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Fileman.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Fileman.exe" $(LIBS)
+
+Sources/abstract.o: Sources/abstract.cpp
+	$(CPP) -c Sources/abstract.cpp -o Sources/abstract.o $(CXXFLAGS)
+
+Sources/aspi.o: Sources/aspi.cpp
+	$(CPP) -c Sources/aspi.cpp -o Sources/aspi.o $(CXXFLAGS)
+
+Sources/audio.o: Sources/audio.cpp
+	$(CPP) -c Sources/audio.cpp -o Sources/audio.o $(CXXFLAGS)
+
+Sources/browse.o: Sources/browse.cpp
+	$(CPP) -c Sources/browse.cpp -o Sources/browse.o $(CXXFLAGS)
+
+Sources/cdinfo.o: Sources/cdinfo.cpp
+	$(CPP) -c Sources/cdinfo.cpp -o Sources/cdinfo.o $(CXXFLAGS)
+
+Sources/context.o: Sources/context.cpp
+	$(CPP) -c Sources/context.cpp -o Sources/context.o $(CXXFLAGS)
+
+Sources/copy.o: Sources/copy.cpp
+	$(CPP) -c Sources/copy.cpp -o Sources/copy.o $(CXXFLAGS)
+
+Sources/count.o: Sources/count.cpp
+	$(CPP) -c Sources/count.cpp -o Sources/count.o $(CXXFLAGS)
+
+Sources/delete.o: Sources/delete.cpp
+	$(CPP) -c Sources/delete.cpp -o Sources/delete.o $(CXXFLAGS)
+
+Sources/fileman.o: Sources/fileman.cpp
+	$(CPP) -c Sources/fileman.cpp -o Sources/fileman.o $(CXXFLAGS)
+
+Sources/FmTests.o: Sources/FmTests.cpp
+	$(CPP) -c Sources/FmTests.cpp -o Sources/FmTests.o $(CXXFLAGS)
+
+Sources/folder.o: Sources/folder.cpp
+	$(CPP) -c Sources/folder.cpp -o Sources/folder.o $(CXXFLAGS)
+
+Sources/helper.o: Sources/helper.cpp
+	$(CPP) -c Sources/helper.cpp -o Sources/helper.o $(CXXFLAGS)
+
+Sources/ltpd.o: Sources/ltpd.cpp
+	$(CPP) -c Sources/ltpd.cpp -o Sources/ltpd.o $(CXXFLAGS)
+
+Sources/move.o: Sources/move.cpp
+	$(CPP) -c Sources/move.cpp -o Sources/move.o $(CXXFLAGS)
+
+Sources/notify.o: Sources/notify.cpp
+	$(CPP) -c Sources/notify.cpp -o Sources/notify.o $(CXXFLAGS)
+
+Sources/operation.o: Sources/operation.cpp
+	$(CPP) -c Sources/operation.cpp -o Sources/operation.o $(CXXFLAGS)
+
+Sources/progress.o: Sources/progress.cpp
+	$(CPP) -c Sources/progress.cpp -o Sources/progress.o $(CXXFLAGS)
+
+Sources/settings.o: Sources/settings.cpp
+	$(CPP) -c Sources/settings.cpp -o Sources/settings.o $(CXXFLAGS)
+
+Sources/task.o: Sources/task.cpp
+	$(CPP) -c Sources/task.cpp -o Sources/task.o $(CXXFLAGS)
+
+Sources/user.o: Sources/user.cpp
+	$(CPP) -c Sources/user.cpp -o Sources/user.o $(CXXFLAGS)
+
+Sources/watcher.o: Sources/watcher.cpp
+	$(CPP) -c Sources/watcher.cpp -o Sources/watcher.o $(CXXFLAGS)
+
+Fileman_private.res: Fileman_private.rc Sources/dialog.rc Sources/fileman.rc 
+	$(WINDRES) -i Fileman_private.rc --input-format=rc -o Fileman_private.res -O coff 

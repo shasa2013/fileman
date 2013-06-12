@@ -1,0 +1,265 @@
+INT_PTR onProgrBarPaint (HWND hWnd, WPARAM wParam, LPARAM lParam) <--- ЭТО НЕ РАБОТАЕТ!
+{
+    int nRange, nLower, nUpper;
+	HBRUSH hBrush = GetSysColorBrush (COLOR_HIGHLIGHT);
+	HDC hDC = GetDC (hWnd);
+    RECT rcClient, rcBlock, rcComplete;
+    int nGapWidth = 2;
+
+    TCHAR strRemaining [100];//CString  strRemaining;
+	lstrcpy (strRemaining, L"ПРИвет всем!");
+	
+	PBRANGE pbRange;
+	SendMessage (hWnd, PBM_GETRANGE, 0, (LPARAM)&pbRange); //this->GetRange (nLower, nUpper);
+	
+	GetClientRect (hWnd, &rcClient); //this->GetClientRect (&rcClient);
+
+	rcBlock.bottom = rcClient.bottom; 
+	rcBlock.left =  rcClient.left;
+	rcBlock.right = rcClient.right;
+	rcBlock.top = rcClient.top; //rcBlock = rcClient;
+
+	float m_lfPercent = float (SendMessage (hWnd, PBM_GETPOS, 0, 0)) / float (nRange + 1);
+	nRange = pbRange.iHigh - pbRange.iLow; // nRange = nUpper - nLower;
+    rcBlock.right = rcBlock.left + int (float (rcBlock.right - rcBlock.left) * m_lfPercent);
+    rcComplete.bottom = rcBlock.bottom;
+	rcComplete.left = rcBlock.left;
+	rcComplete.right = rcBlock.right;
+	rcComplete.top = rcBlock.top;
+
+	HWND hParent = GetParent (hWnd);
+	HBRUSH hBrTmp = (HBRUSH) SendMessage (hParent, WM_CTLCOLORSTATIC, (WPARAM)hDC, (LPARAM)hWnd);
+	//FillRect (hDC, &rcClient, hBrTmp);
+	
+	FillRect (hDC, &rcBlock, hBrush);
+	rcComplete.right = rcBlock.right;
+	OffsetRect (&rcBlock, (rcBlock.left - rcBlock.right) + nGapWidth, 0); //rcBlock.OffsetRect (rcBlock.Width()+nGapWidth, 0);
+    
+    SetBkMode (hDC, TRANSPARENT);//dc.SetBkMode(TRANSPARENT);
+	HFONT hFont = CreateFont (10, 0, 0, 0, 0, 0, 0, 0, RUSSIAN_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, FF_DONTCARE, NULL);
+	SelectObject (hDC, hFont); //pFount = dc.SelectObject (&m_fountHorz);
+	SaveDC (hDC); //dc.SaveDC();
+	IntersectClipRect (hDC, rcComplete.left, rcComplete.top, rcComplete.right, rcComplete.top);
+	SetTextColor (hDC, (COLORREF) GetSysColor (COLOR_HIGHLIGHTTEXT));
+	DrawText (hDC, strRemaining, lstrlen (strRemaining), &rcClient, DT_NOPREFIX | DT_SINGLELINE | DT_VCENTER | DT_CENTER); 
+	RestoreDC (hDC, -1);
+
+	/*SaveDC (hDC);
+	ExcludeClipRect (hDC, rcComplete.left, rcComplete.top, rcComplete.right, rcComplete.bottom);
+	SetTextColor (hDC, (COLORREF) GetSysColor (COLOR_WINDOWTEXT));//SetTextColor (GetSysColor(COLOR_WINDOWTEXT));
+	DrawText (hDC, strRemaining, lstrlen (strRemaining), &rcClient, DT_NOPREFIX | DT_SINGLELINE | DT_VCENTER | DT_CENTER);
+	RestoreDC (hDC, -1);*/
+
+	SelectObject (hDC, hFont);
+	DeleteObject (hFont);
+	return (INT) FALSE;
+}
+
+
+
+void CMyCoolProgressCtrl::OnPaint() //CMyCoolProgressCtrl наследник от CProgressCtrl в MFC, ну и соответственно OnPaint это обработчик WM_PAINT
+{
+    int      nRange, nLower, nUpper;
+    CBrush   brush(::GetSysColor(COLOR_HIGHLIGHT));
+    CPaintDC dcPaint(this);
+    CMemDC   dc(&dcPaint);
+    CRect    rcClient, rcBlock, rcComplete;
+    LONG     lStyle;
+    int      nGapWidth = 2;
+    int      nLoop, nBlocks;
+    clock_t  now = clock();
+    CString  strRemaining;
+
+    this->GetRange(nLower, nUpper);
+    this->GetClientRect(&rcClient);
+    rcBlock = rcClient;
+
+    nRange      = nUpper - nLower;
+    m_lfPercent = (double)this->GetPos() / (double)nRange;
+    lStyle      = ::GetWindowLong(*this, GWL_STYLE);
+
+    if ((lStyle & PBS_VERTICAL) == PBS_VERTICAL)
+        rcBlock.top = rcBlock.bottom - (int)(rcBlock.Height() * m_lfPercent);
+    else
+        rcBlock.right = rcBlock.left + (int)(rcBlock.Width() * m_lfPercent);
+    rcComplete = rcBlock;
+
+    if ((lStyle & PBS_SMOOTH) == PBS_SMOOTH)
+        nBlocks = 1;
+    else
+    {
+        #define BLOCKS 18.0
+        rcBlock = rcClient;
+        if ((lStyle & PBS_VERTICAL) == PBS_VERTICAL)
+            rcBlock.top = rcBlock.bottom - (int)((rcClient.Height()-(9*nGapWidth)) / BLOCKS);
+        else
+            rcBlock.right = rcBlock.left + (int)((rcClient.Width()-(9*nGapWidth)) / BLOCKS);
+        nBlocks = (int)((m_lfPercent*BLOCKS)+0.9);
+    }
+
+    if (this->GetParent() != NULL)
+        ::FillRect(dc, &rcClient, (HBRUSH)this->GetParent()->SendMessage(WM_CTLCOLORSTATIC, (WPARAM)(HDC)dc, (LPARAM)this->GetSafeHwnd()));
+
+    for (nLoop=1; nLoop<=nBlocks; nLoop++)
+    {
+        ::FillRect(dc, &rcBlock, brush);
+        if ((lStyle & PBS_VERTICAL) == PBS_VERTICAL)
+        {
+            rcComplete.top = rcBlock.top;
+            rcBlock.OffsetRect(0, -(rcBlock.Height()+nGapWidth));
+        }
+        else
+        {
+            rcComplete.right = rcBlock.right;
+            rcBlock.OffsetRect(rcBlock.Width()+nGapWidth, 0);
+        }
+    }
+
+    if (m_lfPercent > 0.02)
+    {
+        CFont  *pFount;
+        double  lfSecsSoFar = (double)(now - m_start) / CLOCKS_PER_SEC;
+        strRemaining = this->GetRemainingText(m_lfPercent, (lfSecsSoFar / m_lfPercent) * (1.0 - m_lfPercent));
+        dc.SetBkMode(TRANSPARENT);
+
+        if ((lStyle & PBS_VERTICAL) == PBS_VERTICAL)
+        {
+            CSize  szExt;
+            CPoint ptText;
+
+            // draw the vertical text centred in the control
+            pFount = dc.SelectObject(&m_fountVert);
+            szExt  = dc.GetTextExtent(strRemaining);
+            ptText.x = (rcClient.Width() - szExt.cy) >> 1;
+            ptText.y = rcClient.bottom - ((rcClient.Height() - szExt.cx) >> 1);
+
+            dc.SaveDC();
+            dc.IntersectClipRect(rcComplete);
+            dc.SetTextColor(::GetSysColor(COLOR_HIGHLIGHTTEXT));
+            dc.ExtTextOut(ptText.x, ptText.y, ETO_CLIPPED, rcClient, strRemaining, NULL);
+            dc.RestoreDC(-1);
+
+            dc.SaveDC();
+            dc.ExcludeClipRect(rcComplete);
+            dc.SetTextColor(::GetSysColor(COLOR_WINDOWTEXT));
+            dc.ExtTextOut(ptText.x, ptText.y, ETO_CLIPPED, rcClient, strRemaining, NULL);
+            dc.RestoreDC(-1);
+
+            dc.SelectObject(pFount);
+        }
+        else
+        {
+            // horizontal text is easier
+            pFount = dc.SelectObject(&m_fountHorz);
+
+            dc.SaveDC();
+            dc.IntersectClipRect(rcComplete);
+            dc.SetTextColor(::GetSysColor(COLOR_HIGHLIGHTTEXT));
+            dc.DrawText(strRemaining, rcClient, DT_NOPREFIX | DT_SINGLELINE | DT_VCENTER | DT_CENTER);
+            dc.RestoreDC(-1);
+
+            dc.SaveDC();
+            dc.ExcludeClipRect(rcComplete);
+            dc.SetTextColor(::GetSysColor(COLOR_WINDOWTEXT));
+            dc.DrawText(strRemaining, rcClient, DT_NOPREFIX | DT_SINGLELINE | DT_VCENTER | DT_CENTER);
+            dc.RestoreDC(-1);
+
+            dc.SelectObject(pFount);
+        }
+    }
+}
+
+
+INT CALLBACK subClassLvProc (HWND hLv, UINT msg, WPARAM wParam, LONG lParam)
+{
+	static BOOL shiftIsDown = FALSE;
+	FmPanelProps* panel = (FmPanelProps*) GetProp (hLv, L"Props");
+	switch (msg) 
+    {
+		case WM_NOTIFY:
+		{
+			NMHDR* pNmhdr = (NMHDR*)lParam;
+			switch (pNmhdr->code)
+			{
+				case HDN_ENDTRACK:
+					onListViewEndTrack (hLv, wParam, lParam);
+					break;
+				case HDN_TRACK:
+					onListViewTrack (hLv, wParam, lParam);
+					break;
+			}
+			break;
+		}
+		case WM_GETDLGCODE:
+			return DLGC_WANTALLKEYS;
+		case WM_DROPFILES:
+			onDropFiles	(hLv, wParam, lParam);
+			break;
+		case WM_KEYUP:
+		{
+			switch (wParam)
+			{
+				case VK_SHIFT:
+					shiftIsDown = FALSE;
+					break;
+			}
+			return FALSE;
+		}
+		case WM_KEYDOWN:
+		{
+			BOOL retCode = TRUE;
+			LVITEM lvi;
+			lvi.mask = LVIF_STATE;
+			lvi.stateMask = LVIS_SELECTED | LVIS_FOCUSED;					
+			lvi.iSubItem = 0;
+			if (!shiftIsDown)
+			{
+				lvi.state = 0;						
+				lvi.iItem = panel->curSel;				
+				SendMessage (hLv, LVM_SETITEM, 0, (LPARAM)&lvi);
+			}
+			int itemsCount = (int) SendMessage (hLv, LVM_GETITEMCOUNT, 0, 0);
+			switch (wParam)
+			{
+				case VK_UP:
+					-- panel->curSel;
+					if (panel->curSel < 0) panel->curSel = 0;
+					break;
+				case VK_DOWN:
+					++ panel->curSel;
+					if (panel->curSel > itemsCount) panel->curSel = itemsCount - 1;
+					break;
+				case VK_SHIFT:
+					shiftIsDown = TRUE;
+					break;
+				case VK_F11:
+				{
+					TCHAR path [FM_MAX_PATH];
+					SendMessage (panel->hFullPath, WM_GETTEXT, SIZETC (path), (LPARAM) path);
+					SetCurrentDirectory (path);
+					ShellExecute (NULL, L"open", L"cmd", NULL, NULL, SW_SHOWDEFAULT);
+					break;
+				}
+				case VK_RETURN:
+					onIdOk (panel->hDlg, 0, 0);
+					break;
+				default:
+					retCode = FALSE;
+					break;
+			}
+			if (retCode)
+			{
+				lvi.state = LVIS_SELECTED;
+				lvi.iItem = panel->curSel;
+				SendMessage (hLv, LVM_SETITEM, 0, (LPARAM)&lvi);
+				if (!shiftIsDown)
+				{
+					SendMessage (hLv, LVM_ENSUREVISIBLE, panel->curSel, (LPARAM)TRUE);
+				}
+				return retCode;
+			}
+			break;
+		}
+	}
+ 	return CallWindowProc (panel->defProc, hLv, msg, wParam, lParam);
+}

@@ -1,0 +1,213 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 374, 251
+STYLE DS_ABSALIGN | DS_LOCALEDIT | DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_WINDOWEDGE | WS_EX_CONTROLPARENT | WS_EX_APPWINDOW
+CAPTION "Fileman"
+MENU IDR_MAIN_MENU
+FONT 8, "MS Shell Dlg", 400, 0, 0xCC
+BEGIN
+    CONTROL         "",IDC_LEFTPANEL,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,0,26,185,207,WS_EX_ACCEPTFILES
+    CONTROL         "",IDC_RIGHTPANEL,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,189,26,181,207,WS_EX_ACCEPTFILES
+    COMBOBOX        IDC_DISK_LIST_LEFT,0,0,50,84,CBS_DROPDOWNLIST | WS_VSCROLL
+    COMBOBOX        IDC_DISK_LIST_RIGHT,189,0,50,87,CBS_DROPDOWNLIST | WS_VSCROLL
+    EDITTEXT        IDC_FULL_PATH_LEFT,0,13,185,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_FULL_PATH_RIGHT,189,13,181,12,ES_AUTOHSCROLL | ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Выделено 0 байт",IDC_BYTES_SELECTED_LEFT,0,233,104,8
+    LTEXT           "Выделено 0 байт",IDC_BYTES_SELECTED_RIGHT,189,234,101,8
+    LTEXT           "Свободно 0 из 0 байт",IDC_FREE_LEFT,52,0,131,10
+    LTEXT           "Свободно 0 из 0 байт",IDC_FREE_RIGHT,240,0,131,10
+END
+
+IDD_COPY_PROGRESS DIALOGEX 0, 0, 243, 74
+STYLE DS_LOCALEDIT | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_NOPARENTNOTIFY | WS_EX_APPWINDOW
+CAPTION "Копирование"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_COPY_PROGRESS_BAR,"msctls_progress32",0x1,5,38,233,14,WS_EX_STATICEDGE
+    LTEXT           "Источник",IDC_STATIC,9,5,42,8
+    LTEXT           "Назначение",IDC_STATIC,7,23,42,8
+    LTEXT           "",IDC_COPY_SPEED,5,56,53,14,SS_SUNKEN,WS_EX_RIGHT
+    PUSHBUTTON      "Пауза",IDC_PAUSE_TOGGLE,179,56,59,14
+    CONTROL         "",IDC_COPY_TIME,"Static",SS_LEFTNOWORDWRAP | SS_SUNKEN | WS_GROUP,62,56,54,14,WS_EX_RIGHT
+    LTEXT           "",IDC_COPY_PERCENT,120,56,54,14,SS_SUNKEN,WS_EX_RIGHT
+    EDITTEXT        IDC_COPY_SOURCE,50,3,188,14,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY,WS_EX_LEFTSCROLLBAR
+    EDITTEXT        IDC_COPY_DEST,50,20,188,14,ES_AUTOHSCROLL | ES_READONLY,WS_EX_LEFTSCROLLBAR
+END
+
+IDD_DELETE_PREGRESS DIALOGEX 0, 0, 240, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Удаление"
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_DEL_PROGRESS,"msctls_progress32",WS_BORDER | 0x1,4,26,175,14
+    PUSHBUTTON      "Пауза",IDC_BUTTON1,185,26,50,14
+    EDITTEXT        IDC_CUR_DEL_FILENAME,4,5,231,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "Файл"
+    BEGIN
+        MENUITEM "Сравнить",                    ID_40013
+        MENUITEM "Разделить",                   ID_40026
+        MENUITEM "Объеденить",                  ID_40027
+        MENUITEM "Создать ...",                 ID_40028
+    END
+    POPUP "Помощь"
+    BEGIN
+        MENUITEM "О программе ...",             ID_HELP_ABOUT
+    END
+END
+
+IDC_CONTEXT_MENU MENU 
+BEGIN
+    POPUP "Fileman"
+    BEGIN
+        MENUITEM "Цвет фона ...",               FM_SELBKCOLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        RIGHTMARGIN, 370
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_COPY_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 238
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DELETE_PREGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 235
+        BOTTOMMARGIN, 40
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_CAPTION             "Fileman"
+    IDS_SHURE_CANCEL_COPY   "Прервать копирование?"
+    IDS_COPY_PAUSE          "Пауза"
+    IDS_DRIVE_UNKNOWN       "Неизвестный тип"
+    IDS_DRIVE_NO_ROOT_DIR   "Не корневая директория"
+    IDS_DRIVE_REMOVABLE     "Съёмный диск"
+    IDS_DRIVE_FIXED         "Жёсткий диск"
+    IDS_DRIVE_REMOTE        "Сетевой диск"
+    IDS_DRIVE_CDROM         "CD-дисковод"
+    IDS_DRIVE_RAMDISK       "RAM-диск"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_COPY_RESUME         "Продолжить"
+    IDS_NOTHING_SELECTED    "Ничего не выбрано"
+    IDS_EXECUTE_ERR_MSG_TITLE "Fileman - Windows сообщает:"
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

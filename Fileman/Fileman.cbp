@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Fileman" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="Fileman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug Win32" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="C:/Program Files/Microsoft Visual Studio 8/VC/atlmfc/include" />
+					<Add directory="../../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/Program Files/Microsoft Visual Studio 8/VC/atlmfc/include" />
+					<Add directory="../../include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add directory="../../lib" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="Fileman" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release Win32" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+					<Add option="-O0" />
+					<Add directory="C:/Program Files/Microsoft Platform SDK/include/mfc" />
+					<Add directory="../../include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="C:/Program Files/Microsoft Platform SDK/include/mfc" />
+					<Add directory="../../include" />
+				</ResourceCompiler>
+				<Linker>
+					<Add library="comctl32" />
+					<Add library="Psapi" />
+					<Add directory="../../lib" />
+				</Linker>
+			</Target>
+		</Build>
+		<Unit filename="../Docs/usertype.dat" />
+		<Unit filename="../Sources/Fileman.exe.manifest" />
+		<Unit filename="../Sources/abstract.cpp" />
+		<Unit filename="../Sources/abstract.h" />
+		<Unit filename="../Sources/audio.cpp" />
+		<Unit filename="../Sources/audio.h" />
+		<Unit filename="../Sources/browse.cpp" />
+		<Unit filename="../Sources/browse.h" />
+		<Unit filename="../Sources/build.h" />
+		<Unit filename="../Sources/cdinfo.h" />
+		<Unit filename="../Sources/consts.h" />
+		<Unit filename="../Sources/context.cpp" />
+		<Unit filename="../Sources/context.h" />
+		<Unit filename="../Sources/copy.cpp" />
+		<Unit filename="../Sources/copy.h" />
+		<Unit filename="../Sources/count.cpp" />
+		<Unit filename="../Sources/count.h" />
+		<Unit filename="../Sources/delete.cpp" />
+		<Unit filename="../Sources/delete.h" />
+		<Unit filename="../Sources/fileman.cpp" />
+		<Unit filename="../Sources/fileman.h" />
+		<Unit filename="../Sources/fileman.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../Sources/fmmemory.cpp" />
+		<Unit filename="../Sources/fmmemory.h" />
+		<Unit filename="../Sources/folder.cpp" />
+		<Unit filename="../Sources/folder.h" />
+		<Unit filename="../Sources/globals.h" />
+		<Unit filename="../Sources/icon1.ico" />
+		<Unit filename="../Sources/icon3.ico" />
+		<Unit filename="../Sources/ltpd.cpp" />
+		<Unit filename="../Sources/ltpd.h" />
+		<Unit filename="../Sources/operation.cpp" />
+		<Unit filename="../Sources/operation.h" />
+		<Unit filename="../Sources/progress.cpp" />
+		<Unit filename="../Sources/progress.h" />
+		<Unit filename="../Sources/resource.h" />
+		<Unit filename="../Sources/settings.cpp" />
+		<Unit filename="../Sources/settings.h" />
+		<Unit filename="../Sources/task.cpp" />
+		<Unit filename="../Sources/task.h" />
+		<Unit filename="../Sources/user.cpp" />
+		<Unit filename="../Sources/user.h" />
+		<Unit filename="../Sources/watcher.cpp" />
+		<Unit filename="../Sources/watcher.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

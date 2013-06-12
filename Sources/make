@@ -1,0 +1,2 @@
+all: fileman.cpp
+		gcc -lstdc++ -g3 -o browse.cpp temp.cpp context.cpp copy.cpp count.cpp delete.cpp fileman.cpp helper.cpp ltpd.cpp move.cpp operation.cpp progress.cpp sort.cpp task.cpp user.cpp watcher.cpp
